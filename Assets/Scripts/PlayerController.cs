@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float movementSpeed;
@@ -14,12 +15,18 @@ public class PlayerMovement : MonoBehaviour
     Animator playerAnimator;
     SpriteRenderer spriteRenderer;
 
+    public GameObject noDestroy;
+    public Vector3 spawnPosition;
+
+    private LevelLoader levelLoader;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        levelLoader = FindObjectOfType<LevelLoader>();
     }
 
     // Update is called once per frame
@@ -64,5 +71,33 @@ public class PlayerMovement : MonoBehaviour
     {
         movementInput = inputValue.Get<Vector2>();
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Emerald"))
+        {
+            DontDestroyOnLoad(noDestroy);
+            spawnPosition = new Vector3(-8.7f, -1.49f, 0f);
+
+            levelLoader.LoadNextLevel();
+            StartCoroutine(updatePlayerPositionAfterDelay());
+        }
+        else if(collision.CompareTag("Sapphire"))
+        {
+            DontDestroyOnLoad(noDestroy);
+            spawnPosition = new Vector3(0f, 1.7f, 0f);
+
+            levelLoader.LoadNextLevel();
+            StartCoroutine(updatePlayerPositionAfterDelay());
+        }
+    }
+
+    private IEnumerator updatePlayerPositionAfterDelay()
+    {
+        yield return new WaitForSeconds(2.0f);
+
+        transform.position = spawnPosition;
+    }
 }
+
 
