@@ -14,12 +14,17 @@ public class PlayerMovement : MonoBehaviour
     Animator playerAnimator;
     SpriteRenderer spriteRenderer;
 
+    public GameObject noDestroy;
+    public Vector3 spawnPosition;
+    private LevelLoader levelLoader;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        levelLoader = FindObjectOfType<LevelLoader>();
     }
 
     // Update is called once per frame
@@ -63,6 +68,34 @@ public class PlayerMovement : MonoBehaviour
     void OnMove(InputValue inputValue)
     {
         movementInput = inputValue.Get<Vector2>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Emerald"))
+        {
+            DontDestroyOnLoad(noDestroy);
+            spawnPosition = new Vector3(-8.7f, -1.49f, 0f);
+
+            levelLoader.loadNextLevel();
+            StartCoroutine(updatePlayerPositionAfterDelay());
+        }
+        else if(collision.CompareTag("Sapphire"))
+        {
+            DontDestroyOnLoad(noDestroy);
+            spawnPosition = new Vector3(0f, 1.5f, 0f);
+
+            levelLoader.loadNextLevel();
+            StartCoroutine(updatePlayerPositionAfterDelay());
+
+        }
+    }
+
+    private IEnumerator updatePlayerPositionAfterDelay()
+    {
+        yield return new WaitForSeconds(1.0f);
+
+        transform.position = spawnPosition;
     }
 }
 
