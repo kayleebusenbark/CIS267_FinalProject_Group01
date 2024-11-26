@@ -143,8 +143,8 @@ TextureImporter:
         y: 192
         width: 61
         height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +283,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Massacre Sprite Sheet_7
+      name: wolf_attack_02
       rect:
         serializedVersion: 2
         x: 69
@@ -304,7 +304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Massacre Sprite Sheet_8
+      name: wolf_attack_03
       rect:
         serializedVersion: 2
         x: 130
@@ -325,7 +325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Massacre Sprite Sheet_9
+      name: wolf_attack_04
       rect:
         serializedVersion: 2
         x: 196
@@ -346,7 +346,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Massacre Sprite Sheet_10
+      name: wolf_attack_05
       rect:
         serializedVersion: 2
         x: 262
@@ -608,11 +608,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Massacre Sprite Sheet_10: -708207959
-      Massacre Sprite Sheet_7: 313530064
-      Massacre Sprite Sheet_8: -1808629860
-      Massacre Sprite Sheet_9: -2061417330
       wolf_attack_01: -2003289472
+      wolf_attack_02: 313530064
+      wolf_attack_03: -1808629860
+      wolf_attack_04: -2061417330
+      wolf_attack_05: -708207959
       wolf_damage_01: -333698142
       wolf_damage_02: 2112473545
       wolf_damage_03: 1253688858
