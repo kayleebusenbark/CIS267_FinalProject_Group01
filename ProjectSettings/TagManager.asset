@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Emerald
   - Sapphire
+  - Sword&Shield
+  - Level03EnemySpawnPoints
+  - SkeletonEnemy
+  - WolfEnemy
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -13,8 +18,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - SpawnPoints
+  - AVOID
   - 
   - 
   - 

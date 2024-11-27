@@ -1038,6 +1038,237 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_01
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 343
+        width: 26
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba94ba264d2d8ec4b8384288912a43d8
+      internalID: 313561917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_02
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 343
+        width: 15
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca5a114267840b4688fbef9a0720c0c
+      internalID: 1706042119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_03
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 343
+        width: 15
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63aece6e0b885f49a60c8de157996cf
+      internalID: -1052054004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_04
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 343
+        width: 15
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a3c7c1b3ea02647b2eedd48978f7ad
+      internalID: -49590434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_05
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 343
+        width: 26
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00460dcf978d8e45a40739e5f1ed2b2
+      internalID: 1780883626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_06
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 343
+        width: 32
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58db1e0fe145b9444a1f2950aa3ce0c2
+      internalID: 1041554849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_07
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 343
+        width: 39
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ea0b37acbed1742afee98df2ef074b
+      internalID: 816375888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_08
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 341
+        width: 49
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014a487190c6db542aaa8ba2eb0db02f
+      internalID: -1471922491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_09
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 341
+        width: 49
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8212e7af4472adc48b2723f6140b2917
+      internalID: -1748282795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_10
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 341
+        width: 49
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575d4c643a4da1942bad92fdc556bc33
+      internalID: -1539099804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KnightAttackType3_11
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 341
+        width: 25
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a812179ae5b6f48abe95e784b3ca29
+      internalID: 1633273731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1066,6 +1297,17 @@ TextureImporter:
       KnightAttackType2_08: -971354172
       KnightAttackType2_09: -382043319
       KnightAttackType2_10: 842243291
+      KnightAttackType3_01: 313561917
+      KnightAttackType3_02: 1706042119
+      KnightAttackType3_03: -1052054004
+      KnightAttackType3_04: -49590434
+      KnightAttackType3_05: 1780883626
+      KnightAttackType3_06: 1041554849
+      KnightAttackType3_07: 816375888
+      KnightAttackType3_08: -1471922491
+      KnightAttackType3_09: -1748282795
+      KnightAttackType3_10: -1539099804
+      KnightAttackType3_11: 1633273731
       KnightBlock01: -1903639402
       KnightBlock02: -355255394
       KnightBlock03: -561771258

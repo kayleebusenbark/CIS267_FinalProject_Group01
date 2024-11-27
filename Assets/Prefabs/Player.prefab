@@ -34,7 +34,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.203, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5985053595723734752}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7963474572557383257
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: -2081753711, guid: ea3e4a26ccc84dd4b8e7f81a622c7110, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -118,7 +119,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3114798266001635152}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -136,7 +137,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6634325171339499572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 3f126a271b83bce4f8dcf7dbff60f2ef, type: 3}
-  m_NotificationBehavior: 0
+  m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -161,7 +162,83 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 5e4644449215430469f292b0d8383ac4, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 59bb0b92-83d3-47ce-bfd4-202f3f6fa89d
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e4f94b39-d5d8-483a-81c9-27200a82c62c
+    m_ActionName: Player/Look[/Mouse/delta,/Touchscreen/delta,/Pen/delta]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 5e4644449215430469f292b0d8383ac4, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d9909fbd-8b81-46fa-a9bf-3fce28882bdc
+    m_ActionName: Player/Fire[/Mouse/leftButton,/Mouse/rightButton,/Touchscreen/primaryTouch/tap]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ffdf4f90-4dd2-4249-841f-a797d2b16e33
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9fd4f4e1-a97c-423b-b3a4-5d422bb2202f
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d4362a5e-983e-4456-ae9f-15639cf2bafa
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 65277c8a-4bc6-4075-9120-ef778a729cdc
+    m_ActionName: UI/Point[/Mouse/position,/Pen/position,/Touchscreen/touch0/position,/Touchscreen/touch1/position,/Touchscreen/touch2/position,/Touchscreen/touch3/position,/Touchscreen/touch4/position,/Touchscreen/touch5/position,/Touchscreen/touch6/position,/Touchscreen/touch7/position,/Touchscreen/touch8/position,/Touchscreen/touch9/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 991f53bf-a5cd-4c13-a0dd-b9359f5df1e8
+    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip,/Touchscreen/touch0/press,/Touchscreen/touch1/press,/Touchscreen/touch2/press,/Touchscreen/touch3/press,/Touchscreen/touch4/press,/Touchscreen/touch5/press,/Touchscreen/touch6/press,/Touchscreen/touch7/press,/Touchscreen/touch8/press,/Touchscreen/touch9/press]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 756162aa-56da-4fe2-a3d1-d4d3cdd594cd
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 83bd36d3-f666-4f08-a499-a2d134d3d339
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8453de2b-1560-4f8f-9b58-cdf0c9c1495d
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3652c3de-9870-4c9a-923b-f424c49c2ee6
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5814945a-1686-4fd7-a9cd-c300edcf088c
+    m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -197,6 +274,7 @@ MonoBehaviour:
   collisionOffset: 0.002
   noDestroy: {fileID: 0}
   spawnPosition: {x: 0, y: 0, z: 0}
+  attack01: {fileID: 8486473046545837187}
 --- !u!61 &4941228147027215674
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -229,7 +307,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.019746402, y: 0.024018098}
+  m_Offset: {x: 0.020303056, y: 0.024018098}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -240,5 +318,97 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.110507205, y: 0.048036195}
+  m_Size: {x: 0.091575116, y: 0.048036195}
   m_EdgeRadius: 0
+--- !u!1 &8343600547529215396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5985053595723734752}
+  - component: {fileID: 6827646977331108945}
+  - component: {fileID: 8486473046545837187}
+  m_Layer: 0
+  m_Name: SwordHitBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5985053595723734752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8343600547529215396}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.123000145, y: 0.099999905, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6531787891721042424}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &6827646977331108945
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8343600547529215396}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14, y: 0.25}
+  m_EdgeRadius: 0
+--- !u!114 &8486473046545837187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8343600547529215396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322a2eecdccb7ae49b0e513c004234c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  swordColliderAttack01: {fileID: 6827646977331108945}
+  damage: 3

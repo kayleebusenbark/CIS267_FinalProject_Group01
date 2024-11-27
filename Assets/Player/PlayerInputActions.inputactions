@@ -223,6 +223,17 @@
                 },
                 {
                     "name": "",
+                    "id": "ef373b26-81e1-4614-97de-a6099c379e1a",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "886e731e-7071-4ae4-95c0-e61739dad6fd",
                     "path": "<Touchscreen>/primaryTouch/tap",
                     "interactions": "",
