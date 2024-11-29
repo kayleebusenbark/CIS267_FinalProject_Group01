@@ -23,6 +23,15 @@ public class PlayerController : MonoBehaviour
 
     public PlayerAttack01 attack01;
 
+    private int mouseClickCount = 0;
+    private float mouseClickTimer = 0f;
+    public float doubleClickTimeLimit = 0.5f;
+
+    private bool isBlocking = false;
+
+    private bool isMouseHeld = false;
+    private float mouseHeldTimer = 0f;
+    public float attack3Threshold = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +46,33 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(mouseClickCount > 0)
+        {
+            mouseClickTimer += Time.deltaTime;
+
+            if(mouseClickTimer > doubleClickTimeLimit)
+            {
+                mouseClickCount = 0;
+                mouseClickTimer = 0f;
+            }
+        }
+
+        if(Input.GetMouseButtonDown(1))
+        {
+            if(!isBlocking)
+            {
+                isBlocking = true;
+                triggerBlockAnimation(true);
+            }
+        }
+        else if(Input.GetMouseButtonUp(1))
+        {
+            if(isBlocking)
+            {
+                isBlocking = false;
+                triggerBlockAnimation(false);
+            }
+        }
     }
     private void FixedUpdate()
     {
@@ -144,7 +180,36 @@ public class PlayerController : MonoBehaviour
         if (hasSwordAndShield == true)
         {
             print("firepressed");
-            playerAnimator.SetTrigger("attack1LeftMouseClick");
+
+            mouseClickCount++;
+            mouseClickTimer = 0f;
+
+            if (mouseClickCount == 1)
+            {
+                playerAnimator.SetTrigger("attack1LeftMouseClick");
+
+            }
+            else if (mouseClickCount == 2)
+            {
+                playerAnimator.SetTrigger("attack2LeftMouseDoubleClick");
+                mouseClickCount = 0;
+            }
+
+            if(Input.GetMouseButton(0))
+            {
+                isMouseHeld = true;
+                mouseHeldTimer += Time.deltaTime;
+
+                if(mouseHeldTimer >= attack3Threshold)
+                {
+                    if(!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("attack3LeftMouseDown"))
+                    {
+                        playerAnimator.SetTrigger("attack3LeftMouseDown");
+                    }
+
+                }
+            }
+
         }
 
     }
@@ -164,6 +229,11 @@ public class PlayerController : MonoBehaviour
     public void endSwordAttack()
     {
         attack01.stopAttack();
+    }
+
+    private void triggerBlockAnimation(bool isBlocking)
+    {
+        playerAnimator.SetBool("isBlocking", isBlocking);
     }
 }
 
