@@ -30,6 +30,8 @@ public class WizardAI : MonoBehaviour
 
         animator = GetComponent<Animator>();
 
+        enabled = false;
+
     }
 
     // Update is called once per frame
@@ -132,4 +134,21 @@ public class WizardAI : MonoBehaviour
 
     }
 
+    public void activateWizard()
+    {
+        enabled = true;
+    }
+
+    public void lockChamberWithDelay(Collider2D chamberCollider)
+    {
+        StartCoroutine(delayLock(chamberCollider));
+    }
+
+    private IEnumerator delayLock(Collider2D chambercollider)
+    {
+        yield return new WaitForSeconds(1f);
+
+        chambercollider.isTrigger = false;
+
+    }
 }

@@ -33,6 +33,10 @@ public class PlayerController : MonoBehaviour
     private float mouseHeldTimer = 0f;
     public float attack3Threshold = 1f;
 
+    private WizardAI wizard;
+
+    private bool canUseAttack3 = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,11 +45,34 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         levelLoader = FindObjectOfType<LevelLoader>();
+        wizard = FindObjectOfType<WizardAI>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if (canUseAttack3 && Input.GetMouseButton(0))
+        {
+            isMouseHeld = true;
+            mouseHeldTimer += Time.deltaTime;
+
+            if (mouseHeldTimer >= attack3Threshold)
+            {
+                if (!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("attack3LeftMouseDown"))
+                {
+                    playerAnimator.SetTrigger("attack3LeftMouseHold");
+                    mouseHeldTimer = 0f;
+                    isMouseHeld = false;
+                }
+            }
+        }
+        else if (Input.GetMouseButton(0))
+        {
+            isMouseHeld = false ;
+            mouseHeldTimer = 0f;
+        }
+
         if(mouseClickCount > 0)
         {
             mouseClickTimer += Time.deltaTime;
@@ -166,6 +193,20 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             playerAnimator.SetBool("sword&shieldPickUp", true);
         }
+        else if(collision.CompareTag("Scroll"))
+        {
+            canUseAttack3 = true;
+            Destroy(collision.gameObject);
+        }
+
+
+        else if(collision.CompareTag("WizardChamber"))
+        { 
+            wizard.activateWizard();
+
+            wizard.lockChamberWithDelay(collision);
+
+        }
     }
 
     private IEnumerator updatePlayerPositionAfterDelay()
@@ -194,22 +235,6 @@ public class PlayerController : MonoBehaviour
                 playerAnimator.SetTrigger("attack2LeftMouseDoubleClick");
                 mouseClickCount = 0;
             }
-
-            if(Input.GetMouseButton(0))
-            {
-                isMouseHeld = true;
-                mouseHeldTimer += Time.deltaTime;
-
-                if(mouseHeldTimer >= attack3Threshold)
-                {
-                    if(!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("attack3LeftMouseDown"))
-                    {
-                        playerAnimator.SetTrigger("attack3LeftMouseDown");
-                    }
-
-                }
-            }
-
         }
 
     }

@@ -11,6 +11,8 @@ TagManager:
   - SkeletonEnemy
   - WolfEnemy
   - Enemy
+  - WizardChamber
+  - Scroll
   layers:
   - Default
   - TransparentFX

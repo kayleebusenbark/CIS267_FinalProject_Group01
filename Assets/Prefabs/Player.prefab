@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4941228147027215674}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Actions: {fileID: -944628639613478452, guid: 3f126a271b83bce4f8dcf7dbff60f2ef, type: 3}
-  m_NotificationBehavior: 2
+  m_NotificationBehavior: 0
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -275,6 +275,8 @@ MonoBehaviour:
   noDestroy: {fileID: 0}
   spawnPosition: {x: 0, y: 0, z: 0}
   attack01: {fileID: 8486473046545837187}
+  doubleClickTimeLimit: 0.5
+  attack3Threshold: 1
 --- !u!61 &4941228147027215674
 BoxCollider2D:
   m_ObjectHideFlags: 0
