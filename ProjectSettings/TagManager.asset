@@ -14,6 +14,7 @@ TagManager:
   - SpiderEnemy
   - Scroll
   - WizardChamber
+  - WizardProjectile
   layers:
   - Default
   - TransparentFX
