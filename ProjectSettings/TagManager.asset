@@ -10,7 +10,8 @@ TagManager:
   - Level03EnemySpawnPoints
   - SkeletonEnemy
   - WolfEnemy
-  - Enemy
+  - BatEnemy
+  - SpiderEnemy
   layers:
   - Default
   - TransparentFX
