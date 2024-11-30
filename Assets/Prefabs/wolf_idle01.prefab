@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 6809563025937272128}
   - component: {fileID: 6938314996633784500}
+  - component: {fileID: 6316640513604184748}
   - component: {fileID: 3284670560813908366}
   - component: {fileID: 4895585016692505850}
+  - component: {fileID: 8777141605121959439}
   - component: {fileID: 1966442128943858317}
-  - component: {fileID: 524938441470824859}
-  - component: {fileID: 3859664401867217616}
   m_Layer: 0
   m_Name: wolf_idle01
   m_TagString: WolfEnemy
@@ -89,6 +89,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6316640513604184748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174181237970812991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9003b6eea3f4a4e90076e095b2522e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.75
+  spriteRenderer: {fileID: 6938314996633784500}
+  distanceBetween: 1
+  avoidanceRadius: 1
+  avoidanceLayers:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!95 &3284670560813908366
 Animator:
   serializedVersion: 5
@@ -118,7 +137,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5174181237970812991}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -137,6 +156,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8777141605121959439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174181237970812991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f12c081f6ca4448bcdd4a93ca1946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
 --- !u!61 &1966442128943858317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -182,33 +214,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.6219242, y: 0.26960096}
   m_EdgeRadius: 0
---- !u!114 &524938441470824859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5174181237970812991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b9003b6eea3f4a4e90076e095b2522e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  spriteRenderer: {fileID: 6938314996633784500}
-  distanceBetween: 2
---- !u!114 &3859664401867217616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5174181237970812991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68f12c081f6ca4448bcdd4a93ca1946a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 15
-  destroyDelay: 0.5
-  pushbackForce: 2
