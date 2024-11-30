@@ -8,7 +8,7 @@ public class Level03EnemyHealth : MonoBehaviour
     public float maxHealth = 3;
     private float currentHealth;
     public float destroyDelay = 0.5f;
-    public float pushbackForce = 1f;
+    public float pushbackForce = 0.1f;
 
 
     private Animator animator;
@@ -33,7 +33,11 @@ public class Level03EnemyHealth : MonoBehaviour
 
         animator.SetTrigger("hit");
         
-        pushBackFromPlayer();
+        if(GetComponent<WizardAI>() == null)
+        {
+            pushBackFromPlayer();
+
+        }
 
         if (currentHealth <= 0)
         {

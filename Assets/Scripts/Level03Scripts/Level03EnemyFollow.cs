@@ -23,6 +23,12 @@ public class Level03EnemyFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        followPlayer();
+    }
+    
+    public void followPlayer()
+    {
+
         distance = Vector2.Distance(transform.position, player.transform.position);
         Vector2 direction;
 
@@ -32,14 +38,14 @@ public class Level03EnemyFollow : MonoBehaviour
             direction = player.transform.position - transform.position;
             direction.Normalize();
 
-            transform.position = Vector2.MoveTowards(transform.position, player.transform.position , speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }
         else
         {
 
             direction = orginalPosition - (Vector2)transform.position;
 
-            if(direction.magnitude > 0.1f)
+            if (direction.magnitude > 0.1f)
             {
                 transform.position = Vector2.MoveTowards(transform.position, orginalPosition, speed * Time.deltaTime);
             }
@@ -51,6 +57,7 @@ public class Level03EnemyFollow : MonoBehaviour
         }
         handleSpriteFlips(direction);
     }
+
 
     public void setOriginalPosition(Vector2 position)
     {
