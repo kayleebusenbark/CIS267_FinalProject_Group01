@@ -33,6 +33,8 @@ public class PlayerController : MonoBehaviour
     private float mouseHeldTimer = 0f;
     public float attack3Threshold = 1f;
 
+    private bool canUseAttack3 = false; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,28 +48,50 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(mouseClickCount > 0)
+
+        if (canUseAttack3 && Input.GetMouseButton(0))
+        {
+            isMouseHeld = true;
+            mouseHeldTimer += Time.deltaTime;
+
+            if (mouseHeldTimer >= attack3Threshold)
+            {
+                if (!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("attack3LeftMouseHold"))
+                {
+                    playerAnimator.SetTrigger("attack3LeftMouseHold");
+                    mouseHeldTimer = 0f;
+                    isMouseHeld = false;
+                }
+            }
+        }
+        else if (Input.GetMouseButton(0))
+        {
+            isMouseHeld = false;
+            mouseHeldTimer = 0f;
+        }
+
+        if (mouseClickCount > 0)
         {
             mouseClickTimer += Time.deltaTime;
 
-            if(mouseClickTimer > doubleClickTimeLimit)
+            if (mouseClickTimer > doubleClickTimeLimit)
             {
                 mouseClickCount = 0;
                 mouseClickTimer = 0f;
             }
         }
 
-        if(Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1))
         {
-            if(!isBlocking)
+            if (!isBlocking)
             {
                 isBlocking = true;
                 triggerBlockAnimation(true);
             }
         }
-        else if(Input.GetMouseButtonUp(1))
+        else if (Input.GetMouseButtonUp(1))
         {
-            if(isBlocking)
+            if (isBlocking)
             {
                 isBlocking = false;
                 triggerBlockAnimation(false);
@@ -166,6 +190,11 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             playerAnimator.SetBool("sword&shieldPickUp", true);
         }
+        else if (collision.CompareTag("Scroll"))
+        {
+            canUseAttack3 = true;
+            Destroy(collision.gameObject);
+        }
     }
 
     private IEnumerator updatePlayerPositionAfterDelay()
@@ -195,20 +224,20 @@ public class PlayerController : MonoBehaviour
                 mouseClickCount = 0;
             }
 
-            if(Input.GetMouseButton(0))
-            {
-                isMouseHeld = true;
-                mouseHeldTimer += Time.deltaTime;
+            //if(Input.GetMouseButton(0))
+            //{
+            //    isMouseHeld = true;
+            //    mouseHeldTimer += Time.deltaTime;
 
-                if(mouseHeldTimer >= attack3Threshold)
-                {
-                    if(!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("attack3LeftMouseDown"))
-                    {
-                        playerAnimator.SetTrigger("attack3LeftMouseDown");
-                    }
+            //    if(mouseHeldTimer >= attack3Threshold)
+            //    {
+            //        if(!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("attack3LeftMouseDown"))
+            //        {
+            //            playerAnimator.SetTrigger("attack3LeftMouseDown");
+            //        }
 
-                }
-            }
+            //    }
+            //}
 
         }
 

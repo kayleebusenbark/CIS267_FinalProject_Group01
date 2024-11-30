@@ -12,6 +12,8 @@ TagManager:
   - WolfEnemy
   - BatEnemy
   - SpiderEnemy
+  - Scroll
+  - WizardChamber
   layers:
   - Default
   - TransparentFX

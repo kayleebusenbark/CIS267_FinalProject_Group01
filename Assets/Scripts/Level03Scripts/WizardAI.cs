@@ -29,7 +29,7 @@ public class WizardAI : MonoBehaviour
         }
 
         animator = GetComponent<Animator>();
-
+        enabled = false;
     }
 
     // Update is called once per frame
@@ -130,6 +130,11 @@ public class WizardAI : MonoBehaviour
 
         }
 
+    }
+
+    public void activateWizard()
+    {
+        enabled = true;
     }
 
 }

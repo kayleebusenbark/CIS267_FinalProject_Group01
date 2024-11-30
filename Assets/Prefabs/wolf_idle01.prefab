@@ -104,10 +104,6 @@ MonoBehaviour:
   speed: 0.75
   spriteRenderer: {fileID: 6938314996633784500}
   distanceBetween: 1
-  avoidanceRadius: 1
-  avoidanceLayers:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!95 &3284670560813908366
 Animator:
   serializedVersion: 5
@@ -168,7 +164,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f12c081f6ca4448bcdd4a93ca1946a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 15
+  maxHealth: 3
+  destroyDelay: 0.5
+  pushbackForce: 1
 --- !u!61 &1966442128943858317
 BoxCollider2D:
   m_ObjectHideFlags: 0
