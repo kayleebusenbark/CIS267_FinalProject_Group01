@@ -33,6 +33,11 @@ public class PlayerController : MonoBehaviour
     private float mouseHeldTimer = 0f;
     public float attack3Threshold = 1f;
 
+<<<<<<< Updated upstream
+=======
+    private bool canUseAttack3 = false;
+
+>>>>>>> Stashed changes
     // Start is called before the first frame update
     void Start()
     {
@@ -166,6 +171,14 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
             playerAnimator.SetBool("sword&shieldPickUp", true);
         }
+<<<<<<< Updated upstream
+=======
+        else if(collision.CompareTag("Scroll"))
+        {
+            canUseAttack3 = true;
+            Destroy(collision.gameObject);
+        }
+>>>>>>> Stashed changes
     }
 
     private IEnumerator updatePlayerPositionAfterDelay()
