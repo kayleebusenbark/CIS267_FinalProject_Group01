@@ -8387,6 +8387,7 @@ MonoBehaviour:
   orbitDuration: 2
   projectileCount: 5
   shootSpeed: 3
+  damage: 10
 --- !u!95 &1337189116
 Animator:
   serializedVersion: 5
@@ -8424,6 +8425,8 @@ MonoBehaviour:
   maxHealth: 50
   destroyDelay: 0.5
   pushbackForce: 0.1
+  heartPrefab: {fileID: 0}
+  heartDropChange: 0.5
 --- !u!1 &1392903240
 GameObject:
   m_ObjectHideFlags: 0

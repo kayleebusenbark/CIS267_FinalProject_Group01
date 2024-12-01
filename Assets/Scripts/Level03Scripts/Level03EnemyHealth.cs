@@ -16,6 +16,11 @@ public class Level03EnemyHealth : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerController player;
 
+    public GameObject heartPrefab;
+
+    // (0 = never and 1 = always) 
+    [Range(0f,1f)] public float heartDropChange = 0.3f;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -61,6 +66,11 @@ public class Level03EnemyHealth : MonoBehaviour
 
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+
+        if (heartPrefab != null && Random.value <= heartDropChange)
+        {
+            Instantiate(heartPrefab, transform.position, Quaternion.identity);
+        }
 
         Destroy(gameObject, destroyDelay);
     }
