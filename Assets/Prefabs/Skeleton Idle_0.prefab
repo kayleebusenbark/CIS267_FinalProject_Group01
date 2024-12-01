@@ -125,6 +125,7 @@ MonoBehaviour:
   speed: 0.4
   spriteRenderer: {fileID: 4585054000726788618}
   distanceBetween: 1
+  damage: 5
 --- !u!114 &1292674288250076553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +171,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

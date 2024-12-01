@@ -13,11 +13,18 @@ public class Level03EnemyFollow : MonoBehaviour
 
     private Vector2 orginalPosition;
 
+    public int damage = 10;
+
+    PlayerHealth playerHealth;
+
+
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
         animator = GetComponent<Animator>();
+        playerHealth = FindObjectOfType<PlayerHealth>();
+
     }
 
     // Update is called once per frame
@@ -83,5 +90,16 @@ public class Level03EnemyFollow : MonoBehaviour
             spriteRenderer.flipX = true;
         }
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerHitBox"))
+        {
+            playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+
+            playerHealth.takeDamage(damage);
+
+        }
     }
 }

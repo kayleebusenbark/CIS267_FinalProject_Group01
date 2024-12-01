@@ -83504,26 +83504,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1459182404 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1455023173272634836, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
-  m_PrefabInstance: {fileID: 1588961493}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1459182406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459182404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30a7b8f9f4647ca4ab304b5c62d28cb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currHealth: 0
-  healthBar: {fileID: 56931942}
 --- !u!1 &1475000640
 GameObject:
   m_ObjectHideFlags: 0
@@ -83806,6 +83786,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1940617380}
     m_Modifications:
+    - target: {fileID: 941140674688434227, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+      propertyPath: m_Size.x
+      value: 0.18341494
+      objectReference: {fileID: 0}
+    - target: {fileID: 941140674688434227, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.21033669
+      objectReference: {fileID: 0}
+    - target: {fileID: 941140674688434227, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0220325
+      objectReference: {fileID: 0}
+    - target: {fileID: 941140674688434227, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.105784416
+      objectReference: {fileID: 0}
+    - target: {fileID: 3095658009504966650, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 56931942}
     - target: {fileID: 3114798266001635152, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
       propertyPath: m_Name
       value: Player
@@ -83814,14 +83814,6 @@ PrefabInstance:
       propertyPath: noDestroy
       value: 
       objectReference: {fileID: 1940617379}
-    - target: {fileID: 5197476404892911541, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
-      propertyPath: m_Size.y
-      value: 0.12821484
-      objectReference: {fileID: 0}
-    - target: {fileID: 5197476404892911541, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
-      propertyPath: m_Center.y
-      value: 0.11420584
-      objectReference: {fileID: 0}
     - target: {fileID: 6531787891721042424, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.71
@@ -83865,10 +83857,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1455023173272634836, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1459182406}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
 --- !u!4 &1588961494 stripped
 Transform:

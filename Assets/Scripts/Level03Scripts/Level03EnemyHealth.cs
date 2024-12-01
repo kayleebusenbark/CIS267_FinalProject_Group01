@@ -32,7 +32,9 @@ public class Level03EnemyHealth : MonoBehaviour
         currentHealth -= damage;
 
         animator.SetTrigger("hit");
-        
+
+
+        //this is so the wizard doesn't get pushed back since he's not really following the player as much as the other enemies
         if(GetComponent<WizardAI>() == null)
         {
             pushBackFromPlayer();

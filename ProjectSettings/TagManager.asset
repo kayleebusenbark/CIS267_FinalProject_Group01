@@ -16,7 +16,7 @@ TagManager:
   - WizardChamber
   - WizardProjectile
   - Wizard
-  - PlayHitBox
+  - PlayerHitBox
   layers:
   - Default
   - TransparentFX

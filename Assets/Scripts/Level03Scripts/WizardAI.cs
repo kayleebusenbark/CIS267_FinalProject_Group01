@@ -18,6 +18,8 @@ public class WizardAI : MonoBehaviour
     private List<Coroutine> orbitCoroutines = new List<Coroutine>();
     private Animator animator;
 
+    public int damage = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -136,5 +138,17 @@ public class WizardAI : MonoBehaviour
     {
         enabled = true;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerHitBox"))
+        {
+            PlayerHealth playerHealth = collision.GetComponentInParent<PlayerHealth>();
+
+
+            playerHealth.takeDamage(damage);
+        }
+    }
+
 
 }

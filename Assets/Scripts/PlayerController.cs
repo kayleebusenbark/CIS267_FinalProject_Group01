@@ -224,21 +224,6 @@ public class PlayerController : MonoBehaviour
                 mouseClickCount = 0;
             }
 
-            //if(Input.GetMouseButton(0))
-            //{
-            //    isMouseHeld = true;
-            //    mouseHeldTimer += Time.deltaTime;
-
-            //    if(mouseHeldTimer >= attack3Threshold)
-            //    {
-            //        if(!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("attack3LeftMouseDown"))
-            //        {
-            //            playerAnimator.SetTrigger("attack3LeftMouseDown");
-            //        }
-
-            //    }
-            //}
-
         }
 
     }

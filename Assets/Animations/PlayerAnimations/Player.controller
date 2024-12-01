@@ -540,6 +540,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: New Trigger
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -973,10 +979,10 @@ AnimatorStateMachine:
     m_Position: {x: -230, y: 1060, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7868093705421790558}
-    m_Position: {x: 290, y: 600, z: 0}
+    m_Position: {x: -540, y: 1100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7465922743641993954}
-    m_Position: {x: 390, y: 710, z: 0}
+    m_Position: {x: 230, y: 1100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7208471377308746955}
     m_Position: {x: 40, y: 880, z: 0}

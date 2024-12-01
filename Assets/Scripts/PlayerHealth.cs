@@ -9,12 +9,15 @@ public class PlayerHealth : MonoBehaviour
     public int currHealth;
 
     public HealthBar healthBar;
+    private Animator playerAnimator;
+    private bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
     {
         currHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,9 +26,33 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
-    void takeDamage(int damage)
+    public void takeDamage(int damage)
     {
-        currHealth =- damage;
+        if(isDead) return;
+
+
+        currHealth -= damage;
         healthBar.SetHealth(currHealth);
+
+        //if(currHealth > 0)
+        //{
+        //    playerAnimator.SetTrigger("damage");
+        //}
+
+        //else
+        //{
+           
+        //}
     }
+
+    private void die()
+    {
+        isDead = true;
+
+        //playerAnimator.SetTrigger("die");
+
+        GetComponent<PlayerController>().enabled = false;
+    }
+
+
 }
