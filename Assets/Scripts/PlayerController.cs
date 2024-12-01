@@ -35,8 +35,6 @@ public class PlayerController : MonoBehaviour
 
     private bool canUseAttack3 = false; 
 
-    PlayerInvincibility playerInvincibility;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +43,6 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         levelLoader = FindObjectOfType<LevelLoader>();
-        playerInvincibility = FindObjectOfType<PlayerInvincibility>();
 
     }
 
@@ -200,9 +197,11 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        else if(collision.CompareTag("Invincibility"))
+        else if(collision.CompareTag("freeze"))
         {
-            playerInvincibility.activateInvincibility();
+            Freeze freeze = FindObjectOfType<Freeze>();
+
+            freeze.showCanvas();
             Destroy(collision.gameObject);
         }
     }

@@ -4,26 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Emerald
-  - Sapphire
-  - Sword&Shield
   - Level03EnemySpawnPoints
-  - SkeletonEnemy
-  - WolfEnemy
-  - BatEnemy
-  - SpiderEnemy
-  - Scroll
-  - WizardChamber
-  - WizardProjectile
   - Wizard
-<<<<<<< Updated upstream
-  - PlayerHitBox
-  - Invincibility
-  - invincibleCanvas
-=======
-  - PlayHitBox
-  - Cyclops
->>>>>>> Stashed changes
+  - freeze
   layers:
   - Default
   - TransparentFX
@@ -31,8 +14,8 @@ TagManager:
   - 
   - Water
   - UI
-  - SpawnPoints
-  - AVOID
+  - 
+  - 
   - 
   - 
   - 
