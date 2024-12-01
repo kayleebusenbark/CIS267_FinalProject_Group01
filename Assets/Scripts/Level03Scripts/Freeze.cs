@@ -20,6 +20,8 @@ public class Freeze: MonoBehaviour
     private bool isFlickering = false;
     public float flickerThreshold = 20f;
 
+    public AudioSource freezeSound;
+
 
     private void Start()
     {
@@ -29,6 +31,8 @@ public class Freeze: MonoBehaviour
         slider = canvas.GetComponentInChildren<Slider>();
         slider.maxValue = 100f;
         slider.value = 100f;
+
+        freezeSound.mute = true;
     }
 
     private void Update()
@@ -83,6 +87,8 @@ public class Freeze: MonoBehaviour
     private void activePowerUp()
     {
         isInvincible = true;
+        freezeSound.mute = false;
+        freezeSound.Play();
 
         WizardAI wizard = FindObjectOfType<WizardAI>();
         wizard.freezeWizard();
