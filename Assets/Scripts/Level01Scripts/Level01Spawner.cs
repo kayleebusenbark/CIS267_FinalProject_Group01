@@ -30,8 +30,6 @@ public class Level01Spawner : MonoBehaviour
         }
 
        // time += Time.deltaTime;
-
-
         if (spawnTime <= 0)
         {
             spawnEnemy();

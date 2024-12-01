@@ -17,6 +17,7 @@ public class Level01Enemy : MonoBehaviour
     private float maxRange; 
     public Transform target; 
     public Rigidbody2D rb;
+    public int attackPower = 10; 
 
     public Transform homePos; 
     private Animator myAnimator; 
@@ -46,7 +47,6 @@ public class Level01Enemy : MonoBehaviour
             goHome();
         }
         
-
         
     }
 
@@ -57,8 +57,6 @@ public class Level01Enemy : MonoBehaviour
         myAnimator.SetFloat("moveX", target.position.x - transform.position.x);
         myAnimator.SetFloat("moveY", target.position.y - transform.position.y);
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime); 
-
-
     }
 
     public void goHome()
@@ -77,45 +75,32 @@ public class Level01Enemy : MonoBehaviour
     {
         Debug.Log("Collision " + collision.gameObject.name);
 
-        if(collision)
+        if(collision.CompareTag("PlayerHitBox"))
         {
+            PlayerHealth playerHealth = collision.GetComponentInParent<PlayerHealth>();
+            playerHealth.takeDamage(attackPower);
 
         }
         else if(Vector3.Distance(target.position, transform.position) >= maxRange)
         {
-            isDead(); 
+            myAnimator.SetBool("isMoving", false);
         }
     }
 
     private void isDead()
     {
-
+        myAnimator.SetBool("death", true);
+        myAnimator.SetBool("boom", true);
+        Destroy(myAnimator);
     }
 
-    //private void enemyAttack()
-    //{
-    //    if()
-    //    {
+    private void enemyAttack()
+    {
+        myAnimator.SetBool("attack", true);
+       
+    }
 
-    //    }
-    //    else
-    //    {
-    //        enemyIdle();
-    //    }
-    //}
 
-    //private void enemyIdle()
-    //{
-    //    if()
-    //    {
-
-    //    }
-    //    else
-    //    {
-    //        isDead(); 
-    //    }
-
-    //}
 
     //private void enemyWalk()
     //{

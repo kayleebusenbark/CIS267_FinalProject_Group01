@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -61,5 +62,8 @@ public class PlayerHealth : MonoBehaviour
         GetComponent<PlayerController>().enabled = false;
     }
 
-
+    internal void takeDamage(float attackDamage)
+    {
+        throw new NotImplementedException();
+    }
 }

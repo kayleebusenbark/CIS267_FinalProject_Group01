@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4168805327918512733}
   m_Layer: 0
   m_Name: Berries
-  m_TagString: Untagged
+  m_TagString: Berries
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30cf9508380843a45a234d293fbc9161, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  increaseSpeed: 0.5
 --- !u!61 &4168805327918512733
 BoxCollider2D:
   m_ObjectHideFlags: 0

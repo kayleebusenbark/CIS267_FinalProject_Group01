@@ -13,6 +13,10 @@ TagManager:
   - SkeletonEnemy
   - WolfEnemy
   - Environment
+  - Cyclops
+  - BatEnemy
+  - Berries
+  - Level01EnemySpawns
   layers:
   - Default
   - TransparentFX
