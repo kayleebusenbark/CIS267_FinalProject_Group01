@@ -28,7 +28,7 @@ public class Level02EnemyFollow : MonoBehaviour
 
         if (distance < distanceBetweenPlayer)
         {
-            //animator.SetBool("playerDetected", true);
+            animator.SetBool("playerDetected", true);
             direction = player.transform.position - transform.position;
             direction.Normalize();
 
@@ -44,7 +44,7 @@ public class Level02EnemyFollow : MonoBehaviour
             }
             else
             {
-                //animator.SetBool("playerDetected,", false);
+                animator.SetBool("playerDetected,", false);
             }
         }
         flipEnemySprites(direction);
@@ -68,6 +68,14 @@ public class Level02EnemyFollow : MonoBehaviour
             spriteRenderer.flipX = true;
         }
         else if (tag.Equals("SpiderEnemy") && direction.x < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (tag.Equals("Cyclops") && direction.x > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (tag.Equals("Cyclops") && direction.x < 0)
         {
             spriteRenderer.flipX = false;
         }

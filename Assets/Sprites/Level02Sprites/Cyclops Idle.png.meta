@@ -1,0 +1,632 @@
+fileFormatVersion: 2
+guid: 7b154717fcd2d244d8f17f20d0a0388c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18bb22094af2c84fa932866e7a96b4d
+      internalID: 447056941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b5e17417e1c6e4fb50bda5262a1ebd
+      internalID: -662152541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9848e38555f310643be689192f8bf0a5
+      internalID: 1983135621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47c9c82e95568e144af80595058a7634
+      internalID: 769930569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80b4c81151a068469754762ebe7cd7c
+      internalID: -1653340814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dc69b5d169f2c468547cd3f58acbdd
+      internalID: -757686938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40605db36898bbd48b5e00cc9690e727
+      internalID: -573762205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c5d58f425a38d4c9a7f38a6ced8aed
+      internalID: -1397430293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756bead6f158906438585f24fe514497
+      internalID: -2066721324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0a3f0275766404d91b111bedab867f
+      internalID: 1417434605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d0ca4bfcb75fe4d971915ab47da535
+      internalID: 1573613821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4583db80cd09942a49324cfdf12051
+      internalID: 87071903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843fa4323aeffae49a3cc5bd18b38dc2
+      internalID: 163158255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d21299ed6a4c5c4b870bbf9c6c45462
+      internalID: -1023073005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6a9b9bc5caf27448fe046458a3fb77
+      internalID: -700085734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cyclops Sprite Sheet_0: 447056941
+      Cyclops Sprite Sheet_1: -662152541
+      Cyclops Sprite Sheet_10: 1573613821
+      Cyclops Sprite Sheet_100: -1293130839
+      Cyclops Sprite Sheet_101: -1454735904
+      Cyclops Sprite Sheet_102: 217778361
+      Cyclops Sprite Sheet_103: -1403119038
+      Cyclops Sprite Sheet_104: 450322228
+      Cyclops Sprite Sheet_105: -2030136898
+      Cyclops Sprite Sheet_106: -933733894
+      Cyclops Sprite Sheet_107: 2009565748
+      Cyclops Sprite Sheet_108: -1112213352
+      Cyclops Sprite Sheet_109: 1588591653
+      Cyclops Sprite Sheet_11: 87071903
+      Cyclops Sprite Sheet_110: -299283508
+      Cyclops Sprite Sheet_111: -792989786
+      Cyclops Sprite Sheet_112: 1297632349
+      Cyclops Sprite Sheet_113: -888439334
+      Cyclops Sprite Sheet_114: -1448482885
+      Cyclops Sprite Sheet_115: -1170943964
+      Cyclops Sprite Sheet_116: -1216716522
+      Cyclops Sprite Sheet_117: 1638478166
+      Cyclops Sprite Sheet_118: -1539869044
+      Cyclops Sprite Sheet_119: -885546811
+      Cyclops Sprite Sheet_12: 163158255
+      Cyclops Sprite Sheet_120: -2116412710
+      Cyclops Sprite Sheet_121: -1044178787
+      Cyclops Sprite Sheet_122: -656563237
+      Cyclops Sprite Sheet_123: 746453900
+      Cyclops Sprite Sheet_124: -1399078221
+      Cyclops Sprite Sheet_125: -261437155
+      Cyclops Sprite Sheet_126: 1293759180
+      Cyclops Sprite Sheet_127: 525157739
+      Cyclops Sprite Sheet_128: 1203052496
+      Cyclops Sprite Sheet_129: 415162813
+      Cyclops Sprite Sheet_13: -1023073005
+      Cyclops Sprite Sheet_130: 1482247986
+      Cyclops Sprite Sheet_131: -692310637
+      Cyclops Sprite Sheet_132: -1676055526
+      Cyclops Sprite Sheet_133: 1831129697
+      Cyclops Sprite Sheet_134: -573202784
+      Cyclops Sprite Sheet_135: 352306915
+      Cyclops Sprite Sheet_136: 959627534
+      Cyclops Sprite Sheet_137: 668748629
+      Cyclops Sprite Sheet_138: -2074435924
+      Cyclops Sprite Sheet_139: 1357440171
+      Cyclops Sprite Sheet_14: -700085734
+      Cyclops Sprite Sheet_140: -1716866791
+      Cyclops Sprite Sheet_141: 457515125
+      Cyclops Sprite Sheet_142: -1935017641
+      Cyclops Sprite Sheet_143: -1472471359
+      Cyclops Sprite Sheet_144: -1852486051
+      Cyclops Sprite Sheet_145: -967989740
+      Cyclops Sprite Sheet_146: 371969817
+      Cyclops Sprite Sheet_147: 261898107
+      Cyclops Sprite Sheet_148: -799374589
+      Cyclops Sprite Sheet_149: 199413149
+      Cyclops Sprite Sheet_15: -1467707224
+      Cyclops Sprite Sheet_150: -1910802214
+      Cyclops Sprite Sheet_151: 1855974753
+      Cyclops Sprite Sheet_152: 646997485
+      Cyclops Sprite Sheet_153: -1849810438
+      Cyclops Sprite Sheet_154: -1705551278
+      Cyclops Sprite Sheet_155: 907530147
+      Cyclops Sprite Sheet_156: -1396626696
+      Cyclops Sprite Sheet_157: 675757555
+      Cyclops Sprite Sheet_158: 431851216
+      Cyclops Sprite Sheet_159: 1944830840
+      Cyclops Sprite Sheet_16: -1259533081
+      Cyclops Sprite Sheet_160: -26504587
+      Cyclops Sprite Sheet_161: -1206122162
+      Cyclops Sprite Sheet_162: 73126801
+      Cyclops Sprite Sheet_163: -1521376904
+      Cyclops Sprite Sheet_17: -680556205
+      Cyclops Sprite Sheet_18: -1620374774
+      Cyclops Sprite Sheet_19: -1633184735
+      Cyclops Sprite Sheet_2: 1983135621
+      Cyclops Sprite Sheet_20: -238506075
+      Cyclops Sprite Sheet_21: 1949307601
+      Cyclops Sprite Sheet_22: -1774009681
+      Cyclops Sprite Sheet_23: -1846034557
+      Cyclops Sprite Sheet_24: 564428456
+      Cyclops Sprite Sheet_25: 1330357102
+      Cyclops Sprite Sheet_26: -334191813
+      Cyclops Sprite Sheet_27: 1262930586
+      Cyclops Sprite Sheet_28: 832758165
+      Cyclops Sprite Sheet_29: 1050480144
+      Cyclops Sprite Sheet_3: 769930569
+      Cyclops Sprite Sheet_30: -1790030622
+      Cyclops Sprite Sheet_31: 1094640450
+      Cyclops Sprite Sheet_32: -975423661
+      Cyclops Sprite Sheet_33: -409017199
+      Cyclops Sprite Sheet_34: 737574361
+      Cyclops Sprite Sheet_35: 367295842
+      Cyclops Sprite Sheet_36: 375085203
+      Cyclops Sprite Sheet_37: 1389887392
+      Cyclops Sprite Sheet_38: -656259761
+      Cyclops Sprite Sheet_39: 1024292183
+      Cyclops Sprite Sheet_4: -1653340814
+      Cyclops Sprite Sheet_40: -2108235705
+      Cyclops Sprite Sheet_41: -1278753371
+      Cyclops Sprite Sheet_42: -1529926653
+      Cyclops Sprite Sheet_43: -1531727874
+      Cyclops Sprite Sheet_44: 322381211
+      Cyclops Sprite Sheet_45: 1395809319
+      Cyclops Sprite Sheet_46: 493523236
+      Cyclops Sprite Sheet_47: 2105391192
+      Cyclops Sprite Sheet_48: -10224914
+      Cyclops Sprite Sheet_49: 2101989217
+      Cyclops Sprite Sheet_5: -757686938
+      Cyclops Sprite Sheet_50: 650209291
+      Cyclops Sprite Sheet_51: 505024493
+      Cyclops Sprite Sheet_52: -1083940463
+      Cyclops Sprite Sheet_53: -745162963
+      Cyclops Sprite Sheet_54: 638238431
+      Cyclops Sprite Sheet_55: -1519115535
+      Cyclops Sprite Sheet_56: 83238540
+      Cyclops Sprite Sheet_57: -85331766
+      Cyclops Sprite Sheet_58: -1400259375
+      Cyclops Sprite Sheet_59: -1174579735
+      Cyclops Sprite Sheet_6: -573762205
+      Cyclops Sprite Sheet_60: -1202387798
+      Cyclops Sprite Sheet_61: -1791163165
+      Cyclops Sprite Sheet_62: -212328302
+      Cyclops Sprite Sheet_63: -1054317404
+      Cyclops Sprite Sheet_64: 1099546508
+      Cyclops Sprite Sheet_65: 1058746358
+      Cyclops Sprite Sheet_66: -1759476341
+      Cyclops Sprite Sheet_67: -1971371002
+      Cyclops Sprite Sheet_68: 1233760089
+      Cyclops Sprite Sheet_69: -924937484
+      Cyclops Sprite Sheet_7: -1397430293
+      Cyclops Sprite Sheet_70: 1268439295
+      Cyclops Sprite Sheet_71: -1832802441
+      Cyclops Sprite Sheet_72: 1752467279
+      Cyclops Sprite Sheet_73: -1109891128
+      Cyclops Sprite Sheet_74: 1586218925
+      Cyclops Sprite Sheet_75: 1574358229
+      Cyclops Sprite Sheet_76: 1337608322
+      Cyclops Sprite Sheet_77: -1517467264
+      Cyclops Sprite Sheet_78: 557625711
+      Cyclops Sprite Sheet_79: -280880325
+      Cyclops Sprite Sheet_8: -2066721324
+      Cyclops Sprite Sheet_80: -2016129454
+      Cyclops Sprite Sheet_81: 1919194637
+      Cyclops Sprite Sheet_82: 2081258647
+      Cyclops Sprite Sheet_83: -692141350
+      Cyclops Sprite Sheet_84: 383354254
+      Cyclops Sprite Sheet_85: -1143145524
+      Cyclops Sprite Sheet_86: -1114394758
+      Cyclops Sprite Sheet_87: -747926902
+      Cyclops Sprite Sheet_88: 1248731007
+      Cyclops Sprite Sheet_89: -1382698859
+      Cyclops Sprite Sheet_9: 1417434605
+      Cyclops Sprite Sheet_90: 1954214940
+      Cyclops Sprite Sheet_91: -2133821834
+      Cyclops Sprite Sheet_92: 258207885
+      Cyclops Sprite Sheet_93: 1673475362
+      Cyclops Sprite Sheet_94: -768065369
+      Cyclops Sprite Sheet_95: -1397967760
+      Cyclops Sprite Sheet_96: 1078995864
+      Cyclops Sprite Sheet_97: 283553923
+      Cyclops Sprite Sheet_98: -1426952835
+      Cyclops Sprite Sheet_99: 1187536169
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

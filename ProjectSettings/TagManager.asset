@@ -16,9 +16,14 @@ TagManager:
   - WizardChamber
   - WizardProjectile
   - Wizard
+<<<<<<< Updated upstream
   - PlayerHitBox
   - Invincibility
   - invincibleCanvas
+=======
+  - PlayHitBox
+  - Cyclops
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

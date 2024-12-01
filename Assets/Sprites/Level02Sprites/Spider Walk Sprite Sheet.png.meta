@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: 3381b935dd0530b4ba41feb7bead7921
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spider Walk Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985b16e1a2857184b9bdb5daad4efc2b
+      internalID: -2118023694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider Walk Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6364b0361f6c72f4cbad236f646890d5
+      internalID: -934100235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider Walk Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe99212db567d842aa4557b311fe5eb
+      internalID: 1191332456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider Walk Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270c51d2f39456042a6bde1206e52046
+      internalID: 877494487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider Walk Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2830d99f512044da9f07da81440ba7
+      internalID: -449837544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider Walk Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825c1274a5a917248a91f068c89ff963
+      internalID: -1268377834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Spider Walk Sprite Sheet_0: 201951842
+      Spider Walk Sprite Sheet_1: -359023793
+      Spider Walk Sprite Sheet_10: -1268377834
+      Spider Walk Sprite Sheet_11: 148311920
+      Spider Walk Sprite Sheet_12: 836180550
+      Spider Walk Sprite Sheet_13: 198654007
+      Spider Walk Sprite Sheet_14: -1800864958
+      Spider Walk Sprite Sheet_15: -46897311
+      Spider Walk Sprite Sheet_16: -538807934
+      Spider Walk Sprite Sheet_17: -847418220
+      Spider Walk Sprite Sheet_18: 1886441454
+      Spider Walk Sprite Sheet_19: -769344708
+      Spider Walk Sprite Sheet_2: -1039744121
+      Spider Walk Sprite Sheet_20: 629686555
+      Spider Walk Sprite Sheet_21: -415084784
+      Spider Walk Sprite Sheet_22: 1397288237
+      Spider Walk Sprite Sheet_23: 1398503055
+      Spider Walk Sprite Sheet_24: -1063169108
+      Spider Walk Sprite Sheet_25: 92160778
+      Spider Walk Sprite Sheet_26: 1580301973
+      Spider Walk Sprite Sheet_27: -188159410
+      Spider Walk Sprite Sheet_28: 1195651707
+      Spider Walk Sprite Sheet_29: 1096283716
+      Spider Walk Sprite Sheet_3: 1435161548
+      Spider Walk Sprite Sheet_30: 259331621
+      Spider Walk Sprite Sheet_31: -894014319
+      Spider Walk Sprite Sheet_32: 1012783972
+      Spider Walk Sprite Sheet_33: -146198301
+      Spider Walk Sprite Sheet_34: -703626523
+      Spider Walk Sprite Sheet_35: -37613253
+      Spider Walk Sprite Sheet_36: 1084976396
+      Spider Walk Sprite Sheet_37: -882204843
+      Spider Walk Sprite Sheet_38: 712667078
+      Spider Walk Sprite Sheet_39: -55618958
+      Spider Walk Sprite Sheet_4: 1245926268
+      Spider Walk Sprite Sheet_40: -1350295447
+      Spider Walk Sprite Sheet_41: -699382663
+      Spider Walk Sprite Sheet_42: -1530494423
+      Spider Walk Sprite Sheet_43: 97493181
+      Spider Walk Sprite Sheet_44: -825623754
+      Spider Walk Sprite Sheet_45: 162383916
+      Spider Walk Sprite Sheet_46: 885921360
+      Spider Walk Sprite Sheet_47: 604513842
+      Spider Walk Sprite Sheet_48: 1640974287
+      Spider Walk Sprite Sheet_49: 385918581
+      Spider Walk Sprite Sheet_5: -2118023694
+      Spider Walk Sprite Sheet_50: -1220555862
+      Spider Walk Sprite Sheet_51: 2088342140
+      Spider Walk Sprite Sheet_52: 116775698
+      Spider Walk Sprite Sheet_53: -249144470
+      Spider Walk Sprite Sheet_54: 623439178
+      Spider Walk Sprite Sheet_55: 1865720501
+      Spider Walk Sprite Sheet_56: 285964858
+      Spider Walk Sprite Sheet_57: -1864563649
+      Spider Walk Sprite Sheet_58: -317114968
+      Spider Walk Sprite Sheet_59: -786962861
+      Spider Walk Sprite Sheet_6: -934100235
+      Spider Walk Sprite Sheet_60: 669895860
+      Spider Walk Sprite Sheet_61: -227723692
+      Spider Walk Sprite Sheet_62: 797019573
+      Spider Walk Sprite Sheet_63: -1661028383
+      Spider Walk Sprite Sheet_64: 232084511
+      Spider Walk Sprite Sheet_65: 714763086
+      Spider Walk Sprite Sheet_66: 1938219152
+      Spider Walk Sprite Sheet_67: 1413713831
+      Spider Walk Sprite Sheet_68: 102865688
+      Spider Walk Sprite Sheet_69: 437668470
+      Spider Walk Sprite Sheet_7: 1191332456
+      Spider Walk Sprite Sheet_70: -1078027948
+      Spider Walk Sprite Sheet_71: 483275001
+      Spider Walk Sprite Sheet_72: -1827738907
+      Spider Walk Sprite Sheet_73: 1446548576
+      Spider Walk Sprite Sheet_74: -668017327
+      Spider Walk Sprite Sheet_75: -1596518490
+      Spider Walk Sprite Sheet_76: -1843285509
+      Spider Walk Sprite Sheet_77: -217343507
+      Spider Walk Sprite Sheet_78: 1922289592
+      Spider Walk Sprite Sheet_79: 2051301485
+      Spider Walk Sprite Sheet_8: 877494487
+      Spider Walk Sprite Sheet_80: 414945232
+      Spider Walk Sprite Sheet_81: 1335012805
+      Spider Walk Sprite Sheet_82: 485868600
+      Spider Walk Sprite Sheet_83: 1100656216
+      Spider Walk Sprite Sheet_84: 209658664
+      Spider Walk Sprite Sheet_85: 1249729546
+      Spider Walk Sprite Sheet_9: -449837544
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: bb740c64551b6d84ea8080eb585fe760
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyclops Walk_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869796ee6002b28428851fb3a8e6b1c0
+      internalID: 1936521070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65edd72c470b9f4c9a806cdf8ed0964
+      internalID: 865133244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884584c04fb89fc4cb4da378f6e3eba9
+      internalID: 169331967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5305dd1c34d194484d78eb6572bb3e
+      internalID: 642659883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feeabcedc0fbfd549afdac89834c5f75
+      internalID: 255360634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f88d864e6f2bd4aa60ba6a2342c967
+      internalID: 1847256439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211a4c2d50773574eb92d14c5b1d17f5
+      internalID: 99785036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_22
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df67a0e36450f564cb9877e536c48644
+      internalID: -430958336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_23
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842cf8c0204120347b84373a04c555df
+      internalID: 180475089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_24
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe3b7f9ad3f33143a9850a5f7115b67
+      internalID: -1868824794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2215f0ed665022647a2eede73bca8250
+      internalID: 1827715644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Walk_26
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d2074b32980df48965f2e274bf0751
+      internalID: -358525084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cyclops Walk_0: -803020554
+      Cyclops Walk_1: 958026648
+      Cyclops Walk_10: -1482745847
+      Cyclops Walk_100: -1985500037
+      Cyclops Walk_101: -1828912381
+      Cyclops Walk_102: 1444571995
+      Cyclops Walk_103: -1903916172
+      Cyclops Walk_104: -1618516643
+      Cyclops Walk_105: -1104496556
+      Cyclops Walk_106: 715904920
+      Cyclops Walk_107: 1346448488
+      Cyclops Walk_108: 1797708140
+      Cyclops Walk_109: 1382542143
+      Cyclops Walk_11: 1078782349
+      Cyclops Walk_110: -578136237
+      Cyclops Walk_111: -1608346223
+      Cyclops Walk_112: -427931295
+      Cyclops Walk_113: -369765171
+      Cyclops Walk_114: -940198532
+      Cyclops Walk_115: -334018243
+      Cyclops Walk_116: 1598830609
+      Cyclops Walk_117: -976939630
+      Cyclops Walk_118: -330725398
+      Cyclops Walk_119: 815368339
+      Cyclops Walk_12: -1157989844
+      Cyclops Walk_120: 79554805
+      Cyclops Walk_121: 725504690
+      Cyclops Walk_122: -1288115703
+      Cyclops Walk_123: 1561465401
+      Cyclops Walk_124: -1986337676
+      Cyclops Walk_125: 588507610
+      Cyclops Walk_126: -1488225583
+      Cyclops Walk_127: -1001525151
+      Cyclops Walk_128: 1235102732
+      Cyclops Walk_129: -1680102758
+      Cyclops Walk_13: -685442372
+      Cyclops Walk_130: 1582599098
+      Cyclops Walk_131: 1382339613
+      Cyclops Walk_132: -1445786246
+      Cyclops Walk_133: 893519750
+      Cyclops Walk_134: -712886325
+      Cyclops Walk_135: -754103936
+      Cyclops Walk_136: 1861844792
+      Cyclops Walk_137: 185040508
+      Cyclops Walk_138: -1602937051
+      Cyclops Walk_139: 1116499385
+      Cyclops Walk_14: 1569219232
+      Cyclops Walk_140: -1938813772
+      Cyclops Walk_141: -1584563543
+      Cyclops Walk_142: 1609173243
+      Cyclops Walk_143: -195690621
+      Cyclops Walk_144: 1714472491
+      Cyclops Walk_145: 1444237305
+      Cyclops Walk_146: -713263205
+      Cyclops Walk_147: -1665711927
+      Cyclops Walk_148: 1259656635
+      Cyclops Walk_149: 945048527
+      Cyclops Walk_15: 1936521070
+      Cyclops Walk_150: 133720641
+      Cyclops Walk_151: 1623389907
+      Cyclops Walk_152: 1549327729
+      Cyclops Walk_153: 1558986770
+      Cyclops Walk_154: 1981740569
+      Cyclops Walk_155: -1227508987
+      Cyclops Walk_156: 649712264
+      Cyclops Walk_157: -225252484
+      Cyclops Walk_158: 1712879487
+      Cyclops Walk_159: 722605252
+      Cyclops Walk_16: 865133244
+      Cyclops Walk_160: -1712464599
+      Cyclops Walk_161: -1054758066
+      Cyclops Walk_162: -909820238
+      Cyclops Walk_163: -2096457362
+      Cyclops Walk_17: 169331967
+      Cyclops Walk_18: 642659883
+      Cyclops Walk_19: 255360634
+      Cyclops Walk_2: 185631737
+      Cyclops Walk_20: 1847256439
+      Cyclops Walk_21: 99785036
+      Cyclops Walk_22: -430958336
+      Cyclops Walk_23: 180475089
+      Cyclops Walk_24: -1868824794
+      Cyclops Walk_25: 1827715644
+      Cyclops Walk_26: -358525084
+      Cyclops Walk_27: 1333789736
+      Cyclops Walk_28: -882802119
+      Cyclops Walk_29: 1543344348
+      Cyclops Walk_3: -1727739378
+      Cyclops Walk_30: -1434319016
+      Cyclops Walk_31: 121487575
+      Cyclops Walk_32: 1906093316
+      Cyclops Walk_33: -1051476609
+      Cyclops Walk_34: 1265984641
+      Cyclops Walk_35: 894850793
+      Cyclops Walk_36: -121406689
+      Cyclops Walk_37: -70328027
+      Cyclops Walk_38: 1637995532
+      Cyclops Walk_39: -69394802
+      Cyclops Walk_4: 131041593
+      Cyclops Walk_40: 1270801117
+      Cyclops Walk_41: -2127735984
+      Cyclops Walk_42: 853227705
+      Cyclops Walk_43: -1515455418
+      Cyclops Walk_44: 575313701
+      Cyclops Walk_45: 1736985189
+      Cyclops Walk_46: -347362251
+      Cyclops Walk_47: 812238755
+      Cyclops Walk_48: -642368100
+      Cyclops Walk_49: -479703347
+      Cyclops Walk_5: -572617550
+      Cyclops Walk_50: -1424895986
+      Cyclops Walk_51: -1918718070
+      Cyclops Walk_52: -239300129
+      Cyclops Walk_53: -1299135786
+      Cyclops Walk_54: -1281529930
+      Cyclops Walk_55: -538794442
+      Cyclops Walk_56: 1876396755
+      Cyclops Walk_57: -1081904282
+      Cyclops Walk_58: 1397748865
+      Cyclops Walk_59: -467157138
+      Cyclops Walk_6: -476411368
+      Cyclops Walk_60: -1872476062
+      Cyclops Walk_61: 986939337
+      Cyclops Walk_62: -1672932932
+      Cyclops Walk_63: -1453747053
+      Cyclops Walk_64: 1722510968
+      Cyclops Walk_65: 1918080244
+      Cyclops Walk_66: -1864945145
+      Cyclops Walk_67: -2120792526
+      Cyclops Walk_68: -982222649
+      Cyclops Walk_69: -734401464
+      Cyclops Walk_7: 637566852
+      Cyclops Walk_70: -1109231443
+      Cyclops Walk_71: 1490887791
+      Cyclops Walk_72: -478006733
+      Cyclops Walk_73: -335077593
+      Cyclops Walk_74: -474938370
+      Cyclops Walk_75: -1456697434
+      Cyclops Walk_76: 603771059
+      Cyclops Walk_77: 217546559
+      Cyclops Walk_78: -538861949
+      Cyclops Walk_79: 328122364
+      Cyclops Walk_8: -368086293
+      Cyclops Walk_80: -48687232
+      Cyclops Walk_81: 1214682270
+      Cyclops Walk_82: 1056014557
+      Cyclops Walk_83: 1006929411
+      Cyclops Walk_84: -526749305
+      Cyclops Walk_85: -1220565359
+      Cyclops Walk_86: 1169977813
+      Cyclops Walk_87: 276715830
+      Cyclops Walk_88: 478689177
+      Cyclops Walk_89: -1907760890
+      Cyclops Walk_9: -1008358452
+      Cyclops Walk_90: -1805058551
+      Cyclops Walk_91: -735499274
+      Cyclops Walk_92: 705419748
+      Cyclops Walk_93: -139932863
+      Cyclops Walk_94: 1805726833
+      Cyclops Walk_95: -488345431
+      Cyclops Walk_96: -1230578720
+      Cyclops Walk_97: -1917068616
+      Cyclops Walk_98: -352480891
+      Cyclops Walk_99: 590784172
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
