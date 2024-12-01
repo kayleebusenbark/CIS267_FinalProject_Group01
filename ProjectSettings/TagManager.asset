@@ -17,6 +17,8 @@ TagManager:
   - WizardProjectile
   - Wizard
   - PlayerHitBox
+  - Invincibility
+  - invincibleCanvas
   layers:
   - Default
   - TransparentFX

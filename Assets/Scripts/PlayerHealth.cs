@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        if(isDead) return;
+        //if(isDead || !GetComponent<PlayerInvincibility>().canTakeDamage()) return;
 
         if(Time.time - lastDamageTime < damageCoolDown)
         {
