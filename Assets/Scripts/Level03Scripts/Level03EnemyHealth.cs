@@ -17,6 +17,7 @@ public class Level03EnemyHealth : MonoBehaviour
     private PlayerController player;
 
     public GameObject heartPrefab;
+    public GameObject rubyPrefab;
 
     // (0 = never and 1 = always) 
     [Range(0f,1f)] public float heartDropChange = 0.3f;
@@ -73,5 +74,7 @@ public class Level03EnemyHealth : MonoBehaviour
         }
 
         Destroy(gameObject, destroyDelay);
+        Instantiate(rubyPrefab, transform.position, Quaternion.identity);
+
     }
 }

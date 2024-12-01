@@ -7,6 +7,12 @@ TagManager:
   - Level03EnemySpawnPoints
   - Wizard
   - freeze
+  - Sword&Shield
+  - Emerald
+  - PlayerHitBox
+  - SkeletonEnemy
+  - WolfEnemy
+  - Environment
   layers:
   - Default
   - TransparentFX

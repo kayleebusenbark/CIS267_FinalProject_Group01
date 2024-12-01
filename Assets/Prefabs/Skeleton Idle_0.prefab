@@ -143,6 +143,7 @@ MonoBehaviour:
   destroyDelay: 0.5
   pushbackForce: 0.2
   heartPrefab: {fileID: 1784160590423258716, guid: 441c5475a4dd36d448e80286503b79b8, type: 3}
+  rubyPrefab: {fileID: 0}
   heartDropChange: 0.5
 --- !u!61 &2271783536958562266
 BoxCollider2D:

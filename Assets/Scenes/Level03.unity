@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 253852911}
   m_Layer: 7
   m_Name: CastleFloorsandVerticalWalls
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8513,6 +8513,7 @@ MonoBehaviour:
   duration: 10
   rechargeRate: 1
   activeKey: 105
+  flickerThreshold: 20
 --- !u!1 &1077649334
 GameObject:
   m_ObjectHideFlags: 0
@@ -8587,7 +8588,7 @@ GameObject:
   - component: {fileID: 1168367207}
   m_Layer: 7
   m_Name: CastleHorizontalWallsAndDecor
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8697,7 +8698,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337189108}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -8841,6 +8842,7 @@ MonoBehaviour:
   destroyDelay: 0.5
   pushbackForce: 0.1
   heartPrefab: {fileID: 0}
+  rubyPrefab: {fileID: 8798363770966117254, guid: 3a42ce9e4b07a8740a043c672e138143, type: 3}
   heartDropChange: 0.5
 --- !u!1 &1392903240
 GameObject:

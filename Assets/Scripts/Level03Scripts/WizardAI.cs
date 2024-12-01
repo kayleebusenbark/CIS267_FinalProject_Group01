@@ -18,6 +18,11 @@ public class WizardAI : MonoBehaviour
     private List<Coroutine> orbitCoroutines = new List<Coroutine>();
     private Animator animator;
 
+    //everything related to freeze
+    private bool isFrozen = false;
+    private SpriteRenderer spriteRenderer;
+    private Coroutine flickerCoroutine;
+
     public int damage = 10;
 
     // Start is called before the first frame update
@@ -32,12 +37,14 @@ public class WizardAI : MonoBehaviour
 
         animator = GetComponent<Animator>();
         enabled = false;
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player == null)
+        if (player == null || isFrozen)
             return;
 
         if(!isAttacking)
@@ -69,6 +76,7 @@ public class WizardAI : MonoBehaviour
 
     private IEnumerator attack()
     {
+        if(isFrozen) yield break;
         isAttacking = true;
 
         for (int i = 0; i < projectileCount; i++)
@@ -151,4 +159,65 @@ public class WizardAI : MonoBehaviour
     }
 
 
+    public void freezeWizard()
+    {
+
+        if(isFrozen) return;
+
+        isFrozen = true;
+
+        animator.speed = 0;
+
+        spriteRenderer.color = Color.blue;
+
+        foreach(GameObject projectile in  activeProjectiles)
+        {
+
+            Destroy(projectile);
+        }
+
+        activeProjectiles.Clear();
+
+    }
+
+    public void unfreezeWizard()
+    {
+        if(!isFrozen) return;
+
+        isFrozen = false;
+        stopFlicker();
+
+        animator.speed = 1;
+
+        spriteRenderer.color = Color.white;
+    }
+
+    public void startFlicker()
+    {
+        if (flickerCoroutine != null) return;
+
+        flickerCoroutine = StartCoroutine(flickerEffect());
+    }
+
+    public void stopFlicker()
+    {
+        if(flickerCoroutine != null)
+        {
+            StopCoroutine(flickerCoroutine);
+            flickerCoroutine = null;
+
+            spriteRenderer.color = Color.blue;
+        }
+    }
+
+    private IEnumerator flickerEffect()
+    {
+        while(true)
+        {
+            spriteRenderer.color = Color.white;
+            yield return new WaitForSeconds(0.2f);
+            spriteRenderer.color = Color.blue;
+            yield return new WaitForSeconds(0.2f);
+        }
+    }
 }
