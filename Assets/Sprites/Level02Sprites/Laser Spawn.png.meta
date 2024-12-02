@@ -1,0 +1,485 @@
+fileFormatVersion: 2
+guid: bf049b57852ec864d8c21961130a2c20
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Laser Spawn_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9ab568dfebc0854697ab9f2f2545551
+      internalID: 1837923436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Spawn_75
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd2595df27d2804dbeb657481aced86
+      internalID: -1948571450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Spawn_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4374092d99a5b0e44bc19c4908b9f6c2
+      internalID: -528614583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Spawn_77
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70283997a31291e468377286514a46fd
+      internalID: -1196679174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Spawn_78
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1550ad73b93f3f49a4fd4a0da514f1a
+      internalID: -193717694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Spawn_79
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9408a810a0ff2e3429d92c276b48601d
+      internalID: -1433488997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Spawn_80
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9226d3d5b4b6804b89a6b83573e2dc8
+      internalID: 1343895070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laser Spawn_81
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4171f048583334c4a9348940762901a6
+      internalID: -153267636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Laser Spawn_0: -1591806885
+      Laser Spawn_1: 1596145706
+      Laser Spawn_10: 1751638951
+      Laser Spawn_100: -868664262
+      Laser Spawn_101: -917538552
+      Laser Spawn_102: -1491570309
+      Laser Spawn_103: -308783678
+      Laser Spawn_104: 658918373
+      Laser Spawn_105: -189473891
+      Laser Spawn_106: -2061971684
+      Laser Spawn_107: 2093901829
+      Laser Spawn_108: -620250707
+      Laser Spawn_109: -743044919
+      Laser Spawn_11: 562975900
+      Laser Spawn_110: -148512565
+      Laser Spawn_111: 249074215
+      Laser Spawn_112: -2051250203
+      Laser Spawn_113: 1637517229
+      Laser Spawn_114: 1085347143
+      Laser Spawn_115: 1467458128
+      Laser Spawn_116: 1842082588
+      Laser Spawn_117: 1351184595
+      Laser Spawn_118: 1372395889
+      Laser Spawn_119: -220404504
+      Laser Spawn_12: -976911896
+      Laser Spawn_120: -640929833
+      Laser Spawn_121: -257271501
+      Laser Spawn_122: -1093860945
+      Laser Spawn_123: 836863287
+      Laser Spawn_124: -882119567
+      Laser Spawn_125: -2114699965
+      Laser Spawn_126: 1424625127
+      Laser Spawn_127: -1038238564
+      Laser Spawn_128: 312198764
+      Laser Spawn_129: 1563194185
+      Laser Spawn_13: -1068859812
+      Laser Spawn_130: -911016502
+      Laser Spawn_131: -1998188346
+      Laser Spawn_132: 1745801113
+      Laser Spawn_133: -2071122773
+      Laser Spawn_134: -2044753499
+      Laser Spawn_135: -366955942
+      Laser Spawn_136: -1335319975
+      Laser Spawn_137: -1906841648
+      Laser Spawn_138: -1963690953
+      Laser Spawn_139: 1086868389
+      Laser Spawn_14: -1876228545
+      Laser Spawn_140: 627633744
+      Laser Spawn_141: 1489384322
+      Laser Spawn_142: -772152491
+      Laser Spawn_143: -1665758878
+      Laser Spawn_144: 1915637160
+      Laser Spawn_145: 1983716975
+      Laser Spawn_146: -1130143662
+      Laser Spawn_147: 237127254
+      Laser Spawn_148: -1875935232
+      Laser Spawn_149: -612146428
+      Laser Spawn_15: -413501868
+      Laser Spawn_150: 1860777601
+      Laser Spawn_151: -1850221984
+      Laser Spawn_152: -1680390789
+      Laser Spawn_153: -676130947
+      Laser Spawn_154: -2021881372
+      Laser Spawn_155: 383675017
+      Laser Spawn_156: 1243481731
+      Laser Spawn_157: 1272925497
+      Laser Spawn_158: 506719322
+      Laser Spawn_159: -1849942018
+      Laser Spawn_16: -1682196380
+      Laser Spawn_160: -1925753261
+      Laser Spawn_161: -1373990437
+      Laser Spawn_162: -1282596463
+      Laser Spawn_163: 1614483383
+      Laser Spawn_17: 901756230
+      Laser Spawn_18: 638051990
+      Laser Spawn_19: -1989980692
+      Laser Spawn_2: -908991021
+      Laser Spawn_20: 1461943879
+      Laser Spawn_21: -1221696197
+      Laser Spawn_22: -1701651457
+      Laser Spawn_23: -1237023676
+      Laser Spawn_24: -320244570
+      Laser Spawn_25: -1486529741
+      Laser Spawn_26: 916444267
+      Laser Spawn_27: 770490957
+      Laser Spawn_28: 2018885547
+      Laser Spawn_29: -1025866745
+      Laser Spawn_3: -1762032416
+      Laser Spawn_30: -1430621909
+      Laser Spawn_31: 1679647633
+      Laser Spawn_32: -1161264656
+      Laser Spawn_33: -1659255978
+      Laser Spawn_34: -537539440
+      Laser Spawn_35: 541567936
+      Laser Spawn_36: -1924988121
+      Laser Spawn_37: -2108869971
+      Laser Spawn_38: 1457957338
+      Laser Spawn_39: -599191512
+      Laser Spawn_4: 347459247
+      Laser Spawn_40: -661998688
+      Laser Spawn_41: -1792727756
+      Laser Spawn_42: 993732577
+      Laser Spawn_43: 380051951
+      Laser Spawn_44: 1031939501
+      Laser Spawn_45: 1057639074
+      Laser Spawn_46: -1139233460
+      Laser Spawn_47: -2108074555
+      Laser Spawn_48: -1274740067
+      Laser Spawn_49: -1807747867
+      Laser Spawn_5: -669750098
+      Laser Spawn_50: -1053381494
+      Laser Spawn_51: 369341618
+      Laser Spawn_52: 747286130
+      Laser Spawn_53: -614862554
+      Laser Spawn_54: 1636492230
+      Laser Spawn_55: -1971420557
+      Laser Spawn_56: 464198705
+      Laser Spawn_57: -1862223334
+      Laser Spawn_58: -2016468060
+      Laser Spawn_59: 1580850828
+      Laser Spawn_6: -938756371
+      Laser Spawn_60: -1767573787
+      Laser Spawn_61: -957494895
+      Laser Spawn_62: -1551061848
+      Laser Spawn_63: -1538543085
+      Laser Spawn_64: 1556686123
+      Laser Spawn_65: -1793447827
+      Laser Spawn_66: 651333326
+      Laser Spawn_67: -229918041
+      Laser Spawn_68: 1243029702
+      Laser Spawn_69: -76242027
+      Laser Spawn_7: -251421686
+      Laser Spawn_70: 545106982
+      Laser Spawn_71: -244375501
+      Laser Spawn_72: -195413022
+      Laser Spawn_73: -302977654
+      Laser Spawn_74: 1837923436
+      Laser Spawn_75: -1948571450
+      Laser Spawn_76: -528614583
+      Laser Spawn_77: -1196679174
+      Laser Spawn_78: -193717694
+      Laser Spawn_79: -1433488997
+      Laser Spawn_8: -791387639
+      Laser Spawn_80: 1343895070
+      Laser Spawn_81: -153267636
+      Laser Spawn_82: -844038323
+      Laser Spawn_83: 1421532833
+      Laser Spawn_84: 1807785573
+      Laser Spawn_85: -413791842
+      Laser Spawn_86: -2135525049
+      Laser Spawn_87: -639288846
+      Laser Spawn_88: -152301256
+      Laser Spawn_89: -1230341320
+      Laser Spawn_9: 464776900
+      Laser Spawn_90: 1587701003
+      Laser Spawn_91: -1505874433
+      Laser Spawn_92: -170133019
+      Laser Spawn_93: -93824076
+      Laser Spawn_94: -356028897
+      Laser Spawn_95: -1905184085
+      Laser Spawn_96: -1901497903
+      Laser Spawn_97: 479758097
+      Laser Spawn_98: 824807817
+      Laser Spawn_99: -2021029568
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

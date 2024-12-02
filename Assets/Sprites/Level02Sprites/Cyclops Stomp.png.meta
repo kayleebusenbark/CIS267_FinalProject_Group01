@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: 78c1f3eda90845f488e1174ea1813433
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyclops Stomp_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438cabf9625ea4948a8f6c9fe72a3675
+      internalID: -2050286092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Stomp_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed8d85de4384664e8044802801dfdd7
+      internalID: 2038582914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Stomp_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4bc79293db9044da978e3eb7628adc
+      internalID: -880687291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Stomp_30
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0f183bc1d021548b382314a0111094
+      internalID: -541022422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Stomp_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f07016f8cf53f4ea5ea6f759e82480
+      internalID: 2142205480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Stomp_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850e3eb69aee1e04d8a81b76445bf3c7
+      internalID: -291921388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops Stomp_33
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90805b477429bd341be4cf2a9371a78d
+      internalID: -1968326202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cyclops Stomp_0: 1578604930
+      Cyclops Stomp_1: 1408821302
+      Cyclops Stomp_10: -612734590
+      Cyclops Stomp_100: 1523527088
+      Cyclops Stomp_101: 2124841984
+      Cyclops Stomp_102: -442675596
+      Cyclops Stomp_103: 1439927676
+      Cyclops Stomp_104: 1962206290
+      Cyclops Stomp_105: -1906206760
+      Cyclops Stomp_106: -1366144491
+      Cyclops Stomp_107: -1994930958
+      Cyclops Stomp_108: -994864841
+      Cyclops Stomp_109: 1011443854
+      Cyclops Stomp_11: 2019694502
+      Cyclops Stomp_110: 43148109
+      Cyclops Stomp_111: -743119205
+      Cyclops Stomp_112: -98233174
+      Cyclops Stomp_113: -109046977
+      Cyclops Stomp_114: -1775756628
+      Cyclops Stomp_115: 15030559
+      Cyclops Stomp_116: 1232265848
+      Cyclops Stomp_117: 2096005824
+      Cyclops Stomp_118: -1418718101
+      Cyclops Stomp_119: 1704521100
+      Cyclops Stomp_12: 1827610814
+      Cyclops Stomp_120: 362707577
+      Cyclops Stomp_121: -844271424
+      Cyclops Stomp_122: 88685776
+      Cyclops Stomp_123: -807495436
+      Cyclops Stomp_124: -1343065916
+      Cyclops Stomp_125: -1356754059
+      Cyclops Stomp_126: -1684793764
+      Cyclops Stomp_127: 1615218669
+      Cyclops Stomp_128: 199859039
+      Cyclops Stomp_129: 1973968747
+      Cyclops Stomp_13: -763956864
+      Cyclops Stomp_130: -93871833
+      Cyclops Stomp_131: 232124550
+      Cyclops Stomp_132: 1910695105
+      Cyclops Stomp_133: -1136060977
+      Cyclops Stomp_134: 808017627
+      Cyclops Stomp_135: 339031077
+      Cyclops Stomp_136: 241064178
+      Cyclops Stomp_137: 1642485562
+      Cyclops Stomp_138: 722119599
+      Cyclops Stomp_139: 1946682981
+      Cyclops Stomp_14: 654113908
+      Cyclops Stomp_140: -864287716
+      Cyclops Stomp_141: 341989950
+      Cyclops Stomp_142: -272365438
+      Cyclops Stomp_143: -1057470180
+      Cyclops Stomp_144: 1713068557
+      Cyclops Stomp_145: -947740104
+      Cyclops Stomp_146: -1937007072
+      Cyclops Stomp_147: -2054001998
+      Cyclops Stomp_148: 50042805
+      Cyclops Stomp_149: 785171118
+      Cyclops Stomp_15: -296785934
+      Cyclops Stomp_150: 1285856013
+      Cyclops Stomp_151: -1851474439
+      Cyclops Stomp_152: 1590634042
+      Cyclops Stomp_153: -1532711829
+      Cyclops Stomp_154: -1385639702
+      Cyclops Stomp_155: 2056795866
+      Cyclops Stomp_156: 994095028
+      Cyclops Stomp_157: 394724784
+      Cyclops Stomp_158: 37853862
+      Cyclops Stomp_159: -148529103
+      Cyclops Stomp_16: -2074685418
+      Cyclops Stomp_160: -856122263
+      Cyclops Stomp_161: 1303341425
+      Cyclops Stomp_162: -946292660
+      Cyclops Stomp_163: 1259247298
+      Cyclops Stomp_17: 291125697
+      Cyclops Stomp_18: -614231359
+      Cyclops Stomp_19: 1384171594
+      Cyclops Stomp_2: 857868491
+      Cyclops Stomp_20: 10256594
+      Cyclops Stomp_21: 513639483
+      Cyclops Stomp_22: 580309618
+      Cyclops Stomp_23: 755857577
+      Cyclops Stomp_24: 2367828
+      Cyclops Stomp_25: 1638703352
+      Cyclops Stomp_26: -722595713
+      Cyclops Stomp_27: -2050286092
+      Cyclops Stomp_28: 2038582914
+      Cyclops Stomp_29: -880687291
+      Cyclops Stomp_3: 307055255
+      Cyclops Stomp_30: -541022422
+      Cyclops Stomp_31: 2142205480
+      Cyclops Stomp_32: -291921388
+      Cyclops Stomp_33: -1968326202
+      Cyclops Stomp_34: -1655341767
+      Cyclops Stomp_35: -1411205170
+      Cyclops Stomp_36: -628938445
+      Cyclops Stomp_37: 923039302
+      Cyclops Stomp_38: -258252681
+      Cyclops Stomp_39: 564877385
+      Cyclops Stomp_4: -394011539
+      Cyclops Stomp_40: 1151538931
+      Cyclops Stomp_41: 1931835461
+      Cyclops Stomp_42: -866027751
+      Cyclops Stomp_43: -1068976963
+      Cyclops Stomp_44: 1587688738
+      Cyclops Stomp_45: -1155304108
+      Cyclops Stomp_46: 1981492630
+      Cyclops Stomp_47: -1659856719
+      Cyclops Stomp_48: -1216278112
+      Cyclops Stomp_49: -1362057208
+      Cyclops Stomp_5: 1103283666
+      Cyclops Stomp_50: -720820657
+      Cyclops Stomp_51: 1568821528
+      Cyclops Stomp_52: -1547973730
+      Cyclops Stomp_53: 826582845
+      Cyclops Stomp_54: 468508911
+      Cyclops Stomp_55: -1960073584
+      Cyclops Stomp_56: -1781635634
+      Cyclops Stomp_57: 1506932861
+      Cyclops Stomp_58: -1141499043
+      Cyclops Stomp_59: 302201249
+      Cyclops Stomp_6: -448988232
+      Cyclops Stomp_60: 664848525
+      Cyclops Stomp_61: 864259676
+      Cyclops Stomp_62: 1922612320
+      Cyclops Stomp_63: -2112054393
+      Cyclops Stomp_64: -665003545
+      Cyclops Stomp_65: 1059329499
+      Cyclops Stomp_66: -83516194
+      Cyclops Stomp_67: -122097524
+      Cyclops Stomp_68: -250887287
+      Cyclops Stomp_69: -226010663
+      Cyclops Stomp_7: -1568936608
+      Cyclops Stomp_70: -271790545
+      Cyclops Stomp_71: -638093281
+      Cyclops Stomp_72: 2110905687
+      Cyclops Stomp_73: 665776212
+      Cyclops Stomp_74: 764252629
+      Cyclops Stomp_75: 1026559593
+      Cyclops Stomp_76: -1057685152
+      Cyclops Stomp_77: 1395966801
+      Cyclops Stomp_78: 1672411167
+      Cyclops Stomp_79: -1803013991
+      Cyclops Stomp_8: 426319194
+      Cyclops Stomp_80: 1361821092
+      Cyclops Stomp_81: 557434199
+      Cyclops Stomp_82: -725532471
+      Cyclops Stomp_83: -122619550
+      Cyclops Stomp_84: -760597003
+      Cyclops Stomp_85: 866007771
+      Cyclops Stomp_86: 1119421148
+      Cyclops Stomp_87: 295656586
+      Cyclops Stomp_88: 1687270016
+      Cyclops Stomp_89: 1238835970
+      Cyclops Stomp_9: -1306456114
+      Cyclops Stomp_90: 1889207537
+      Cyclops Stomp_91: -1401860807
+      Cyclops Stomp_92: 940183619
+      Cyclops Stomp_93: -397071472
+      Cyclops Stomp_94: 1035225195
+      Cyclops Stomp_95: 1856351620
+      Cyclops Stomp_96: -78710671
+      Cyclops Stomp_97: 1725823148
+      Cyclops Stomp_98: -1067788494
+      Cyclops Stomp_99: -945049140
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

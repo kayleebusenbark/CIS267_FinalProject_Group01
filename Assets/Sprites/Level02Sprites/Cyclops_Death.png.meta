@@ -1,0 +1,506 @@
+fileFormatVersion: 2
+guid: 49311a908f316ad479584fda6a87f760
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyclops_Death_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278fb0c3634c56649a52f0b47ee439e3
+      internalID: 1565964614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Death_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92083135bc0c90647a0c722995cb1832
+      internalID: -1461602764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Death_57
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4859b21c37c5e14fa5f956396eb632a
+      internalID: -1607265403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Death_58
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4911dc27ce54d2409509ea2066beebb
+      internalID: -1518988168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Death_59
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06817fc51dfbaf4e8455bd2f6f0fc62
+      internalID: 1152686335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Death_60
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e57bf09bbec7c43b5d5875c58553df
+      internalID: -144453624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Death_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad66fb4b167edf40ba86bf44f69a86a
+      internalID: 1407715109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Death_62
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccee0191a59b4e44b831c046da40475d
+      internalID: -655285204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Death_63
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ad6cf5fcc5b4241b248948fde3b5ea
+      internalID: 852472288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cyclops_Death_0: -118138560
+      Cyclops_Death_1: -1248061674
+      Cyclops_Death_10: -1704555693
+      Cyclops_Death_100: 1337087862
+      Cyclops_Death_101: 1282450805
+      Cyclops_Death_102: 951791600
+      Cyclops_Death_103: 456658762
+      Cyclops_Death_104: -226667107
+      Cyclops_Death_105: 751172983
+      Cyclops_Death_106: -1139199215
+      Cyclops_Death_107: -1437073741
+      Cyclops_Death_108: -823578988
+      Cyclops_Death_109: -924493171
+      Cyclops_Death_11: -795438025
+      Cyclops_Death_110: -1788538534
+      Cyclops_Death_111: -1745046626
+      Cyclops_Death_112: -592507888
+      Cyclops_Death_113: -644292492
+      Cyclops_Death_114: -2033981892
+      Cyclops_Death_115: -1731032231
+      Cyclops_Death_116: -1959256773
+      Cyclops_Death_117: -181746049
+      Cyclops_Death_118: -244163605
+      Cyclops_Death_119: 907480737
+      Cyclops_Death_12: -1494161779
+      Cyclops_Death_120: -1633079054
+      Cyclops_Death_121: -1833113742
+      Cyclops_Death_122: -1774838800
+      Cyclops_Death_123: -1903832399
+      Cyclops_Death_124: 518791025
+      Cyclops_Death_125: 1754061610
+      Cyclops_Death_126: -151814699
+      Cyclops_Death_127: -1345850841
+      Cyclops_Death_128: 1648417892
+      Cyclops_Death_129: -1630249607
+      Cyclops_Death_13: -893510409
+      Cyclops_Death_130: 199494909
+      Cyclops_Death_131: -1079945538
+      Cyclops_Death_132: 1104119419
+      Cyclops_Death_133: 1709195870
+      Cyclops_Death_134: 2011794627
+      Cyclops_Death_135: 1075466428
+      Cyclops_Death_136: 1260773052
+      Cyclops_Death_137: -1468576260
+      Cyclops_Death_138: 475319933
+      Cyclops_Death_139: 1837840705
+      Cyclops_Death_14: -912864928
+      Cyclops_Death_140: 243073714
+      Cyclops_Death_141: 1936566945
+      Cyclops_Death_142: -409902902
+      Cyclops_Death_143: -327257683
+      Cyclops_Death_144: 533940211
+      Cyclops_Death_145: -1636488717
+      Cyclops_Death_146: -1953983683
+      Cyclops_Death_147: -478917017
+      Cyclops_Death_148: 617573923
+      Cyclops_Death_149: -550922719
+      Cyclops_Death_15: -2147366253
+      Cyclops_Death_150: 1537800635
+      Cyclops_Death_151: 1752952567
+      Cyclops_Death_152: 1089277047
+      Cyclops_Death_153: -1606641525
+      Cyclops_Death_154: -475504058
+      Cyclops_Death_155: 33651759
+      Cyclops_Death_156: 371538937
+      Cyclops_Death_157: 2000229520
+      Cyclops_Death_158: -1426859108
+      Cyclops_Death_159: 1189092227
+      Cyclops_Death_16: 1827462221
+      Cyclops_Death_160: -1734094570
+      Cyclops_Death_161: -1286807670
+      Cyclops_Death_162: -1801107077
+      Cyclops_Death_163: -2080231472
+      Cyclops_Death_17: 1061065713
+      Cyclops_Death_18: -1481053693
+      Cyclops_Death_19: -1854999596
+      Cyclops_Death_2: -1756403905
+      Cyclops_Death_20: 672847363
+      Cyclops_Death_21: -269835577
+      Cyclops_Death_22: 1644493974
+      Cyclops_Death_23: -991054158
+      Cyclops_Death_24: -1915434831
+      Cyclops_Death_25: -723789063
+      Cyclops_Death_26: 803430712
+      Cyclops_Death_27: -1422546119
+      Cyclops_Death_28: -291077029
+      Cyclops_Death_29: 1536481197
+      Cyclops_Death_3: -1535657769
+      Cyclops_Death_30: 72079793
+      Cyclops_Death_31: -574428661
+      Cyclops_Death_32: -478269814
+      Cyclops_Death_33: -466768433
+      Cyclops_Death_34: 517221769
+      Cyclops_Death_35: 918755633
+      Cyclops_Death_36: -333608866
+      Cyclops_Death_37: -124004091
+      Cyclops_Death_38: 1335062478
+      Cyclops_Death_39: -843260779
+      Cyclops_Death_4: -502015659
+      Cyclops_Death_40: -123476814
+      Cyclops_Death_41: -981794594
+      Cyclops_Death_42: 1899970592
+      Cyclops_Death_43: 1775416000
+      Cyclops_Death_44: 281596597
+      Cyclops_Death_45: 1879054192
+      Cyclops_Death_46: 141607887
+      Cyclops_Death_47: -958059304
+      Cyclops_Death_48: 2011511037
+      Cyclops_Death_49: 835295376
+      Cyclops_Death_5: 1978244727
+      Cyclops_Death_50: 1012810510
+      Cyclops_Death_51: 372295675
+      Cyclops_Death_52: -11544425
+      Cyclops_Death_53: 315867080
+      Cyclops_Death_54: 646212442
+      Cyclops_Death_55: 1565964614
+      Cyclops_Death_56: -1461602764
+      Cyclops_Death_57: -1607265403
+      Cyclops_Death_58: -1518988168
+      Cyclops_Death_59: 1152686335
+      Cyclops_Death_6: 969477727
+      Cyclops_Death_60: -144453624
+      Cyclops_Death_61: 1407715109
+      Cyclops_Death_62: -655285204
+      Cyclops_Death_63: 852472288
+      Cyclops_Death_64: 940378266
+      Cyclops_Death_65: 843904779
+      Cyclops_Death_66: 1452081258
+      Cyclops_Death_67: 1618081602
+      Cyclops_Death_68: 230796955
+      Cyclops_Death_69: 1819716203
+      Cyclops_Death_7: -1070301655
+      Cyclops_Death_70: 270257604
+      Cyclops_Death_71: 1796143802
+      Cyclops_Death_72: 662891436
+      Cyclops_Death_73: -1413810867
+      Cyclops_Death_74: 1670244131
+      Cyclops_Death_75: -1015712542
+      Cyclops_Death_76: -1137790838
+      Cyclops_Death_77: 607688547
+      Cyclops_Death_78: -1290374714
+      Cyclops_Death_79: 448162946
+      Cyclops_Death_8: 1212312108
+      Cyclops_Death_80: 1408986462
+      Cyclops_Death_81: 645042421
+      Cyclops_Death_82: -1996377642
+      Cyclops_Death_83: -510315702
+      Cyclops_Death_84: 559131691
+      Cyclops_Death_85: -1164592645
+      Cyclops_Death_86: -900989853
+      Cyclops_Death_87: -1201188899
+      Cyclops_Death_88: 1283207715
+      Cyclops_Death_89: 202444198
+      Cyclops_Death_9: 1941778513
+      Cyclops_Death_90: -373707680
+      Cyclops_Death_91: 1440159686
+      Cyclops_Death_92: -1772649645
+      Cyclops_Death_93: 526422929
+      Cyclops_Death_94: -2057202358
+      Cyclops_Death_95: 1208583061
+      Cyclops_Death_96: -1924866194
+      Cyclops_Death_97: 580149162
+      Cyclops_Death_98: 959855523
+      Cyclops_Death_99: -1069823386
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class CyclopsAI : MonoBehaviour
 {
+    public float cyclopsSpeed = 1f;
+    public float stopDistance = .4f;
+
+    private bool isFiringLaser = false;
+    private bool isThrowingRock = false;
+    private bool isStomping = false;
+
+    private Animator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
