@@ -1,0 +1,443 @@
+fileFormatVersion: 2
+guid: f86c0fcf5a23fed43a8fbd6c271c6f70
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyclops_Laser_Charge_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6c296fdf997c64ca2a2f9b72c3fcd9
+      internalID: 219859990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Laser_Charge_69
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b217a978397a8764cbbbea116a9f8335
+      internalID: 1522327382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Laser_Charge_70
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b612b536809e142b77b70c16fd7aba
+      internalID: -88840328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Laser_Charge_71
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765c5483c8688cb46958176a2e2a9e8d
+      internalID: -1216133541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Laser_Charge_72
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9590d2d2599a894aa7ac88fe8d683b8
+      internalID: 1032855119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Laser_Charge_73
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849683f6c2fc9d440bbc97d5636060ab
+      internalID: 600330242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cyclops_Laser_Charge_0: 929919276
+      Cyclops_Laser_Charge_1: -1595751918
+      Cyclops_Laser_Charge_10: -892927522
+      Cyclops_Laser_Charge_100: -323183616
+      Cyclops_Laser_Charge_101: 1174408038
+      Cyclops_Laser_Charge_102: 111952583
+      Cyclops_Laser_Charge_103: 1898471015
+      Cyclops_Laser_Charge_104: 501579935
+      Cyclops_Laser_Charge_105: 59039483
+      Cyclops_Laser_Charge_106: -854041642
+      Cyclops_Laser_Charge_107: -1728816695
+      Cyclops_Laser_Charge_108: -1108573155
+      Cyclops_Laser_Charge_109: 1403342208
+      Cyclops_Laser_Charge_11: 417820944
+      Cyclops_Laser_Charge_110: -2040692512
+      Cyclops_Laser_Charge_111: -203688882
+      Cyclops_Laser_Charge_112: 1404140407
+      Cyclops_Laser_Charge_113: -1173560166
+      Cyclops_Laser_Charge_114: 1736646411
+      Cyclops_Laser_Charge_115: -467909423
+      Cyclops_Laser_Charge_116: -1724500945
+      Cyclops_Laser_Charge_117: 216414839
+      Cyclops_Laser_Charge_118: -1755670526
+      Cyclops_Laser_Charge_119: -1387574024
+      Cyclops_Laser_Charge_12: -1639066976
+      Cyclops_Laser_Charge_120: 156229577
+      Cyclops_Laser_Charge_121: 198957217
+      Cyclops_Laser_Charge_122: 1381029877
+      Cyclops_Laser_Charge_123: -1773581146
+      Cyclops_Laser_Charge_124: 1057828707
+      Cyclops_Laser_Charge_125: -835942220
+      Cyclops_Laser_Charge_126: -845925904
+      Cyclops_Laser_Charge_127: 1620702732
+      Cyclops_Laser_Charge_128: 1982147768
+      Cyclops_Laser_Charge_129: 1855407369
+      Cyclops_Laser_Charge_13: -1158403512
+      Cyclops_Laser_Charge_130: -729993503
+      Cyclops_Laser_Charge_131: 297457758
+      Cyclops_Laser_Charge_132: -1143118618
+      Cyclops_Laser_Charge_133: -440837283
+      Cyclops_Laser_Charge_134: 5002050
+      Cyclops_Laser_Charge_135: -871682010
+      Cyclops_Laser_Charge_136: 687109436
+      Cyclops_Laser_Charge_137: 83981378
+      Cyclops_Laser_Charge_138: 145202928
+      Cyclops_Laser_Charge_139: 1277427285
+      Cyclops_Laser_Charge_14: 1547804947
+      Cyclops_Laser_Charge_140: -92610887
+      Cyclops_Laser_Charge_141: -444992469
+      Cyclops_Laser_Charge_142: 331396413
+      Cyclops_Laser_Charge_143: -362028742
+      Cyclops_Laser_Charge_144: -251751048
+      Cyclops_Laser_Charge_145: 844086138
+      Cyclops_Laser_Charge_146: -2102755447
+      Cyclops_Laser_Charge_147: -555717931
+      Cyclops_Laser_Charge_148: 560872204
+      Cyclops_Laser_Charge_149: -418199773
+      Cyclops_Laser_Charge_15: -827190493
+      Cyclops_Laser_Charge_150: -411461649
+      Cyclops_Laser_Charge_151: -255252148
+      Cyclops_Laser_Charge_152: -53612179
+      Cyclops_Laser_Charge_153: 1868781429
+      Cyclops_Laser_Charge_154: -1760366080
+      Cyclops_Laser_Charge_155: -64708577
+      Cyclops_Laser_Charge_156: -846468122
+      Cyclops_Laser_Charge_157: 551732415
+      Cyclops_Laser_Charge_158: -1656214436
+      Cyclops_Laser_Charge_159: 849368124
+      Cyclops_Laser_Charge_16: 1761038028
+      Cyclops_Laser_Charge_160: 1731270787
+      Cyclops_Laser_Charge_161: 894392950
+      Cyclops_Laser_Charge_162: -566586039
+      Cyclops_Laser_Charge_163: -932456950
+      Cyclops_Laser_Charge_17: -82979114
+      Cyclops_Laser_Charge_18: 530573185
+      Cyclops_Laser_Charge_19: 985732884
+      Cyclops_Laser_Charge_2: -1880781368
+      Cyclops_Laser_Charge_20: -146745093
+      Cyclops_Laser_Charge_21: 1670606243
+      Cyclops_Laser_Charge_22: 13534293
+      Cyclops_Laser_Charge_23: 1935087539
+      Cyclops_Laser_Charge_24: 965881353
+      Cyclops_Laser_Charge_25: 887600818
+      Cyclops_Laser_Charge_26: 1412687479
+      Cyclops_Laser_Charge_27: -1111036527
+      Cyclops_Laser_Charge_28: -1596291014
+      Cyclops_Laser_Charge_29: 1103616087
+      Cyclops_Laser_Charge_3: 882927502
+      Cyclops_Laser_Charge_30: -1242653950
+      Cyclops_Laser_Charge_31: -1597647801
+      Cyclops_Laser_Charge_32: -884442888
+      Cyclops_Laser_Charge_33: 1679078027
+      Cyclops_Laser_Charge_34: 1136221800
+      Cyclops_Laser_Charge_35: 588712947
+      Cyclops_Laser_Charge_36: 466419412
+      Cyclops_Laser_Charge_37: -912641489
+      Cyclops_Laser_Charge_38: 323099533
+      Cyclops_Laser_Charge_39: 367615701
+      Cyclops_Laser_Charge_4: -1910852588
+      Cyclops_Laser_Charge_40: -578335404
+      Cyclops_Laser_Charge_41: -604964852
+      Cyclops_Laser_Charge_42: -58907803
+      Cyclops_Laser_Charge_43: 1911176851
+      Cyclops_Laser_Charge_44: -1132525133
+      Cyclops_Laser_Charge_45: 1372126181
+      Cyclops_Laser_Charge_46: 247689583
+      Cyclops_Laser_Charge_47: -820098207
+      Cyclops_Laser_Charge_48: -422483243
+      Cyclops_Laser_Charge_49: 7745529
+      Cyclops_Laser_Charge_5: 1410410042
+      Cyclops_Laser_Charge_50: -1900390235
+      Cyclops_Laser_Charge_51: 1757927708
+      Cyclops_Laser_Charge_52: 2100016696
+      Cyclops_Laser_Charge_53: -1225854947
+      Cyclops_Laser_Charge_54: 1967716713
+      Cyclops_Laser_Charge_55: -412823887
+      Cyclops_Laser_Charge_56: 1493901222
+      Cyclops_Laser_Charge_57: -1056468193
+      Cyclops_Laser_Charge_58: -1822981072
+      Cyclops_Laser_Charge_59: -800363529
+      Cyclops_Laser_Charge_6: 2046519803
+      Cyclops_Laser_Charge_60: 412415889
+      Cyclops_Laser_Charge_61: 404354994
+      Cyclops_Laser_Charge_62: 2106446135
+      Cyclops_Laser_Charge_63: -264924250
+      Cyclops_Laser_Charge_64: -1591059150
+      Cyclops_Laser_Charge_65: -443000907
+      Cyclops_Laser_Charge_66: -1350198112
+      Cyclops_Laser_Charge_67: -1533114317
+      Cyclops_Laser_Charge_68: 219859990
+      Cyclops_Laser_Charge_69: 1522327382
+      Cyclops_Laser_Charge_7: -351974569
+      Cyclops_Laser_Charge_70: -88840328
+      Cyclops_Laser_Charge_71: -1216133541
+      Cyclops_Laser_Charge_72: 1032855119
+      Cyclops_Laser_Charge_73: 600330242
+      Cyclops_Laser_Charge_74: -1223193474
+      Cyclops_Laser_Charge_75: -223710705
+      Cyclops_Laser_Charge_76: -20532201
+      Cyclops_Laser_Charge_77: -435417580
+      Cyclops_Laser_Charge_78: -1122808948
+      Cyclops_Laser_Charge_79: 102078911
+      Cyclops_Laser_Charge_8: -166072192
+      Cyclops_Laser_Charge_80: -1272754337
+      Cyclops_Laser_Charge_81: 704023145
+      Cyclops_Laser_Charge_82: -1950279113
+      Cyclops_Laser_Charge_83: -926345399
+      Cyclops_Laser_Charge_84: -786622376
+      Cyclops_Laser_Charge_85: -1015870408
+      Cyclops_Laser_Charge_86: 226221175
+      Cyclops_Laser_Charge_87: 905325916
+      Cyclops_Laser_Charge_88: 1424478780
+      Cyclops_Laser_Charge_89: 747931617
+      Cyclops_Laser_Charge_9: -29162703
+      Cyclops_Laser_Charge_90: -1983368531
+      Cyclops_Laser_Charge_91: -1437946601
+      Cyclops_Laser_Charge_92: -6343459
+      Cyclops_Laser_Charge_93: 39009878
+      Cyclops_Laser_Charge_94: 577651406
+      Cyclops_Laser_Charge_95: -1763642229
+      Cyclops_Laser_Charge_96: -2000380101
+      Cyclops_Laser_Charge_97: -226705850
+      Cyclops_Laser_Charge_98: 349320169
+      Cyclops_Laser_Charge_99: 1427908533
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

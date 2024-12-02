@@ -1,0 +1,590 @@
+fileFormatVersion: 2
+guid: 0bb1cd28feb67cc449253415dd51591e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b57f7eb2d1efdf43bac457354bb8ba7
+      internalID: 1773672157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_35
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee03f6fb19e3044f8564f4ead68e9a5
+      internalID: 1370502271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7501829a5045a48af07da51b8d0c0d
+      internalID: -2011412377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccd027f6dd22554ea55f426994c34af
+      internalID: -1504483232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f969780f87489d44ba1c7ed1ed1ba8c8
+      internalID: 770128170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772cca2ce3f7f2e4a951ea2101603e1a
+      internalID: 558129343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_40
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839c3a472f9617a4daf0bf653175d89c
+      internalID: 1108334288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_41
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df236e03ced9e7642b97772d2cb5a9eb
+      internalID: -77634203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_42
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af226a913d697474eabcbd95c23cad3d
+      internalID: 1446979403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_43
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c1e8775504e044b9ec07e869764caa
+      internalID: 1696250873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_44
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ebb883d5a87f04eabdbafed221c2a9
+      internalID: -154070107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_45
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2162a19b08696d347add49003482ff1f
+      internalID: -1896268862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyclops_Throw_Rock_46
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a3f999db41bfd46a915039970633da
+      internalID: -638835020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cyclops_Throw_Rock_0: 1784354113
+      Cyclops_Throw_Rock_1: -280168707
+      Cyclops_Throw_Rock_10: 684349268
+      Cyclops_Throw_Rock_100: 823171246
+      Cyclops_Throw_Rock_101: 1204807075
+      Cyclops_Throw_Rock_102: 2068399646
+      Cyclops_Throw_Rock_103: -499508748
+      Cyclops_Throw_Rock_104: 1748470782
+      Cyclops_Throw_Rock_105: 1154489801
+      Cyclops_Throw_Rock_106: 622375584
+      Cyclops_Throw_Rock_107: 881097435
+      Cyclops_Throw_Rock_108: 1198197938
+      Cyclops_Throw_Rock_109: 657786790
+      Cyclops_Throw_Rock_11: 483891974
+      Cyclops_Throw_Rock_110: 1878931080
+      Cyclops_Throw_Rock_111: 1934851244
+      Cyclops_Throw_Rock_112: -1727499361
+      Cyclops_Throw_Rock_113: -2010072983
+      Cyclops_Throw_Rock_114: -2113508807
+      Cyclops_Throw_Rock_115: 598837007
+      Cyclops_Throw_Rock_116: -763529863
+      Cyclops_Throw_Rock_117: 1176631160
+      Cyclops_Throw_Rock_118: 780182258
+      Cyclops_Throw_Rock_119: -1297846483
+      Cyclops_Throw_Rock_12: 1208961450
+      Cyclops_Throw_Rock_120: 928737163
+      Cyclops_Throw_Rock_121: 1741858033
+      Cyclops_Throw_Rock_122: -985949313
+      Cyclops_Throw_Rock_123: 24366753
+      Cyclops_Throw_Rock_124: -806036179
+      Cyclops_Throw_Rock_125: -1726457885
+      Cyclops_Throw_Rock_126: 78768047
+      Cyclops_Throw_Rock_127: -1803490803
+      Cyclops_Throw_Rock_128: -1419607832
+      Cyclops_Throw_Rock_129: 116629941
+      Cyclops_Throw_Rock_13: -964845382
+      Cyclops_Throw_Rock_130: 1966561675
+      Cyclops_Throw_Rock_131: 1790601427
+      Cyclops_Throw_Rock_132: -1826655804
+      Cyclops_Throw_Rock_133: 1268336067
+      Cyclops_Throw_Rock_134: 1836979331
+      Cyclops_Throw_Rock_135: 964949412
+      Cyclops_Throw_Rock_136: -171338925
+      Cyclops_Throw_Rock_137: 48353792
+      Cyclops_Throw_Rock_138: 866936227
+      Cyclops_Throw_Rock_139: 228094841
+      Cyclops_Throw_Rock_14: 768365278
+      Cyclops_Throw_Rock_140: -1310310562
+      Cyclops_Throw_Rock_141: 1066449592
+      Cyclops_Throw_Rock_142: 25682004
+      Cyclops_Throw_Rock_143: -1557761516
+      Cyclops_Throw_Rock_144: 23978994
+      Cyclops_Throw_Rock_145: 1603564551
+      Cyclops_Throw_Rock_146: -1055264511
+      Cyclops_Throw_Rock_147: -1598215041
+      Cyclops_Throw_Rock_148: -1648722369
+      Cyclops_Throw_Rock_149: -1031104380
+      Cyclops_Throw_Rock_15: 878433958
+      Cyclops_Throw_Rock_150: -439169755
+      Cyclops_Throw_Rock_151: 294919423
+      Cyclops_Throw_Rock_152: -1478690
+      Cyclops_Throw_Rock_153: -2054261558
+      Cyclops_Throw_Rock_154: -55695421
+      Cyclops_Throw_Rock_155: -1712979588
+      Cyclops_Throw_Rock_156: 148804370
+      Cyclops_Throw_Rock_157: 1327812544
+      Cyclops_Throw_Rock_158: 2029139602
+      Cyclops_Throw_Rock_159: -436434191
+      Cyclops_Throw_Rock_16: 150195161
+      Cyclops_Throw_Rock_160: -34161055
+      Cyclops_Throw_Rock_161: -253078407
+      Cyclops_Throw_Rock_162: -1072278931
+      Cyclops_Throw_Rock_163: 459458212
+      Cyclops_Throw_Rock_17: -1127928768
+      Cyclops_Throw_Rock_18: -1992673384
+      Cyclops_Throw_Rock_19: 1514238627
+      Cyclops_Throw_Rock_2: 541982140
+      Cyclops_Throw_Rock_20: 1346194257
+      Cyclops_Throw_Rock_21: 93247004
+      Cyclops_Throw_Rock_22: -1360870133
+      Cyclops_Throw_Rock_23: -181679844
+      Cyclops_Throw_Rock_24: 882185933
+      Cyclops_Throw_Rock_25: 480786098
+      Cyclops_Throw_Rock_26: -1037708424
+      Cyclops_Throw_Rock_27: -977331196
+      Cyclops_Throw_Rock_28: -973251361
+      Cyclops_Throw_Rock_29: 1505099471
+      Cyclops_Throw_Rock_3: -1504118346
+      Cyclops_Throw_Rock_30: 236024493
+      Cyclops_Throw_Rock_31: -1268409392
+      Cyclops_Throw_Rock_32: 918566791
+      Cyclops_Throw_Rock_33: -300493161
+      Cyclops_Throw_Rock_34: 1773672157
+      Cyclops_Throw_Rock_35: 1370502271
+      Cyclops_Throw_Rock_36: -2011412377
+      Cyclops_Throw_Rock_37: -1504483232
+      Cyclops_Throw_Rock_38: 770128170
+      Cyclops_Throw_Rock_39: 558129343
+      Cyclops_Throw_Rock_4: 985264739
+      Cyclops_Throw_Rock_40: 1108334288
+      Cyclops_Throw_Rock_41: -77634203
+      Cyclops_Throw_Rock_42: 1446979403
+      Cyclops_Throw_Rock_43: 1696250873
+      Cyclops_Throw_Rock_44: -154070107
+      Cyclops_Throw_Rock_45: -1896268862
+      Cyclops_Throw_Rock_46: -638835020
+      Cyclops_Throw_Rock_47: 1912227527
+      Cyclops_Throw_Rock_48: -1039337525
+      Cyclops_Throw_Rock_49: -1243793730
+      Cyclops_Throw_Rock_5: 1226122059
+      Cyclops_Throw_Rock_50: 351683053
+      Cyclops_Throw_Rock_51: -2089760148
+      Cyclops_Throw_Rock_52: 1346072106
+      Cyclops_Throw_Rock_53: 1668765284
+      Cyclops_Throw_Rock_54: 392177655
+      Cyclops_Throw_Rock_55: -455831380
+      Cyclops_Throw_Rock_56: -1490649119
+      Cyclops_Throw_Rock_57: 104042359
+      Cyclops_Throw_Rock_58: 521513019
+      Cyclops_Throw_Rock_59: -1033898415
+      Cyclops_Throw_Rock_6: -1842114040
+      Cyclops_Throw_Rock_60: -437421247
+      Cyclops_Throw_Rock_61: -1972735350
+      Cyclops_Throw_Rock_62: -1227393724
+      Cyclops_Throw_Rock_63: 68634865
+      Cyclops_Throw_Rock_64: -784785
+      Cyclops_Throw_Rock_65: -1997756340
+      Cyclops_Throw_Rock_66: 2012536208
+      Cyclops_Throw_Rock_67: -178421595
+      Cyclops_Throw_Rock_68: 115356724
+      Cyclops_Throw_Rock_69: 1594871121
+      Cyclops_Throw_Rock_7: 253850113
+      Cyclops_Throw_Rock_70: -1455169668
+      Cyclops_Throw_Rock_71: -1966965025
+      Cyclops_Throw_Rock_72: -1374609073
+      Cyclops_Throw_Rock_73: 766996427
+      Cyclops_Throw_Rock_74: 644110881
+      Cyclops_Throw_Rock_75: 1481930908
+      Cyclops_Throw_Rock_76: 74734128
+      Cyclops_Throw_Rock_77: -1361534507
+      Cyclops_Throw_Rock_78: -176231780
+      Cyclops_Throw_Rock_79: -1626503242
+      Cyclops_Throw_Rock_8: -252462267
+      Cyclops_Throw_Rock_80: 1931207439
+      Cyclops_Throw_Rock_81: -224111022
+      Cyclops_Throw_Rock_82: 1361284194
+      Cyclops_Throw_Rock_83: 1899651650
+      Cyclops_Throw_Rock_84: 1022266061
+      Cyclops_Throw_Rock_85: -928903039
+      Cyclops_Throw_Rock_86: -1436417009
+      Cyclops_Throw_Rock_87: -1969874991
+      Cyclops_Throw_Rock_88: -1550071306
+      Cyclops_Throw_Rock_89: 1334548093
+      Cyclops_Throw_Rock_9: 274330404
+      Cyclops_Throw_Rock_90: 1680886384
+      Cyclops_Throw_Rock_91: 1378605996
+      Cyclops_Throw_Rock_92: -451096605
+      Cyclops_Throw_Rock_93: -1576108245
+      Cyclops_Throw_Rock_94: -536996207
+      Cyclops_Throw_Rock_95: 1979184621
+      Cyclops_Throw_Rock_96: -48160637
+      Cyclops_Throw_Rock_97: 1067608260
+      Cyclops_Throw_Rock_98: -77620669
+      Cyclops_Throw_Rock_99: -1213954264
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
