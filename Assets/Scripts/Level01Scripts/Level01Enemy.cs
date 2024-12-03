@@ -1,73 +1,78 @@
 using Cinemachine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Level01Enemy : MonoBehaviour
 {
-    private GameObject player;
-    private GameObject gameManager;
-    private Vector2 moveLocation;
-    private float timer;
-    [SerializeField]
-    private float speed = 2f;
-    [SerializeField]
-    private float minRange; 
-    [SerializeField]
-    private float maxRange; 
-    public Transform target; 
-    public Rigidbody2D rb;
+    PlayerHealth playerHealth;
+    private PlayerController player; 
+    private Animator myAnimator;
+    private Vector2 originalPos;
+    public float speed;
+    public float distanceBetween;
+    public SpriteRenderer spriteRenderer;
     public int attackPower = 10; 
 
-    public Transform homePos; 
-    private Animator myAnimator; 
    
     
     // Start is called before the first frame update
     void Start()
     {
-        //player = GameObject.FindGameObjectWithTag("Player"); 
+        player = FindObjectOfType<PlayerController>();
         myAnimator = GetComponent<Animator>();
-        target = GameObject.FindGameObjectWithTag("Player").transform; 
+        //initizalze at the start so that we can avoid errors; 
+        originalPos = transform.position;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-       // playerLocation = player.transform.position;
-       // transform.position = Vector2.MoveTowards(transform.position, playerLocation, speed * Time.deltaTime);
+        // playerLocation = player.transform.position;
+        // transform.position = Vector2.MoveTowards(transform.position, playerLocation, speed * Time.deltaTime);
 
-        if(Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+        float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+        Vector2 direction;
+
+        if (distanceToPlayer < distanceBetween)
         {
-            followPlayer();
+            myAnimator.SetBool("playerDetected", true);
+            direction = player.transform.position - transform.position;
+            direction.Normalize();
+
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+
         }
         else
         {
-            goHome();
+            direction = originalPos - (Vector2)transform.position;
+
+            if(direction.magnitude > 0.1f)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, originalPos, speed * Time.deltaTime);
+            }
+            else
+            {
+                myAnimator.SetBool("playerDetected", false);
+            }
         }
-        
-        
+
+        FlipEnemySprite(direction);
+
     }
 
-
-    public void followPlayer()
+    public void SetOriginalPos(Vector2 pos)
     {
-        myAnimator.SetBool("isMoving", true);
-        myAnimator.SetFloat("moveX", target.position.x - transform.position.x);
-        myAnimator.SetFloat("moveY", target.position.y - transform.position.y);
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime); 
+        originalPos = pos;
     }
 
-    public void goHome()
+    private void FlipEnemySprite(Vector2 direction)
     {
-        myAnimator.SetFloat("moveX", homePos.position.x - transform.position.x);
-        myAnimator.SetFloat("moveY", homePos.position.y - transform.position.y);
-        transform.position = Vector3.MoveTowards(transform.position, homePos.position, speed * Time.deltaTime);
-
-        if(Vector3.Distance(transform.position, homePos.position) == 0 )
+       if(CompareTag("BushMonster") || CompareTag("FlowerEnemy") || CompareTag("Orc"))
         {
-            myAnimator.SetBool("isMoving", false); 
+            spriteRenderer.flipX = direction.x > 0; 
         }
     }
 
@@ -81,10 +86,7 @@ public class Level01Enemy : MonoBehaviour
             playerHealth.takeDamage(attackPower);
 
         }
-        else if(Vector3.Distance(target.position, transform.position) >= maxRange)
-        {
-            myAnimator.SetBool("isMoving", false);
-        }
+      
     }
 
     private void isDead()

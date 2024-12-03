@@ -1,49 +1,45 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 
 public class Level01Spawner : MonoBehaviour
 {
-    public GameObject spawnedEnemies;
-    public float spawnTime;
-    public float coolDown = 1f; 
+    [SerializeField]
+    private GameObject[] spawnedEnemies;
+    [SerializeField]
+    private List<GameObject> spawnedLocation = new List<GameObject>();
+    private Level01Enemy enemy;
 
-    //to control the time/ speed of enemies spawning 
-    //public float time; 
-    //public float timeDelay;
-
-    //the gameObjects are will be where the enemeies spawn 
-    public GameObject[] spawnLocations;
-    // Start is called before the first frame update
-    void Start()
+    public void SpawnEnemies()
     {
-        spawnTime = coolDown;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(spawnTime > 0)
+        if (spawnedEnemies.Length == 0 || spawnedLocation.Count == 0)
         {
-            spawnTime -= Time.deltaTime;
+            Debug.Log("No enemy spawns");
+            return;
         }
 
-       // time += Time.deltaTime;
-        if (spawnTime <= 0)
+        foreach (GameObject spawnedLocations in spawnedLocation)
         {
-            spawnEnemy();
-            spawnTime = coolDown; 
+            int randEnemyIndex = Random.Range(0, spawnedEnemies.Length);
+
+            GameObject spawnEnemy = Instantiate(spawnedEnemies[randEnemyIndex], spawnedLocations.transform.position,Quaternion.identity);
+
+            enemy = spawnEnemy.GetComponent<Level01Enemy>();
+
+            if (enemy != null)
+            {
+                enemy.SetOriginalPos(spawnedLocations.transform.position);
+            }
+            else
+            {
+                Debug.Log("Spawned enemy doesnt have the follower");
+            }
         }
     }
 
-    private void spawnEnemy()
-    {
-        int spawnNum = Random.Range(0, spawnLocations.Length);
-        
-        GameObject spawnLocation = spawnLocations[spawnNum];
 
-        Instantiate(spawnedEnemies); 
-        spawnedEnemies.transform.position = new Vector2(spawnLocation.transform.position.x, spawnLocation.transform.position.y);
-    }
 }

@@ -21,6 +21,9 @@ TagManager:
   - SpiderEnemy
   - Scroll
   - Heart
+  - BushMonster
+  - FlowerEnemy
+  - Orc
   layers:
   - Default
   - TransparentFX
