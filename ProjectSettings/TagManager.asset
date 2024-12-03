@@ -17,6 +17,10 @@ TagManager:
   - BatEnemy
   - Berries
   - Level01EnemySpawns
+  - Sapphire
+  - SpiderEnemy
+  - Scroll
+  - Heart
   layers:
   - Default
   - TransparentFX
