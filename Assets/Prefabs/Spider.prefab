@@ -121,4 +121,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 0.75
   spriteRenderer: {fileID: 249428984605045174}
-  distanceBetweenPlayer: 1
+  distanceBetweenPlayer: 0.5
