@@ -90,6 +90,15 @@ public class Level03EnemyFollow : MonoBehaviour
             spriteRenderer.flipX = true;
         }
 
+        if (tag.Equals("BushMonster") && direction.x > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (tag.Equals("BushMonster") && direction.x < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
