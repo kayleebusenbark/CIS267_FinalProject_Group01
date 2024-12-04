@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1790684311928484670}
   - component: {fileID: 8023112723564204692}
   - component: {fileID: 1510355122500149799}
+  - component: {fileID: 6545563094444333584}
   m_Layer: 0
   m_Name: FlowerEnemy
   m_TagString: FlowerEnemy
@@ -168,7 +169,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0030918121, y: -0.0314444}
+  m_Offset: {x: -0.009277344, y: -0.038145665}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -179,7 +180,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19834518, y: 0.2571112}
+  m_Size: {x: 0.26844788, y: 0.2705137}
   m_EdgeRadius: 0
 --- !u!114 &1510355122500149799
 MonoBehaviour:
@@ -197,3 +198,22 @@ MonoBehaviour:
   spriteRenderer: {fileID: 7098868040276974504}
   distanceBetween: 1
   damage: 10
+--- !u!114 &6545563094444333584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8546687563729384736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f12c081f6ca4448bcdd4a93ca1946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  maxHealth: 5
+  destroyDelay: 0.5
+  pushbackForce: 0.1
+  heartPrefab: {fileID: 1784160590423258716, guid: 441c5475a4dd36d448e80286503b79b8, type: 3}
+  rubyPrefab: {fileID: 0}
+  heartDropChange: 0.3
