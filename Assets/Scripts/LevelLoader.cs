@@ -34,7 +34,21 @@ public class LevelLoader : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if(scene.name == "Level03")
+        if (scene.name == "Level01")
+        {
+            level03EnemySpawner = FindObjectOfType<Level03EnemySpawner>();
+
+            if (level03EnemySpawner != null)
+            {
+                level03EnemySpawner.spawnEnemies();
+            }
+            else
+            {
+                Debug.LogWarning("LEVEL 03 ENEMY SPAWNER NOT FOUND");
+            }
+
+        }
+        if (scene.name == "Level03")
         {
             level03EnemySpawner = FindObjectOfType<Level03EnemySpawner>();
 
