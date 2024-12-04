@@ -46,7 +46,6 @@ public class OrcAi : MonoBehaviour
 
     private void MoveToPlayer()
     {
-       
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
@@ -78,11 +77,11 @@ public class OrcAi : MonoBehaviour
         }
     }
 
-    private void isDead()
-    {
-        myAnimator.SetBool("death", true);
-        Destroy(myAnimator);
-    }
+    //private void isDead()
+    //{
+    //    myAnimator.SetBool("death", true);
+    //    Destroy(myAnimator);
+    //}
 
 
 }

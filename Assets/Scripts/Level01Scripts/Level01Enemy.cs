@@ -8,12 +8,14 @@ public class Level01Enemy : MonoBehaviour
 {
     PlayerHealth playerHealth;
     private PlayerController player; 
-    private Animator myAnimator;
+    Animator myAnimator;
     private Vector2 originalPos;
     public float speed;
-    public float distanceBetween;
+    private float distanceBetween;
+    public float distanceToPlayer; 
     public SpriteRenderer spriteRenderer;
     public int attackPower = 10; 
+    
 
    
     
@@ -23,7 +25,7 @@ public class Level01Enemy : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
         myAnimator = GetComponent<Animator>();
         //initizalze at the start so that we can avoid errors; 
-        originalPos = transform.position;
+        //originalPos = transform.position;
 
     }
 
@@ -33,7 +35,7 @@ public class Level01Enemy : MonoBehaviour
         // playerLocation = player.transform.position;
         // transform.position = Vector2.MoveTowards(transform.position, playerLocation, speed * Time.deltaTime);
 
-        float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+        distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
         Vector2 direction;
 
         if (distanceToPlayer < distanceBetween)
@@ -43,6 +45,8 @@ public class Level01Enemy : MonoBehaviour
             direction.Normalize();
 
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+
+            myAnimator.SetTrigger("attack"); 
 
         }
         else
@@ -70,9 +74,34 @@ public class Level01Enemy : MonoBehaviour
 
     private void FlipEnemySprite(Vector2 direction)
     {
-       if(CompareTag("BushMonster") || CompareTag("FlowerEnemy") || CompareTag("Orc"))
+        //if(CompareTag("BushMonster") || CompareTag("FlowerEnemy") || CompareTag("Orc"))
+        // {
+        //     spriteRenderer.flipX = direction.x > 0; 
+        // }
+
+        if (tag.Equals("BushMonster") && direction.x > 0)
         {
-            spriteRenderer.flipX = direction.x > 0; 
+            spriteRenderer.flipX = true;
+        }
+        else if (tag.Equals("BushMonster") && direction.x < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (tag.Equals("FlowerEnemy") && direction.x > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (tag.Equals("FlowerEnemy") && direction.x < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (tag.Equals("Orc") && direction.x > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (tag.Equals("Orc") && direction.x < 0)
+        {
+            spriteRenderer.flipX = false;
         }
     }
 
@@ -86,21 +115,15 @@ public class Level01Enemy : MonoBehaviour
             playerHealth.takeDamage(attackPower);
 
         }
+        
       
     }
 
-    private void isDead()
-    {
-        myAnimator.SetBool("death", true);
-        myAnimator.SetBool("boom", true);
-        Destroy(myAnimator);
-    }
-
-    private void enemyAttack()
-    {
-        myAnimator.SetBool("attack", true);
+    //private void enemyAttack()
+    //{
+    //    myAnimator.SetBool("attack", true);
        
-    }
+    //}
 
 
 
