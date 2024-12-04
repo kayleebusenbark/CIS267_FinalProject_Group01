@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6453991087667633855}
   - component: {fileID: 8091547897837756804}
   - component: {fileID: 4173266004425787230}
+  - component: {fileID: -3495666611709832518}
   m_Layer: 0
   m_Name: 'Cyclops '
   m_TagString: Cyclops
@@ -122,3 +123,21 @@ MonoBehaviour:
   enemySpeed: 0.75
   spriteRenderer: {fileID: 6453991087667633855}
   distanceBetweenPlayer: 1
+--- !u!114 &-3495666611709832518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8699400704035590137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0332364cc7b05b941ae58148c03600e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHealth: 3
+  maxHealth: 0
+  destroyDelay: 0.5
+  pushbackForce: 0.1
+  sapphirePrefab: {fileID: 3528444609249380257, guid: 7a0ec97d932ac0e4ba28cf98f64fbb48, type: 3}
+  heartPrefab: {fileID: 0}

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CyclopsAI : MonoBehaviour
@@ -23,5 +24,30 @@ public class CyclopsAI : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void FollowPlayer()
+    {
+
+    }
+
+    private void StompAtPlayer()
+    {
+
+    }
+
+    private void ShootLaser()
+    {
+
+    }
+
+    private void ThrowRock()
+    {
+
+    }
+    
+    private void CyclopsIsDead()
+    {
+
     }
 }
