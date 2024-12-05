@@ -12148,17 +12148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40eaa5e82f6f055468cee10631a29af6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.75
-  stopDistance: 0.3
-  chargeTime: 1
-  laserDuration: 2
-  eyePivot: {fileID: 1529219310}
-  laserPrefab: {fileID: 7600702759160431720, guid: ab1e146c74787974095ebe228a01034c, type: 3}
-  animator: {fileID: 1280543220}
-  player: {fileID: 0}
-  isAttacking: 0
-  isDead: 0
-  facingRight: 1
 --- !u!95 &1280543220 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6138180077657676308, guid: 7fe282ab2a13b6e48abdb084075aa780, type: 3}
@@ -12845,7 +12834,7 @@ Transform:
   m_GameObject: {fileID: 1529219309}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.078, y: 0.997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13633,6 +13622,14 @@ PrefabInstance:
     - target: {fileID: 1460320890077360192, guid: 7fe282ab2a13b6e48abdb084075aa780, type: 3}
       propertyPath: m_Name
       value: Cyclops (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627246905233481491, guid: 7fe282ab2a13b6e48abdb084075aa780, type: 3}
+      propertyPath: m_Size.y
+      value: 1.2133679
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627246905233481491, guid: 7fe282ab2a13b6e48abdb084075aa780, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.5930071
       objectReference: {fileID: 0}
     - target: {fileID: 9066535309866214041, guid: 7fe282ab2a13b6e48abdb084075aa780, type: 3}
       propertyPath: m_LocalPosition.x
