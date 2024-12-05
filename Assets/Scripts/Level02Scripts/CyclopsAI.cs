@@ -21,6 +21,7 @@ public class CyclopsAI : MonoBehaviour
     private PlayerController player;
 
     private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     public int damage;
     
@@ -48,9 +49,15 @@ public class CyclopsAI : MonoBehaviour
 
     private void ShootLaser()
     {
-        if (stopDistance == .4f) 
+        if (stopDistance <= .4f) 
         {
             isFiringLaser = true;
+            animator.SetBool("isFiringLaser", true);
+        }
+        else
+        {
+            isFiringLaser = false;
+            animator.SetBool("isFiringLaser", false);
         }
     }
 
@@ -61,5 +68,6 @@ public class CyclopsAI : MonoBehaviour
     
     private void CyclopsIsDead()
     {
+
     }
 }
