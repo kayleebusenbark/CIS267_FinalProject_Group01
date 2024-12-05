@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
        levelLoader = FindObjectOfType<LevelLoader>();
+    
     }
 
     // Update is called once per frame

@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    private static PlayerController instance;
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
     public float movementSpeed;
@@ -34,7 +35,8 @@ public class PlayerController : MonoBehaviour
     private float holdTimer = 0f;
     public float attack3Threshold = 1f;
 
-    private bool canUseAttack3 = false; 
+    private bool canUseAttack3 = false;
+
 
     // Start is called before the first frame update
     void Start()

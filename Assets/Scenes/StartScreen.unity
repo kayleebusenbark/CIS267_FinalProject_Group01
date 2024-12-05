@@ -995,9 +995,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 711387559}
-        m_TargetAssemblyTypeName: GuiButtonHandler, Assembly-CSharp
-        m_MethodName: hideControllerScreen
+      - m_Target: {fileID: 711387560}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: hideControlerScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1921,7 +1921,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e6a9ce83dbd3749b086072b2cc742f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
 --- !u!114 &711387560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2258,9 +2257,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 711387559}
-        m_TargetAssemblyTypeName: GuiButtonHandler, Assembly-CSharp
-        m_MethodName: hideArtScreen
+      - m_Target: {fileID: 711387560}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: hideArtCreditScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2697,7 +2696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e6a9ce83dbd3749b086072b2cc742f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 0}
 --- !u!114 &1056653974
 MonoBehaviour:
   m_ObjectHideFlags: 0
