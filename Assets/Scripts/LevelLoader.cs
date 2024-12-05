@@ -9,7 +9,7 @@ public class LevelLoader : MonoBehaviour
     public float transitionTime;
 
     private Level03EnemySpawner level03EnemySpawner;
-    private Level01BerrySpawner level01BerrySpawner;
+    private PickUpSpawner pickUpSpawner;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,12 +38,12 @@ public class LevelLoader : MonoBehaviour
         if (scene.name == "Level01")
         {
             level03EnemySpawner = FindObjectOfType<Level03EnemySpawner>();
-            level01BerrySpawner = FindObjectOfType<Level01BerrySpawner>();
+            pickUpSpawner = FindObjectOfType<PickUpSpawner>();
 
             if (level03EnemySpawner != null)
             {
                 level03EnemySpawner.spawnEnemies();
-                level01BerrySpawner.spawnBerries();
+                pickUpSpawner.spawnPickUps();
             }
             else
             {
