@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -23,14 +24,14 @@ public class PlayerController : MonoBehaviour
 
     public PlayerAttack01 attack01;
 
-    private int mouseClickCount = 0;
-    private float mouseClickTimer = 0f;
+    private int clickCount = 0;
+    private float clickTimer = 0f;
     public float doubleClickTimeLimit = 0.5f;
 
     private bool isBlocking = false;
 
-    private bool isMouseHeld = false;
-    private float mouseHeldTimer = 0f;
+    private bool isHeld = false;
+    private float holdTimer = 0f;
     public float attack3Threshold = 1f;
 
     private bool canUseAttack3 = false; 
@@ -49,56 +50,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        handleMovementInput();
+        handleAttackInput();
+        handleBlockInput();
 
-        if (canUseAttack3 && Input.GetMouseButton(0))
-        {
-            isMouseHeld = true;
-            mouseHeldTimer += Time.deltaTime;
-
-            if (mouseHeldTimer >= attack3Threshold)
-            {
-                if (!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("attack3LeftMouseHold"))
-                {
-                    playerAnimator.SetTrigger("attack3LeftMouseHold");
-                    mouseHeldTimer = 0f;
-                    isMouseHeld = false;
-                }
-            }
-        }
-        else if (Input.GetMouseButton(0))
-        {
-            isMouseHeld = false;
-            mouseHeldTimer = 0f;
-        }
-
-        if (mouseClickCount > 0)
-        {
-            mouseClickTimer += Time.deltaTime;
-
-            if (mouseClickTimer > doubleClickTimeLimit)
-            {
-                mouseClickCount = 0;
-                mouseClickTimer = 0f;
-            }
-        }
-
-        if (Input.GetMouseButtonDown(1))
-        {
-            if (!isBlocking)
-            {
-                isBlocking = true;
-                triggerBlockAnimation(true);
-            }
-        }
-        else if (Input.GetMouseButtonUp(1))
-        {
-            if (isBlocking)
-            {
-                isBlocking = false;
-                triggerBlockAnimation(false);
-            }
-        }
     }
+
+
     private void FixedUpdate()
     {
         if(movementInput != Vector2.zero)
@@ -113,6 +71,87 @@ public class PlayerController : MonoBehaviour
             updatePlayerAnimations(false);
         }
         flipSprite();
+    }
+
+    private void handleMovementInput()
+    {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
+
+        movementInput = new Vector2(moveX, moveY).normalized;
+    }
+
+    private void handleAttackInput()
+    {
+        if (canUseAttack3 && (Input.GetButton("Fire3") || Input.GetMouseButton(0)))
+        {
+            isHeld = true;
+            holdTimer += Time.deltaTime;
+
+            if (holdTimer >= attack3Threshold)
+            {
+                if (!playerAnimator.GetCurrentAnimatorStateInfo(0).IsName("attack3LeftMouseHold"))
+                {
+                    playerAnimator.SetTrigger("attack3LeftMouseHold");
+                    holdTimer = 0f;
+                    isHeld = false;
+                }
+            }
+        }
+
+        else
+        {
+            isHeld = false;
+            holdTimer = 0f;
+        }
+
+        if (Input.GetButtonDown("Fire1") || Input.GetMouseButtonDown(0))
+        {
+            clickCount++;
+            clickTimer = 0f;
+
+            if(clickCount == 1)
+            {
+                playerAnimator.SetTrigger("attack1LeftMouseClick");
+            }
+            else if(clickCount == 2)
+            {
+                playerAnimator.SetTrigger("attack2LeftMouseDoubleClick");
+                clickCount = 0;
+            }
+        }
+
+        if (clickCount > 0)
+        {
+            clickTimer += Time.deltaTime;
+
+            if(clickTimer > doubleClickTimeLimit)
+            {
+                clickCount = 0;
+                clickTimer = 0f;
+            }
+        }
+
+    }
+
+    private void handleBlockInput()
+    {
+        if(Input.GetButtonDown("Fire2") || Input.GetMouseButtonDown(1))
+        {
+            if(!isBlocking)
+            {
+                isBlocking = true;
+                triggerBlockAnimation(true);
+            }
+        }
+        else if(Input.GetButtonUp("Fire2") || Input.GetMouseButtonUp(1))
+        {
+            if(isBlocking)
+            {
+                isBlocking = false;
+                triggerBlockAnimation(false);
+            }
+        }
     }
 
     //this is to help the player slide around objects
@@ -213,29 +252,6 @@ public class PlayerController : MonoBehaviour
         transform.position = spawnPosition;
     }
 
-    void OnFire()
-    {
-        if (hasSwordAndShield == true)
-        {
-            print("firepressed");
-
-            mouseClickCount++;
-            mouseClickTimer = 0f;
-
-            if (mouseClickCount == 1)
-            {
-                playerAnimator.SetTrigger("attack1LeftMouseClick");
-
-            }
-            else if (mouseClickCount == 2)
-            {
-                playerAnimator.SetTrigger("attack2LeftMouseDoubleClick");
-                mouseClickCount = 0;
-            }
-
-        }
-
-    }
 
     public void swordAttack()
     {

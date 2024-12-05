@@ -99,6 +99,14 @@ public class Level03EnemyFollow : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
+        if (tag.Equals("FlowerEnemy") && direction.x > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (tag.Equals("FlowerEnemy") && direction.x < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
