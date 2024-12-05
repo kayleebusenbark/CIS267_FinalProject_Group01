@@ -156,10 +156,10 @@ RectTransform:
   - {fileID: 989531264}
   m_Father: {fileID: 2001339750}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -178.24194, y: -42}
-  m_SizeDelta: {x: 493.7913, y: 63.5031}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -178.24194, y: 214}
+  m_SizeDelta: {x: 493.7913, y: 63.503098}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &900793744
 MonoBehaviour:
@@ -710,10 +710,10 @@ RectTransform:
   - {fileID: 900793743}
   m_Father: {fileID: 971320565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -140}
-  m_SizeDelta: {x: -946, y: -562}
+  m_SizeDelta: {x: 974, y: 428}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2001339751
 MonoBehaviour:
@@ -735,12 +735,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "In a world far far away (not really I just dont know what else to say)...
-    a long standing prophecy foretells that only three mystical gems  - the Emerald,
-    Ruby, and sapphire - can end an ancient curse from being unleased upon the land
-    and spreading evil. \n\nyou have been chosen to retrieve these 3 gems from the
-    dangerous and hidden corners of the kingdom - the forest, cave, and castle...\n\nGood
-    luck..."
+  m_text: "In a world far far away... a long standing prophecy foretells that only
+    three mystical gems  - the Emerald, Ruby, and sapphire - can end an ancient curse
+    from being unleased upon the land and spreading evil. \n\nyou have been chosen
+    to retrieve these 3 gems from the dangerous and hidden corners of the kingdom
+    - the forest, cave, and castle...\n\nGood luck..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
