@@ -17,7 +17,7 @@ public class Level03EnemyHealth : MonoBehaviour
     private PlayerController player;
 
     public GameObject heartPrefab;
-    public GameObject rubyPrefab;
+    public GameObject gem;
 
     // (0 = never and 1 = always) 
     [Range(0f,1f)] public float heartDropChange = 0.3f;
@@ -68,13 +68,18 @@ public class Level03EnemyHealth : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
 
+        if(gem != null)
+        {
+            Instantiate(gem, transform.position, Quaternion.identity);
+
+        }
+
         if (heartPrefab != null && Random.value <= heartDropChange)
         {
             Instantiate(heartPrefab, transform.position, Quaternion.identity);
         }
 
         Destroy(gameObject, destroyDelay);
-        Instantiate(rubyPrefab, transform.position, Quaternion.identity);
 
     }
 }
