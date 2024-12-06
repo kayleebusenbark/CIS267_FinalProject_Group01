@@ -36,6 +36,7 @@ public class Laser2 : MonoBehaviour
             if (hit.collider.CompareTag("Player"))
             {
                 //player takes damage here
+                playerHealth = gameObject.GetComponent<PlayerHealth>();
                 playerHealth.takeDamage(damage);
 
             }
