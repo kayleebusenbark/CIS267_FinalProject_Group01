@@ -16,12 +16,21 @@ public class PlayerHealth : MonoBehaviour
     private float damageCoolDown = 0.6f;
     private float lastDamageTime;
 
+    private SpriteRenderer spriteRenderer;
+    public Color originalColor;
+    public Color damageColor = Color.red;
+    public float flashDuration = 0.2f;
+
     // Start is called before the first frame update
     void Start()
     {
         currHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         playerAnimator = GetComponent<Animator>();
+
+        spriteRenderer = GetComponentInParent<SpriteRenderer>();
+
+        originalColor = spriteRenderer.color;
 
     }
 
@@ -32,9 +41,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        //if(isDead || !GetComponent<PlayerInvincibility>().canTakeDamage()) return;
-
-        if(Time.time - lastDamageTime < damageCoolDown)
+        if(isDead || Time.time - lastDamageTime < damageCoolDown)
         {
             return;
         }
@@ -44,7 +51,9 @@ public class PlayerHealth : MonoBehaviour
         currHealth -= damage;
         healthBar.SetHealth(currHealth);
 
-        playerAnimator.SetTrigger("damage");
+        //damage animation isnt working and i dont feel like dealing with it anymore sooooo imma make my own "Animation"
+        //playerAnimator.SetTrigger("damage");
+        StartCoroutine(flashRed());
 
 
         if (currHealth <= 0)
@@ -57,7 +66,7 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = true;
 
-        playerAnimator.SetTrigger("die");
+        //playerAnimator.SetTrigger("die");
 
         GetComponent<PlayerController>().enabled = false;
     }
@@ -65,5 +74,12 @@ public class PlayerHealth : MonoBehaviour
     internal void takeDamage(float attackDamage)
     {
         throw new NotImplementedException();
+    }
+
+    private IEnumerator flashRed()
+    {
+        spriteRenderer.color = damageColor;
+        yield return new WaitForSeconds(flashDuration);
+        spriteRenderer.color = originalColor;
     }
 }
