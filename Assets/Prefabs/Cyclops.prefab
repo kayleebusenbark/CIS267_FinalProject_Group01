@@ -42,7 +42,6 @@ GameObject:
   - component: {fileID: 1489822595974485817}
   - component: {fileID: 261725392110452277}
   - component: {fileID: 8277736216477351233}
-  - component: {fileID: 5334152464906909892}
   - component: {fileID: 3599744286984765841}
   - component: {fileID: 3222951181459897997}
   - component: {fileID: 2078039284126958394}
@@ -143,21 +142,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5334152464906909892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8579626854860583411}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ffaf361f6e32d409abd9cc95b66ae8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemySpeed: 0.75
-  spriteRenderer: {fileID: 261725392110452277}
-  distanceBetweenPlayer: 1
 --- !u!61 &3599744286984765841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -265,6 +249,7 @@ MonoBehaviour:
   stopDistance: 0.5
   chargeTime: 0.3
   laserDuration: 0.5
-  eyePivot: {fileID: 7775313992326606056}
+  cooldownTime: 3
+  laserSpawnPoint: {fileID: 0}
   laserPrefab: {fileID: 7600702759160431720, guid: ab1e146c74787974095ebe228a01034c, type: 3}
   animator: {fileID: 8277736216477351233}

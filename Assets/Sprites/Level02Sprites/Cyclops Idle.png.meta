@@ -450,6 +450,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Cyclops Idle_0
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 663
+        width: 10
+        height: 7
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d7d241b47a70d47b9a95a0e1e84daf
+      internalID: 973263710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -461,6 +482,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Cyclops Idle_0: 973263710
       Cyclops Sprite Sheet_0: 447056941
       Cyclops Sprite Sheet_1: -662152541
       Cyclops Sprite Sheet_10: 1573613821

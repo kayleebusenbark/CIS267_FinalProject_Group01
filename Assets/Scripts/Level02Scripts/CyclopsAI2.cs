@@ -7,9 +7,10 @@ public class CyclopsAI2 : MonoBehaviour
 
     public float moveSpeed = 0.75f;
     public float stopDistance = 1f;
-    public float chargeTime = 2f;
-    public float laserDuration = 1f;
-    public Transform eyePivot;
+    public float chargeTime = 5f;
+    public float laserDuration = 5f;
+    public float cooldownTime = 3f;
+    public Transform laserSpawnPoint;
     public GameObject laserPrefab;
     public Animator animator;
 
@@ -17,6 +18,8 @@ public class CyclopsAI2 : MonoBehaviour
     private bool isAttacking = false;
     private bool isDead = false;
     private bool facingRight = true;
+    private Vector2 lastPlayerPosition;
+    private float currentCooldown = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,11 @@ public class CyclopsAI2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(currentCooldown > 0)
+        {
+            currentCooldown -= Time.deltaTime;
+        }
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         if (!isAttacking)
@@ -37,7 +45,14 @@ public class CyclopsAI2 : MonoBehaviour
             }
             else
             {
-                StartCoroutine(LaserAttack());
+                lastPlayerPosition = player.position;
+
+                if(currentCooldown <= 0)
+                {
+                    StartCoroutine(LaserAttack());
+                    currentCooldown = cooldownTime;
+
+                }
             }
         }
 
@@ -69,12 +84,12 @@ public class CyclopsAI2 : MonoBehaviour
 
         yield return new WaitForSeconds(chargeTime);
 
-        GameObject laser = Instantiate(laserPrefab, eyePivot.position, eyePivot.rotation);
-        laser.transform.SetParent(eyePivot);
-
-        yield return new WaitForSeconds(laserDuration);
-
-        Destroy(laser);
+        if(laserSpawnPoint != null)
+        {
+            GameObject laser = Instantiate(laserPrefab, laserSpawnPoint.position, Quaternion.identity);
+            Laser2 laserScript = laser.GetComponent<Laser2>();
+            laserScript.setMoveDirection(lastPlayerPosition);
+        }
 
         isAttacking = false;
     }

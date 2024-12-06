@@ -4,47 +4,40 @@ using UnityEngine;
 
 public class Laser2 : MonoBehaviour
 {
-
-    private Transform player;
-    private LineRenderer lineRenderer;
-
-    PlayerHealth playerHealth;
-
+    private Vector2 targetPosition;
+    private PlayerHealth playerHealth;
+    public float speed = 1f;
     public int damage = 20;
+
+    private Vector2 moveDirection;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        lineRenderer = GetComponent<LineRenderer>();
+        //moveDirection = Vector2.right;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 direction = (player.position - transform.position).normalized;
 
-        transform.right = direction;
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction);
-        lineRenderer.SetPosition(0, transform.position);
-
-        if (hit.collider != null)
-        {
-            lineRenderer.SetPosition(1, hit.point);
-
-            if (hit.collider.CompareTag("Player"))
-            {
-                //player takes damage here
-                playerHealth.takeDamage(damage);
-
-            }
-
-            else
-            {
-                lineRenderer.SetPosition(1, transform.position + (Vector3)direction * 10f);
-            }
-        }
+        transform.Translate(moveDirection * speed * Time.deltaTime);
 
     }
+    public void setMoveDirection(Vector2 targetPosition)
+    {
+        moveDirection = (targetPosition - (Vector2)transform.position).normalized;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerHitBox"))
+        {
+            playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+
+            playerHealth.takeDamage(damage);
+
+        }
+    }
+
 }
