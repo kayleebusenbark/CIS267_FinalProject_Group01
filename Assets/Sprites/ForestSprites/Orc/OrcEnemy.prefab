@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8542002915308626206}
   - component: {fileID: 5922997669904304463}
   - component: {fileID: 8424088942717744464}
+  - component: {fileID: -7510338875771021355}
   m_Layer: 0
   m_Name: OrcEnemy
   m_TagString: Untagged
@@ -106,3 +107,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-7510338875771021355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3239323334171552039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d354d55afebfb0a41bcc5c67ad42a53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6531787891721042424, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+  attackDamage: 10
+  attackRange: 5
+  attackCoolDown: 1
+  speed: 0
+  minRange: 0
+  maxRange: 0

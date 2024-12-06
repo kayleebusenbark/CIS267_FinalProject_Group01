@@ -15,15 +15,23 @@ public class OrcAi : MonoBehaviour
     private Animator myAnimator;
     private Transform target;
     private bool isAttacking = false;
+    private bool isDead = false; 
     [SerializeField]
     private float minRange;
     [SerializeField]
     private float maxRange;
+    public int health = 3; 
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player")?.transform; 
+        }
+        
         myAnimator = GetComponent<Animator>();
 
        
@@ -32,33 +40,121 @@ public class OrcAi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, player.position) < attackRange)
+        if (isDead)
+        {
+            //don't do anyhting if the orc is dead 
+            return; 
+        }
+
+        if(player == null)
+        {
+            return;
+        }
+
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        if(distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCoolDown)
         {
             attackPlayer(); 
         }
-
-        if(!isAttacking)
+        else if(!isAttacking && distanceToPlayer <= maxRange && distanceToPlayer > minRange)
         {
             MoveToPlayer();
         }
+        else
+        {
+            StopMoving();
+        }
+
+        FacePlayer();
         
+    }
+
+    private void FacePlayer()
+    {
+        if(player != null)
+        {
+            Vector3 direction =(player.position - transform.position).normalized;
+            if(direction.x > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+        }
+    }
+
+    private void StopMoving()
+    {
+       myAnimator.SetBool("isMoving", false);
+        myAnimator.SetBool("playerDetected", false);
     }
 
     private void MoveToPlayer()
     {
+        myAnimator.SetBool("isMoving", true);
+        myAnimator.SetBool("playerDetected", true);
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
     public void attackPlayer()
     {
-        if (Time.time >= lastAttackTime + attackCoolDown)
-        {
-            player.GetComponent<PlayerHealth>().takeDamage(attackDamage); 
-            lastAttackTime = Time.time;
+        isAttacking = true;
+        myAnimator.SetTrigger("attack"); 
+        lastAttackTime = Time.time;
 
-            myAnimator.SetBool("attack", true); 
+        //Invoke(nameof(takeDamage), 0, 5f);
+        
+
+    }
+
+    private void DealDamage()
+    {
+        if(player != null)
+        {
+            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+
+            if (playerHealth != null)
+            {
+                playerHealth.takeDamage(attackDamage);
+            }
         }
 
+        isAttacking= false;
+    }
+
+    private void TakeDamage(int damage)
+    {
+        if (isDead)
+        {
+            return;
+        }
+
+        health -= damage; 
+
+        if(health <= 0)
+        {
+            Death(); 
+        }
+        else
+        {
+            myAnimator.SetTrigger("hit"); 
+        }
+    }
+
+    private void Death()
+    {
+        isDead = true;
+
+        myAnimator.SetTrigger("Death"); 
+
+        StopMoving();
+
+        GetComponent<Collider2D>().enabled = false;
+
+        Destroy(gameObject, 3f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -67,14 +163,15 @@ public class OrcAi : MonoBehaviour
 
         if (collision.CompareTag("PlayerHitBox"))
         {
+            myAnimator.SetBool("playerDetected", true); 
             PlayerHealth playerHealth = collision.GetComponentInParent<PlayerHealth>();
-            playerHealth.takeDamage(attackDamage);
 
+            if(playerHealth != null)
+            {
+                playerHealth.takeDamage(attackDamage);
+            }
         }
-        else if (Vector3.Distance(target.position, transform.position) >= maxRange)
-        {
-            myAnimator.SetBool("isMoving", false);
-        }
+        
     }
 
     //private void isDead()
