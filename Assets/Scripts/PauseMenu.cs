@@ -62,8 +62,8 @@ public class PauseMenu : MonoBehaviour
 
     public void quitToMainMenu()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("StartScreen");
+
+        gameManager.restartGame();
         pauseMenuCanvas.enabled = false ;
     }
 }

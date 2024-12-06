@@ -10,6 +10,8 @@ public class LevelLoader : MonoBehaviour
 
     private Level03EnemySpawner level03EnemySpawner;
     private PickUpSpawner pickUpSpawner;
+    public GameObject levelNoDestroyPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +30,15 @@ public class LevelLoader : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime);
 
+        if (levelIndex == 2 && FindObjectOfType<NoDestroyLevel>() == null)
+        {
+            Instantiate(levelNoDestroyPrefab);
+        }
+
         SceneManager.LoadScene(levelIndex);
 
         transitionAnimation.SetTrigger("Start");
+
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

@@ -1909,6 +1909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnimation: {fileID: 1109074540}
   transitionTime: 2
+  levelNoDestroyPrefab: {fileID: 2393632822045166183, guid: 1e5bc072c937a2f40ac971a4cf717a61, type: 3}
 --- !u!114 &711387559
 MonoBehaviour:
   m_ObjectHideFlags: 0

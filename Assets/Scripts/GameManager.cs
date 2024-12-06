@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,12 +13,12 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else if(instance != this)
+        else if (instance != this)
         {
             Destroy(gameObject);
         }
@@ -26,8 +27,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       levelLoader = FindObjectOfType<LevelLoader>();
-    
+        levelLoader = FindObjectOfType<LevelLoader>();
+
     }
 
     // Update is called once per frame
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
 
     public void hideArtCreditScreen()
     {
-        ArtCreditsScreen.enabled=false;
+        ArtCreditsScreen.enabled = false;
     }
 
     public void showControlerScreen()
@@ -59,9 +60,20 @@ public class GameManager : MonoBehaviour
 
     public void hideControlerScreen()
     {
-        ControlerScreen.enabled=false;  
+        ControlerScreen.enabled = false;
     }
 
+    public void restartGame()
+    {
+        Time.timeScale = 1.0f;
+        NoDestroyLevel levelInstance = FindObjectOfType<NoDestroyLevel>();
 
+        if (levelInstance != null)
+        {
+            Destroy(levelInstance.gameObject);
+        }
+
+        SceneManager.LoadScene("StartScreen");
+    }
 
 }
