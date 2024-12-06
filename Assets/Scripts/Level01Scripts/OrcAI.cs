@@ -105,10 +105,11 @@ public class OrcAi : MonoBehaviour
         myAnimator.SetTrigger("attack"); 
         lastAttackTime = Time.time;
 
-        //Invoke(nameof(takeDamage), 0, 5f);
+       //s Invoke(nameof(TakeDamage), 0, 5f);
         
 
     }
+
 
     private void DealDamage()
     {

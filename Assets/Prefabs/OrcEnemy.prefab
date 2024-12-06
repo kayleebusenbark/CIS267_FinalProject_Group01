@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 8479941025159086559}
   - component: {fileID: 3585730113385126633}
   - component: {fileID: 5186918222109545469}
-  - component: {fileID: 1308578606496738161}
+  - component: {fileID: -6724565154169789766}
+  - component: {fileID: -574269759863524543}
+  - component: {fileID: 1727922998533573040}
   m_Layer: 0
   m_Name: OrcEnemy
   m_TagString: Orc
@@ -171,7 +173,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.057878647, y: 0.016452624}
   m_Size: {x: 0.4663622, y: 0.3986961}
   m_Direction: 1
---- !u!114 &1308578606496738161
+--- !u!114 &-6724565154169789766
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -180,10 +182,49 @@ MonoBehaviour:
   m_GameObject: {fileID: 4869519769914000697}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9b6af353fdb81b4fab0e27641f9f4e2, type: 3}
+  m_Script: {fileID: 11500000, guid: d354d55afebfb0a41bcc5c67ad42a53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  distanceToPlayer: 0
+  player: {fileID: 6531787891721042424, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+  attackDamage: 10
+  attackRange: 5
+  attackCoolDown: 1
+  speed: 0
+  minRange: 0
+  maxRange: 0
+  health: 3
+--- !u!114 &-574269759863524543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869519769914000697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f12c081f6ca4448bcdd4a93ca1946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  maxHealth: 3
+  destroyDelay: 0.5
+  pushbackForce: 0.1
+  heartPrefab: {fileID: 0}
+  gem: {fileID: 0}
+  heartDropChange: 0.3
+--- !u!114 &1727922998533573040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869519769914000697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b9003b6eea3f4a4e90076e095b2522e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.75
   spriteRenderer: {fileID: 439090487918535950}
-  attackPower: 10
+  distanceBetween: 1
+  damage: 10

@@ -1083,13 +1083,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrcEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 3239323334171552039, guid: 866af1ff79093b04887e300d3b516940, type: 3}
+      propertyPath: m_TagString
+      value: Orc
+      objectReference: {fileID: 0}
     - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.12
+      value: -6.04
       objectReference: {fileID: 0}
     - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.57
+      value: -7.11
       objectReference: {fileID: 0}
     - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1123,8 +1127,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -7510338875771021355, guid: 866af1ff79093b04887e300d3b516940, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1140,6 +1143,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3239323334171552039, guid: 866af1ff79093b04887e300d3b516940, type: 3}
       insertIndex: -1
       addedObject: {fileID: 385185628}
+    - targetCorrespondingSourceObject: {fileID: 3239323334171552039, guid: 866af1ff79093b04887e300d3b516940, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 385185631}
   m_SourcePrefab: {fileID: 100100000, guid: 866af1ff79093b04887e300d3b516940, type: 3}
 --- !u!1 &344956396
 GameObject:
@@ -33431,9 +33437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b9003b6eea3f4a4e90076e095b2522e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.75
   spriteRenderer: {fileID: 385185623}
-  distanceBetween: 0
+  distanceBetween: 1
   damage: 10
 --- !u!114 &385185628
 MonoBehaviour:
@@ -33451,10 +33457,29 @@ MonoBehaviour:
   attackDamage: 10
   attackRange: 5
   attackCoolDown: 1
-  speed: 0
+  speed: 2
   minRange: 0
   maxRange: 0
   health: 3
+--- !u!114 &385185631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385185620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f12c081f6ca4448bcdd4a93ca1946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  maxHealth: 3
+  destroyDelay: 0.5
+  pushbackForce: 0.1
+  heartPrefab: {fileID: 0}
+  gem: {fileID: 1972090863}
+  heartDropChange: 0.3
 --- !u!1 &385895833
 GameObject:
   m_ObjectHideFlags: 0
