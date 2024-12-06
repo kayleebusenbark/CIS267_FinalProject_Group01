@@ -39,7 +39,7 @@ public class PlayerAttack01 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("SkeletonEnemy") || collision.CompareTag("WolfEnemy") || collision.CompareTag("Wizard") || collision.CompareTag("BushMonster") || collision.CompareTag("FlowerEnemy"))
+        if(collision.CompareTag("SkeletonEnemy") || collision.CompareTag("WolfEnemy") || collision.CompareTag("Wizard") || collision.CompareTag("BushMonster") || collision.CompareTag("FlowerEnemy") || collision.CompareTag("Cyclops") || collision.CompareTag("Orc"))
         {
             enemyHealth = collision.GetComponent<Level03EnemyHealth>();
 
