@@ -8,6 +8,10 @@ public class Laser2 : MonoBehaviour
     private Transform player;
     private LineRenderer lineRenderer;
 
+    PlayerHealth playerHealth;
+
+    public int damage = 20;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +32,12 @@ public class Laser2 : MonoBehaviour
         if (hit.collider != null)
         {
             lineRenderer.SetPosition(1, hit.point);
-            if(hit.collider.CompareTag("Player"))
+
+            if (hit.collider.CompareTag("Player"))
             {
                 //player takes damage here
+                playerHealth.takeDamage(damage);
+
             }
 
             else
