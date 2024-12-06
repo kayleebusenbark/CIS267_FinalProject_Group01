@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4957224439892878628}
   - component: {fileID: 249428984605045174}
   - component: {fileID: 1191343492209053096}
-  - component: {fileID: -3903448251810387502}
   m_Layer: 0
   m_Name: Spider
   m_TagString: SpiderEnemy
@@ -107,18 +106,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-3903448251810387502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3366401486995131300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ffaf361f6e32d409abd9cc95b66ae8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemySpeed: 0.75
-  spriteRenderer: {fileID: 249428984605045174}
-  distanceBetweenPlayer: 0.5

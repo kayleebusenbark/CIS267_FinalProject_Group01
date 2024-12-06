@@ -7,6 +7,7 @@ public class Laser2 : MonoBehaviour
     private Vector2 targetPosition;
     private PlayerHealth playerHealth;
     public float speed = 1f;
+
     public int damage = 20;
 
     private Vector2 moveDirection;
