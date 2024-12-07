@@ -20,21 +20,39 @@ public class CyclopsAI2 : MonoBehaviour
     private bool facingRight = true;
     private Vector2 lastPlayerPosition;
     private float currentCooldown = 0f;
+    private SpriteRenderer spriteRenderer;
+
+    public AudioSource source;
+    public AudioClip clip;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        //GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+
+        //if (playerObject != null)
+        //{
+        //    player = playerObject.transform;
+        //}
+
+        //animator = GetComponent<Animator>();
+        //enabled = false;
+
+        //spriteRenderer =  GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(currentCooldown > 0)
+        if (currentCooldown > 0)
         {
             currentCooldown -= Time.deltaTime;
         }
+
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         if (!isAttacking)
@@ -47,7 +65,7 @@ public class CyclopsAI2 : MonoBehaviour
             {
                 lastPlayerPosition = player.position;
 
-                if(currentCooldown <= 0)
+                if (currentCooldown <= 0)
                 {
                     StartCoroutine(LaserAttack());
                     currentCooldown = cooldownTime;
@@ -70,7 +88,7 @@ public class CyclopsAI2 : MonoBehaviour
 
         animator.SetBool("isWalking", true);
 
-        if((direction.x > 0 && !facingRight ) || (direction.x <0 && facingRight))
+        if ((direction.x > 0 && !facingRight) || (direction.x < 0 && facingRight))
         {
             flip();
         }
@@ -82,9 +100,12 @@ public class CyclopsAI2 : MonoBehaviour
 
         animator.SetTrigger("laser");
 
+
         yield return new WaitForSeconds(chargeTime);
 
-        if(laserSpawnPoint != null)
+        source.PlayOneShot(clip);
+
+        if (laserSpawnPoint != null)
         {
             GameObject laser = Instantiate(laserPrefab, laserSpawnPoint.position, Quaternion.identity);
             Laser2 laserScript = laser.GetComponent<Laser2>();
@@ -93,6 +114,11 @@ public class CyclopsAI2 : MonoBehaviour
 
         isAttacking = false;
     }
+
+    //public void activateCyclops()
+    //{
+    //    enabled = true;
+    //}
 
     private void flip()
     {
