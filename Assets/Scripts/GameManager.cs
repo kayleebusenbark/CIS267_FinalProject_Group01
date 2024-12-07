@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         ControlerScreen.enabled = false;
     }
 
-    public void restartGame()
+    public void loadStartScreen()
     {
         Time.timeScale = 1.0f;
         NoDestroyLevel levelInstance = FindObjectOfType<NoDestroyLevel>();
@@ -74,6 +74,23 @@ public class GameManager : MonoBehaviour
         }
 
         SceneManager.LoadScene("StartScreen");
+    }
+
+    public void replayGame()
+    {
+        Time.timeScale = 1.0f;
+        NoDestroyLevel levelInstance = FindObjectOfType<NoDestroyLevel>();
+
+        if (levelInstance != null)
+        {
+            Destroy(levelInstance.gameObject);
+        }
+        StartCoroutine(levelLoader.loadLevel(2));
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
     }
 
 }

@@ -14,7 +14,7 @@ public class StartScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void showArtCreditScreen()
@@ -40,5 +40,10 @@ public class StartScreen : MonoBehaviour
     public void startGame()
     {
         gameManager.startGame();
+    }
+
+    public void exitGame()
+    {
+        gameManager.exitGame();
     }
 }

@@ -21,17 +21,18 @@ public class PlayerHealth : MonoBehaviour
     public Color damageColor = Color.red;
     public float flashDuration = 0.2f;
 
+    private GameOverScreen gameOverCanvas;
     // Start is called before the first frame update
     void Start()
     {
         currHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         playerAnimator = GetComponent<Animator>();
+        gameOverCanvas = FindObjectOfType<GameOverScreen>();    
 
         spriteRenderer = GetComponentInParent<SpriteRenderer>();
 
         originalColor = spriteRenderer.color;
-
     }
 
     // Update is called once per frame
@@ -68,7 +69,11 @@ public class PlayerHealth : MonoBehaviour
 
         //playerAnimator.SetTrigger("die");
 
-        GetComponent<PlayerController>().enabled = false;
+        //GetComponent<PlayerController>().enabled = false;
+
+        gameOverCanvas.showGameOverScreen();
+
+        Time.timeScale = 0f;
     }
 
     internal void takeDamage(float attackDamage)
