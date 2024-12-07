@@ -1,0 +1,428 @@
+fileFormatVersion: 2
+guid: 3e70360db3ecf8549bb0be28ca279593
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spider_Death_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ea989e09d7c504da5afbad540d3c3c
+      internalID: -92455463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_Death_29
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f56f74acffe97499f6905ef6424c07
+      internalID: -1821194109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_Death_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98534e5925158c941ba8eddfe6ae3164
+      internalID: 354177324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_Death_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032d0abe1e85bf2419f00e43c976a2bc
+      internalID: 2039155520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_Death_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040d1bc1efc26f1468ee22f246999560
+      internalID: -785037884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_Death_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78481947703baa44fbb717fc08a97a1a
+      internalID: -1307446537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_Death_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5bfa51ecaef10d4cba0e942dc43b750
+      internalID: -1417795519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_Death_35
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b9ee777b5207942b318befd7717599
+      internalID: -1792315113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_Death_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0542e4c3f6adb3646a1412a1fe54fbd9
+      internalID: 1256233790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Spider_Death_0: 1722536042
+      Spider_Death_1: -1896823505
+      Spider_Death_10: -1305635073
+      Spider_Death_11: -1031405361
+      Spider_Death_12: 10221113
+      Spider_Death_13: -955681252
+      Spider_Death_14: 542960381
+      Spider_Death_15: 346218885
+      Spider_Death_16: -1908724979
+      Spider_Death_17: 1826884287
+      Spider_Death_18: 1114449164
+      Spider_Death_19: 1759905497
+      Spider_Death_2: 611699342
+      Spider_Death_20: -117924814
+      Spider_Death_21: 1939511129
+      Spider_Death_22: -2073825900
+      Spider_Death_23: 1712623911
+      Spider_Death_24: 355520386
+      Spider_Death_25: -2020482038
+      Spider_Death_26: -1950581780
+      Spider_Death_27: 987448408
+      Spider_Death_28: -92455463
+      Spider_Death_29: -1821194109
+      Spider_Death_3: -2037371143
+      Spider_Death_30: 354177324
+      Spider_Death_31: 2039155520
+      Spider_Death_32: -785037884
+      Spider_Death_33: -1307446537
+      Spider_Death_34: -1417795519
+      Spider_Death_35: -1792315113
+      Spider_Death_36: 1256233790
+      Spider_Death_37: -1199643636
+      Spider_Death_38: -3462266
+      Spider_Death_39: -467527071
+      Spider_Death_4: -1286452874
+      Spider_Death_40: -168700842
+      Spider_Death_41: 1374193152
+      Spider_Death_42: 1239858316
+      Spider_Death_43: 1338556382
+      Spider_Death_44: -59442307
+      Spider_Death_45: 2039744526
+      Spider_Death_46: 1748749591
+      Spider_Death_47: -596801826
+      Spider_Death_48: 1346502088
+      Spider_Death_49: 700823340
+      Spider_Death_5: 1775791186
+      Spider_Death_50: -1144150803
+      Spider_Death_51: 851307109
+      Spider_Death_52: 1845156892
+      Spider_Death_53: -1629195725
+      Spider_Death_54: -2105058508
+      Spider_Death_55: 1672180031
+      Spider_Death_56: 1460923926
+      Spider_Death_57: 149511338
+      Spider_Death_58: -1504279302
+      Spider_Death_59: 300069178
+      Spider_Death_6: 260702412
+      Spider_Death_60: -1398662037
+      Spider_Death_61: -511700925
+      Spider_Death_62: 367599404
+      Spider_Death_63: -767640061
+      Spider_Death_64: -1056852778
+      Spider_Death_65: 2052480594
+      Spider_Death_66: 1342763368
+      Spider_Death_67: 637714280
+      Spider_Death_68: 701143250
+      Spider_Death_69: 1918283430
+      Spider_Death_7: 1253672279
+      Spider_Death_70: -1060068230
+      Spider_Death_71: 660579118
+      Spider_Death_72: -1504570262
+      Spider_Death_73: -439543234
+      Spider_Death_74: 1046285679
+      Spider_Death_75: 74657329
+      Spider_Death_76: -669795252
+      Spider_Death_77: -1429869162
+      Spider_Death_78: -1447143036
+      Spider_Death_79: 397071825
+      Spider_Death_8: 242997329
+      Spider_Death_80: -509517345
+      Spider_Death_81: -756520895
+      Spider_Death_82: 1705983839
+      Spider_Death_83: -1703777131
+      Spider_Death_84: 478982837
+      Spider_Death_85: 470452199
+      Spider_Death_9: -307250196
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
