@@ -15,8 +15,6 @@ public class Freeze: MonoBehaviour
     private bool isInvincible = false;
     private bool canActivate = false;
 
-    public KeyCode activeKey = KeyCode.F;
-
     private bool isFlickering = false;
     public float flickerThreshold = 20f;
 
@@ -69,7 +67,7 @@ public class Freeze: MonoBehaviour
                 slider.value += rechargeRate * Time.deltaTime;
             }
 
-            if (Input.GetKeyUp(activeKey) && slider.value >= slider.maxValue)
+            if ((Input.GetKeyUp(KeyCode.F) || Input.GetKeyUp(KeyCode.JoystickButton3)) && slider.value >= slider.maxValue)
             {
                 activePowerUp();
             }
