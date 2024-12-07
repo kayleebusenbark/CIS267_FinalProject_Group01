@@ -297,11 +297,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.45
+      value: 6.87
       objectReference: {fileID: 0}
     - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.17
+      value: -6.96
       objectReference: {fileID: 0}
     - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34238,54 +34238,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &958070462
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 958070463}
-  - component: {fileID: 958070464}
-  m_Layer: 0
-  m_Name: BossSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &958070463
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958070462}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.38, y: -6.99, z: 0.05860818}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &958070464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958070462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d295982241b34448a2a6830a693f001, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnedObjects:
-  - {fileID: 4869519769914000697, guid: 4428fb714dab8c0459c97773005cb525, type: 3}
-  spawnLocations:
-  - {fileID: 958070462}
 --- !u!1 &971722701
 GameObject:
   m_ObjectHideFlags: 0
@@ -75811,7 +75763,6 @@ SceneRoots:
   - {fileID: 1743008726}
   - {fileID: 6179519974095311232}
   - {fileID: 1566775882}
-  - {fileID: 958070463}
   - {fileID: 1577647575}
   - {fileID: 323089271}
   - {fileID: 1139837458}

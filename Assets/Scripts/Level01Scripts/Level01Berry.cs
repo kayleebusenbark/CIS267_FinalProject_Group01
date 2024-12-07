@@ -5,14 +5,27 @@ using UnityEngine;
 
 public class Level01Berry : MonoBehaviour
 {
-    public float increaseSpeed = 0.5f; 
+    public float increaseSpeed = 0.5f;
+
+    private AudioSource audioSource;
+    private BoxCollider2D itemColider;
+    private SpriteRenderer spriteRenderer;
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        itemColider = GetComponent<BoxCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
         if(collision.gameObject.CompareTag("Player"))
         {
+            audioSource.Play();
             //then "destroy" off screen
-            Destroy(this.gameObject);
+            itemColider.enabled = false;
+            spriteRenderer.enabled = false;
+           // Destroy(this.gameObject);
         }
     }
 
