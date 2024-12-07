@@ -1,25 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class StartScreen : MonoBehaviour
 {
     private GameManager gameManager;
+    public GameObject defaultButton;
+
+    //public GameObject controlsScreen;
+    //public GameObject creditsScreen;
     // Start is called before the first frame update
     void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(defaultButton);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(Input.GetButtonDown("Cancel"))
+        {
+            closeScreens();
+        }
     }
 
     public void showArtCreditScreen()
     {
         gameManager.showArtCreditScreen();
+
     }
 
     public void hideArtCreditScreen()
@@ -30,6 +41,7 @@ public class StartScreen : MonoBehaviour
     public void showControlerScreen()
     {
         gameManager.showControlerScreen();
+
     }
 
     public void hideControlerScreen()
@@ -46,4 +58,12 @@ public class StartScreen : MonoBehaviour
     {
         gameManager.exitGame();
     }
+
+    public void closeScreens()
+    {
+        gameManager.hideArtCreditScreen();
+        gameManager.hideControlerScreen();  
+        EventSystem.current.SetSelectedGameObject(defaultButton);
+    }
+
 }

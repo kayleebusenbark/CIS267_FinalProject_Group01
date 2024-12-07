@@ -74,8 +74,6 @@ public class Freeze: MonoBehaviour
                 activePowerUp();
             }
         }
-
-
     }
 
     public void showCanvas()
