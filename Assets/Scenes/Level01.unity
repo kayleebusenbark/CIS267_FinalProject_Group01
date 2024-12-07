@@ -34247,6 +34247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 958070463}
+  - component: {fileID: 958070464}
   m_Layer: 0
   m_Name: BossSpawner
   m_TagString: Untagged
@@ -34263,12 +34264,28 @@ Transform:
   m_GameObject: {fileID: 958070462}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.99, y: -10.15, z: 0.05860818}
+  m_LocalPosition: {x: 6.38, y: -6.99, z: 0.05860818}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &958070464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958070462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d295982241b34448a2a6830a693f001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnedObjects:
+  - {fileID: 4869519769914000697, guid: 4428fb714dab8c0459c97773005cb525, type: 3}
+  spawnLocations:
+  - {fileID: 958070462}
 --- !u!1 &971722701
 GameObject:
   m_ObjectHideFlags: 0
@@ -34361,8 +34378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c189e3b66a93ff4ea74d490825bcad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orc: {fileID: -7510338875771021355, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-  bossCollider: {fileID: 0}
+  orc: {fileID: -6724565154169789766, guid: 4428fb714dab8c0459c97773005cb525, type: 3}
+  bossCollider: {fileID: 5186918222109545469, guid: 4428fb714dab8c0459c97773005cb525, type: 3}
 --- !u!61 &1139837457
 BoxCollider2D:
   m_ObjectHideFlags: 0
