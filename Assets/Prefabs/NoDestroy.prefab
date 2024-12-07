@@ -62,6 +62,7 @@ GameObject:
   - component: {fileID: 6986285373898663501}
   - component: {fileID: 6560774074745171491}
   - component: {fileID: 8277024263478487918}
+  - component: {fileID: 3219756327006854135}
   m_Layer: 0
   m_Name: GAMEOVERSCREEN
   m_TagString: Untagged
@@ -156,6 +157,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &3219756327006854135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87117630558219590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c768156856c0c43823996e95e43bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 6986285373898663501}
 --- !u!1 &192133699427680775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,7 +1573,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7875682705939978814}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3219756327006854135}
+        m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
+        m_MethodName: playAgain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4570998541220776033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,7 +2061,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5541411045556698818}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3219756327006854135}
+        m_TargetAssemblyTypeName: gameOverScreen, Assembly-CSharp
+        m_MethodName: exitToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7321885287245323967
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,6 +3209,9 @@ MonoBehaviour:
   maxHealth: 100
   currHealth: 100
   healthBar: {fileID: 2715697810167350630}
+  originalColor: {r: 0, g: 0, b: 0, a: 0}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.2
 --- !u!95 &3404599952220290783
 Animator:
   serializedVersion: 5

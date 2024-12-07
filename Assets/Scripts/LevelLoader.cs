@@ -24,7 +24,7 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
-    IEnumerator loadLevel(int levelIndex)
+    public IEnumerator loadLevel(int levelIndex)
     {
         transitionAnimation.SetTrigger("End");
 

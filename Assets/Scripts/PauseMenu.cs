@@ -63,7 +63,7 @@ public class PauseMenu : MonoBehaviour
     public void quitToMainMenu()
     {
 
-        gameManager.restartGame();
+        gameManager.loadStartScreen();
         pauseMenuCanvas.enabled = false ;
     }
 }
