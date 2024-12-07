@@ -24,6 +24,7 @@ TagManager:
   - BushMonster
   - FlowerEnemy
   - Orc
+  - Ruby
   layers:
   - Default
   - TransparentFX

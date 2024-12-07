@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
@@ -37,6 +38,8 @@ public class PlayerController : MonoBehaviour
 
     private bool canUseAttack3 = false;
 
+    private Inventory inventory;
+
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +49,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         levelLoader = FindObjectOfType<LevelLoader>();
-
+        inventory = FindObjectOfType<Inventory>();  
     }
 
     // Update is called once per frame
@@ -212,6 +215,9 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.CompareTag("Emerald"))
         {
+            Destroy(collision.gameObject);
+            inventory.showEmerald();
+
             DontDestroyOnLoad(noDestroy);
             spawnPosition = new Vector3(-8.7f, -1.49f, 0f);
 
@@ -220,6 +226,10 @@ public class PlayerController : MonoBehaviour
         }
         else if(collision.CompareTag("Sapphire"))
         {
+            Destroy(collision.gameObject);
+
+            inventory.showSapphire();
+
             DontDestroyOnLoad(noDestroy);
             spawnPosition = new Vector3(0f, 1.5f, 0f);
 
@@ -230,12 +240,19 @@ public class PlayerController : MonoBehaviour
         {
             hasSwordAndShield = true;
             Destroy(collision.gameObject);
+            inventory.showSwordandShield();
+
             playerAnimator.SetBool("sword&shieldPickUp", true);
+        }
+        else if(collision.CompareTag("Berries"))
+        {
+            inventory.showFruit();
         }
         else if (collision.CompareTag("Scroll"))
         {
             canUseAttack3 = true;
             Destroy(collision.gameObject);
+            inventory.showScroll();
         }
 
         else if(collision.CompareTag("freeze"))
@@ -244,6 +261,13 @@ public class PlayerController : MonoBehaviour
 
             freeze.showCanvas();
             Destroy(collision.gameObject);
+        }
+
+        else if(collision.CompareTag("Ruby"))
+        {
+            Destroy(collision.gameObject);
+
+            inventory.showRuby();
         }
     }
 

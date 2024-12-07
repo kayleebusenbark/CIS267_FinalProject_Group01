@@ -10,7 +10,7 @@ public class Freeze: MonoBehaviour
     public Canvas canvas;
     public Slider slider;
     public float duration = 5f;
-    public float rechargeRate = 1f;
+    public float rechargeRate = 5f;
 
     private bool isInvincible = false;
     private bool canActivate = false;
