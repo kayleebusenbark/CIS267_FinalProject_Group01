@@ -30,4 +30,17 @@ public class GameOverScreen : MonoBehaviour
         gameManager.exitGame();
     }
 
+    public void showArtCreditScreen()
+    {
+        gameManager.showArtCreditScreen();
+    }
+
+
+    public void showControlerScreen()
+    {
+        gameManager.showControlerScreen();
+    }
+
+
+
 }
