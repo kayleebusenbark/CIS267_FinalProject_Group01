@@ -10641,10 +10641,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 611720566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9efabf6cf702c7744a7dc23bd8e9ef0f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d295982241b34448a2a6830a693f001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpawnLocations:
+  spawnedObjects:
+  - {fileID: 2538203842386735441, guid: 31e44e35d63cdd348bd2b1bff1ef69a6, type: 3}
+  - {fileID: 3366401486995131300, guid: 628a6a6d237de5344990bde990fde377, type: 3}
+  spawnLocations:
   - {fileID: 1731135887}
   - {fileID: 1525426093}
   - {fileID: 323834175}
@@ -10666,9 +10669,6 @@ MonoBehaviour:
   - {fileID: 979463551}
   - {fileID: 992589469}
   - {fileID: 1414593624}
-  enemyType:
-  - {fileID: 2538203842386735441, guid: 31e44e35d63cdd348bd2b1bff1ef69a6, type: 3}
-  - {fileID: 3366401486995131300, guid: 628a6a6d237de5344990bde990fde377, type: 3}
 --- !u!1001 &711537168
 PrefabInstance:
   m_ObjectHideFlags: 0
