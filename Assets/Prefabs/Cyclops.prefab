@@ -203,6 +203,7 @@ MonoBehaviour:
   maxHealth: 3
   destroyDelay: 0.5
   pushbackForce: 0.1
+  spriteRenderer: {fileID: 261725392110452277}
   heartPrefab: {fileID: 0}
   gem: {fileID: 3528444609249380257, guid: 7a0ec97d932ac0e4ba28cf98f64fbb48, type: 3}
   heartDropChange: 0.3

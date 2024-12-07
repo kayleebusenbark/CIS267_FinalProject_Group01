@@ -169,8 +169,9 @@ MonoBehaviour:
   maxHealth: 10
   destroyDelay: 0.5
   pushbackForce: 0.2
+  spriteRenderer: {fileID: 6938314996633784500}
   heartPrefab: {fileID: 1784160590423258716, guid: 441c5475a4dd36d448e80286503b79b8, type: 3}
-  rubyPrefab: {fileID: 0}
+  gem: {fileID: 0}
   heartDropChange: 0.5
 --- !u!61 &1966442128943858317
 BoxCollider2D:

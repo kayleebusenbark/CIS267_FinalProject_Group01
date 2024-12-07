@@ -15,6 +15,7 @@ public class Level03EnemyHealth : MonoBehaviour
 
     private Rigidbody2D rb;
     private PlayerController player;
+    public SpriteRenderer spriteRenderer;
 
     public GameObject heartPrefab;
     public GameObject gem;
@@ -27,6 +28,7 @@ public class Level03EnemyHealth : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         player = FindObjectOfType<PlayerController>();
+        //spriteRenderer = GetComponent<SpriteRenderer>();
 
         currentHealth = maxHealth;
 
@@ -38,6 +40,7 @@ public class Level03EnemyHealth : MonoBehaviour
         currentHealth -= damage;
 
         animator.SetTrigger("hit");
+        StartCoroutine(flashRed());
 
 
         //this is so the wizard doesn't get pushed back since he's not really following the player as much as the other enemies
@@ -81,5 +84,12 @@ public class Level03EnemyHealth : MonoBehaviour
 
         Destroy(gameObject, destroyDelay);
 
+    }
+
+    private IEnumerator flashRed()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        spriteRenderer.color = Color.white;
     }
 }
