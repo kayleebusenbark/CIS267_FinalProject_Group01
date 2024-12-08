@@ -6,57 +6,78 @@ using UnityEngine.UI;
 
 public class Level01Berry : MonoBehaviour
 {
-    public float increaseSpeed = 0.5f;
-    public float speed = 1f;
-    
-    private BoxCollider2D itemColider;
-    private SpriteRenderer spriteRenderer;
-   
+
+    public Canvas canvas;
+    public Slider slider;
+    public float duration = 2f;
+    public float rechargeRate = 5f;
+
+    private bool isInvincible = false;
+    private bool canActivate = false;
+
+    public AudioSource audioSource;
+    private PlayerHealth playerHealth;
+
+
     private void Start()
     {
-        
-        itemColider = GetComponent<BoxCollider2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        canvas = GetComponent<Canvas>();
+        canvas.enabled = false;
+
+        slider = canvas.GetComponentInChildren<Slider>();
+        slider.maxValue = 100f;
+        slider.value = 100f;
+    
+        playerHealth = FindObjectOfType<PlayerHealth>();
+        audioSource.mute = true;
+
     }
 
     private void Update()
     {
-       
-    }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-        if(collision.gameObject.CompareTag("Player"))
+        if (isInvincible)
         {
-            
-            //then "destroy" off screen
-            itemColider.enabled = false;
-            spriteRenderer.enabled = false;            
-           // Destroy(this.gameObject);
+            slider.value -= (100f / duration) * Time.deltaTime;
+
+            if (slider.value <= 0)
+            {
+                endPowerUp();
+            }
+
+        }
+
+        else if (canActivate)
+        {
+            if (slider.value < slider.maxValue)
+            {
+                slider.value += rechargeRate * Time.deltaTime;
+            }
+
+            if ((Input.GetKeyUp(KeyCode.F) || Input.GetKeyUp(KeyCode.JoystickButton4)) && slider.value >= slider.maxValue)
+            {
+                activePowerUp();
+            }
         }
     }
 
+    public void showCanvas()
+    {
+        canvas.enabled = true;
+        canActivate = true;
+    }
 
-    //   !this needs to go in the player script !
+    private void activePowerUp()
+    {
+        isInvincible = true;
+        audioSource.mute = false;
+        audioSource.Play();
 
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if(collision.gameObject.CompareTag("Berries"))
-    //    {
-    //        Rigidbody rb = GetComponent<Rigidbody>();
+        playerHealth.setInvincible(true);
+    }
 
-    //        if(rb != null)
-    //        {
-    //            rb.velocity += rb.velocity.normalized * increaseSpeed; 
-    //        }
-    //    }
-    //}
-
-
-
-
-
-
-
-
+    private void endPowerUp()
+    {
+        isInvincible = false;
+        playerHealth.setInvincible(false);
+    }
 }

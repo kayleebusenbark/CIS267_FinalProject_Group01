@@ -13,7 +13,7 @@ public class PlayerHealth : MonoBehaviour
     private Animator playerAnimator;
     private bool isDead = false;
 
-    private float damageCoolDown = 0.6f;
+    private float damageCoolDown = 0.4f;
     private float lastDamageTime;
 
     private SpriteRenderer spriteRenderer;
@@ -22,6 +22,8 @@ public class PlayerHealth : MonoBehaviour
     public float flashDuration = 0.2f;
 
     private GameOverScreen gameOverCanvas;
+
+    private bool isInvincible = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        if(isDead || Time.time - lastDamageTime < damageCoolDown)
+        if(isDead || isInvincible || Time.time - lastDamageTime < damageCoolDown)
         {
             return;
         }
@@ -76,15 +78,25 @@ public class PlayerHealth : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    internal void takeDamage(float attackDamage)
-    {
-        throw new NotImplementedException();
-    }
-
     private IEnumerator flashRed()
     {
         spriteRenderer.color = damageColor;
         yield return new WaitForSeconds(flashDuration);
         spriteRenderer.color = originalColor;
+    }
+
+    public void setInvincible(bool state)
+    {
+        isInvincible = state;
+
+        if(state)
+        {
+            spriteRenderer.color = Color.yellow;
+        }
+
+        else
+        {
+            spriteRenderer.color = originalColor;
+        }
     }
 }

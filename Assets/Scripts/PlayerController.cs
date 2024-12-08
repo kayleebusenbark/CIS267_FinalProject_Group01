@@ -253,8 +253,11 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.CompareTag("Berries"))
         {
-            inventory.addToFruitCount(1);
+            Level01Berry berry = FindObjectOfType<Level01Berry>();
+            berry.showCanvas();
             Destroy(collision.gameObject);
+
+
         }
         else if (collision.CompareTag("Scroll"))
         {
