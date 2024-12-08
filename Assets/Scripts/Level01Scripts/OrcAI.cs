@@ -6,50 +6,49 @@ using UnityEngine;
 
 public class OrcAi : MonoBehaviour
 {
-    public Transform player;
-    public int attackDamage = 10; 
+    private Transform player;
+    public int attackDamage = 10;
     public float attackRange = 5f;
     public float attackCoolDown = 1f;
     private float lastAttackTime;
     public float speed;
     private Animator myAnimator;
-    private Transform target;
+    //private Transform target;
     private bool isAttacking = false;
-    private bool isDead = false; 
+    private bool isDead = false;
+    private bool isActive = false;
     [SerializeField]
     private float minRange;
     [SerializeField]
     private float maxRange;
-    public int health = 3; 
-    
+    public int health = 10;
+
 
 
     // Start is called before the first frame update
     void Start()
     {
-        if(player == null)
-        {
-            player = GameObject.FindGameObjectWithTag("Player")?.transform; 
-        }
-        
-        myAnimator = GetComponent<Animator>();
+        enabled = false;
 
-       
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
+
+        myAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isDead)
+        if (!isActive || isDead || player == null)
         {
             //don't do anyhting if the orc is dead 
             return; 
         }
 
-        if(player == null)
-        {
-            return;
-        }
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
@@ -89,14 +88,14 @@ public class OrcAi : MonoBehaviour
     private void StopMoving()
     {
        myAnimator.SetBool("isMoving", false);
-        myAnimator.SetBool("playerDetected", false);
+       myAnimator.SetBool("playerDetected", false);
     }
 
     private void MoveToPlayer()
     {
         myAnimator.SetBool("isMoving", true);
         myAnimator.SetBool("playerDetected", true);
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
 
     public void attackPlayer()
@@ -108,6 +107,11 @@ public class OrcAi : MonoBehaviour
        //s Invoke(nameof(TakeDamage), 0, 5f);
         
 
+    }
+    public void activateOrc()
+    {
+        enabled = true;
+        isActive = true;
     }
 
 

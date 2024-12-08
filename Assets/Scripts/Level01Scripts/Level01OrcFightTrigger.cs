@@ -11,7 +11,7 @@ public class Level01OrcFightTrigger : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-
+            orc.activateOrc();
             StartCoroutine(delayLock()); 
 
         }
