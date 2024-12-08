@@ -8,13 +8,13 @@ public class Level01Berry : MonoBehaviour
 {
     public float increaseSpeed = 0.5f;
     public float speed = 1f;
-    private AudioSource audioSource;
+    
     private BoxCollider2D itemColider;
     private SpriteRenderer spriteRenderer;
    
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        
         itemColider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -28,7 +28,7 @@ public class Level01Berry : MonoBehaviour
         
         if(collision.gameObject.CompareTag("Player"))
         {
-            audioSource.Play();
+            
             //then "destroy" off screen
             itemColider.enabled = false;
             spriteRenderer.enabled = false;            

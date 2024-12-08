@@ -22,7 +22,8 @@ public class Inventory : MonoBehaviour
     public TextMeshProUGUI fruitCountText;
     public PlayerController player;
     public Level01Berry berry; 
-    public float speedIncrease = 0.5f; 
+    public float speedIncrease = 0.5f;
+    private AudioSource audioSource;
 
 
     void Start()
@@ -34,6 +35,8 @@ public class Inventory : MonoBehaviour
         emerald.enabled = false;
         sapphire.enabled = false;
         ruby.enabled = false;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,7 +44,7 @@ public class Inventory : MonoBehaviour
     {
         fruitCountText.text = fruitCount.ToString();
 
-        if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)
+        if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
             UseFruit();
         }
@@ -92,7 +95,9 @@ public class Inventory : MonoBehaviour
         if(fruitCount > 0)
         {
             fruitCount--;
-            player.(speedIncrease);
+            player.movementSpeed(speedIncrease);
+            audioSource.Play();
+
             UpdateFruitCountUI();
         }
     }
