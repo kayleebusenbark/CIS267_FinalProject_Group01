@@ -40,6 +40,10 @@ public class PlayerController : MonoBehaviour
 
     private Inventory inventory;
 
+    public AudioSource source;
+
+    public AudioClip clip;
+
 
     // Start is called before the first frame update
     void Start()
@@ -50,6 +54,7 @@ public class PlayerController : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         levelLoader = FindObjectOfType<LevelLoader>();
         inventory = FindObjectOfType<Inventory>();  
+        source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -213,19 +218,20 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Emerald"))
+        if (collision.CompareTag("Emerald"))
         {
+            // source.PlayOneShot(clip);
             Destroy(collision.gameObject);
             inventory.showEmerald();
-
             DontDestroyOnLoad(noDestroy);
             spawnPosition = new Vector3(-8.7f, -1.49f, 0f);
 
             levelLoader.loadNextLevel();
             StartCoroutine(updatePlayerPositionAfterDelay());
         }
-        else if(collision.CompareTag("Sapphire"))
+        else if (collision.CompareTag("Sapphire"))
         {
+            // source.PlayOneShot(clip);
             Destroy(collision.gameObject);
 
             inventory.showSapphire();
@@ -236,7 +242,7 @@ public class PlayerController : MonoBehaviour
             levelLoader.loadNextLevel();
             StartCoroutine(updatePlayerPositionAfterDelay());
         }
-        else if(collision.CompareTag("Sword&Shield"))
+        else if (collision.CompareTag("Sword&Shield"))
         {
             hasSwordAndShield = true;
             Destroy(collision.gameObject);
@@ -244,7 +250,7 @@ public class PlayerController : MonoBehaviour
 
             playerAnimator.SetBool("sword&shieldPickUp", true);
         }
-        else if(collision.CompareTag("Berries"))
+        else if (collision.CompareTag("Berries"))
         {
             inventory.showFruit();
         }
@@ -255,7 +261,7 @@ public class PlayerController : MonoBehaviour
             inventory.showScroll();
         }
 
-        else if(collision.CompareTag("freeze"))
+        else if (collision.CompareTag("freeze"))
         {
             Freeze freeze = FindObjectOfType<Freeze>();
 
@@ -263,8 +269,9 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        else if(collision.CompareTag("Ruby"))
+        else if (collision.CompareTag("Ruby"))
         {
+            // source.PlayOneShot(clip);
             Destroy(collision.gameObject);
             inventory.showRuby();
 
@@ -286,10 +293,12 @@ public class PlayerController : MonoBehaviour
         if(spriteRenderer.flipX == true)
         {
             attack01.attackLeft();
+            source.PlayOneShot(clip);
         }
         else
         {
             attack01.attackRight();
+            source.PlayOneShot(clip);
         }
     }
 
