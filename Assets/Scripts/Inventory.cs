@@ -15,6 +15,10 @@ public class Inventory : MonoBehaviour
     public Image sapphire;
     public Image ruby;
 
+    //for the berry 
+    public int fruitCount;
+    public Text fruitCountText;
+
     void Start()
     {
         sword.enabled = false;
@@ -29,7 +33,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        fruitCountText.text = fruitCount.ToString();
     }
 
     public void showSwordandShield()
@@ -61,6 +65,14 @@ public class Inventory : MonoBehaviour
     public void showRuby()
     {
         ruby.enabled=true;
+    }
+
+    public void hideFruit()
+    {
+        if(fruitCount == 0)
+        {
+            fruit.enabled=false;
+        }
     }
 
 

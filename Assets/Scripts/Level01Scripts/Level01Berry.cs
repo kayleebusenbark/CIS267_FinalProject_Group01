@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Level01Berry : MonoBehaviour
 {
@@ -10,11 +11,18 @@ public class Level01Berry : MonoBehaviour
     private AudioSource audioSource;
     private BoxCollider2D itemColider;
     private SpriteRenderer spriteRenderer;
+
+   
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         itemColider = GetComponent<BoxCollider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    private void Update()
+    {
+       
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
