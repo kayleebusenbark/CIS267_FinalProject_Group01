@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,7 +18,7 @@ public class Inventory : MonoBehaviour
 
     //for the berry 
     public int fruitCount;
-    public Text fruitCountText;
+    public TextMeshProUGUI fruitCountText;
 
     void Start()
     {
