@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     public AudioSource source;
 
     public AudioClip clip;
+    public AudioClip clip2;
 
 
     // Start is called before the first frame update
@@ -258,6 +259,7 @@ public class PlayerController : MonoBehaviour
         {
             canUseAttack3 = true;
             Destroy(collision.gameObject);
+            source.PlayOneShot(clip2);
             inventory.showScroll();
         }
 

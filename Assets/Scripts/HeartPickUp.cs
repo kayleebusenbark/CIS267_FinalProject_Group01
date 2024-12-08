@@ -6,6 +6,10 @@ public class HeartPickUp : MonoBehaviour
 {
     public int healthRestoreAmount = 20;
 
+    public AudioSource source;
+
+    public AudioClip clip;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
@@ -20,6 +24,8 @@ public class HeartPickUp : MonoBehaviour
             }
 
             playerHealth.healthBar.SetHealth(playerHealth.currHealth);
+
+            source.PlayOneShot(clip);
 
             Destroy(gameObject);
 

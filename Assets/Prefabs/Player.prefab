@@ -250,7 +250,9 @@ MonoBehaviour:
   doubleClickTimeLimit: 0.5
   attack3Threshold: 1
   source: {fileID: 7066437632224153063}
+  source2: {fileID: 0}
   clip: {fileID: 8300000, guid: 1e25fadc69f0d63469dc7f81d822c91b, type: 3}
+  clip2: {fileID: 8300000, guid: c8517b78f0c566544b083b72db869b25, type: 3}
 --- !u!61 &4941228147027215674
 BoxCollider2D:
   m_ObjectHideFlags: 0
