@@ -770,7 +770,13 @@ MonoBehaviour:
 
     Left JoyStick:
 
-    -movement'
+    -movement
+
+
+    LB
+    Or I on keyboard:
+
+    -Invincibility'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -797,8 +803,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1880,6 +1886,7 @@ GameObject:
   - component: {fileID: 711387560}
   - component: {fileID: 711387559}
   - component: {fileID: 711387558}
+  - component: {fileID: 711387561}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1946,6 +1953,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ArtCreditsScreen: {fileID: 426966954}
   ControlerScreen: {fileID: 2087494559}
+--- !u!114 &711387561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711387556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e16e85878f788439638fec7b4d7486, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &877803018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2654,7 +2673,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056653968}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -2845,6 +2864,81 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1115084779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1115084780}
+  - component: {fileID: 1115084782}
+  - component: {fileID: 1115084781}
+  m_Layer: 5
+  m_Name: Image (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1115084780
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115084779}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2087494556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 256, y: -375}
+  m_SizeDelta: {x: 14, y: 19}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1115084781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115084779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1879807756, guid: 79c73209cfd621248bddd29b9b28e6b2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1115084782
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115084779}
+  m_CullTransparentMesh: 1
 --- !u!1 &1235589208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3054,6 +3148,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240991664}
   m_CullTransparentMesh: 1
+--- !u!1 &1279884198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1279884199}
+  - component: {fileID: 1279884201}
+  - component: {fileID: 1279884200}
+  m_Layer: 5
+  m_Name: Image (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1279884199
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279884198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2087494556}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -340, y: -350}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1279884200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279884198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -670114779, guid: 102cc42cbf751144b8dc2807f4803089, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1279884201
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279884198}
+  m_CullTransparentMesh: 1
 --- !u!1 &1320313664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3187,18 +3356,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "UI:\r\n-Start Screen background and title text: \r\n-Art credit & Control
-    Background: sr.toasty\r\n-Health bar: Brackeys\r\n-Buttons and banners: crusenho\r\n\r\nMusic:\r\n-Level
-    01, Level 02 & Level o3: Joseph Standford\r\n\r\nSound Effects:\r\n-Sword slash:\r\n-Eating:\r\n-Scroll:\r\n-Laser:\r\n-Angry
-    cyclops: Joseph Stanford\r\n-gem pickUp:\r\n-Freeze: pixabay\r\n\r\nLevel 01:\r\n-Player:
-    Zerie\r\n-Hearts: Joseph Stanford\r\n-Inventory Bar: ozanoyunbozan\r\n-Forest
-    TileSet: Elthen's Pixel art shop\r\n-Flower Enemy: chiecola\r\n-Sword: catdev-pixelarts\r\n-Shield:
-    Gamer247\r\n-Apple: zrghr\r\n-Orc: Free game assets (GUI, Sprite, tileSets)\r\n-Emerald
-    Gem: Joseph Stanford\r\n\r\nLevel 02:\r\n-Cave tileset: MrBeast. Commissioned
-    by OpenGameArt.org\r\n-Bats: QuimeraGames\r\n-Spiders: Elthen's pixel art shop\r\n-Cyclops:
-    Elthen pixel art shop\r\n-Scroll: andegro4ka on Getty images\r\n-Sapphire Gem:
-    Joseph stanford\r\n\r\nLevel 03:\r\n-Skeleton: Jesse munguia\r\n-Skeleton wolf:
-    Atari Boy\r\n-Potion: Onocentaur\r\n-Wizard: pedrodis\r\n-Castle tileset: 0X72"
+  m_text: "UI:\r\n-Start Screen background and title text: \rFreepik\n-Art credit
+    & Control Background: sr.toasty\r\n-Health bar: Brackeys\r\n-Buttons and banners:
+    crusenho\r\n\r\nMusic:\r\n-Level 01, Level 02 & Level o3: Joseph Standford\r\n\r\nSound
+    Effects:\r\n-Sword slash: Pixabay\r\n \r\n-Eating: Pixabay\r\n-Scroll:  Pixabay\r\n-Laser: 
+    Pixabay\r\n-Angry cyclops: Joseph Stanford\r\n-gem pickUp:  Pixabay\r\n-Freeze:
+    pixabay\r\n\r\nLevel 01:\r\n-Player: Zerie\r\n-Hearts: Joseph Stanford\r\n-Inventory
+    Bar: ozanoyunbozan\r\n-Forest TileSet: Elthen's Pixel art shop\r\n-Flower Enemy:
+    chiecola\r\n-Sword: catdev-pixelarts\r\n-Shield: Gamer247\r\n-Apple: zrghr\r\n-Orc:
+    Free game assets (GUI, Sprite, tileSets)\r\n-Emerald Gem: Joseph Stanford\r\n\r\nLevel
+    02:\r\n-Cave tileset: MrBeast. Commissioned by OpenGameArt.org\r\n-Bats: QuimeraGames\r\n-Spiders:
+    Elthen's pixel art shop\r\n-Cyclops: Elthen pixel art shop\r\n-Scroll: andegro4ka
+    on Getty images\r\n-Sapphire Gem: Joseph stanford\r\n\r\nLevel 03:\r\n-Skeleton:
+    Jesse munguia\r\n-Skeleton wolf: Atari Boy\r\n-Potion: Onocentaur\r\n-Wizard:
+    pedrodis\r\n-Castle tileset: 0X72\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -3225,8 +3396,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17
-  m_fontSizeBase: 17
+  m_fontSize: 16.5
+  m_fontSizeBase: 16.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4148,7 +4319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 288, y: -337}
+  m_AnchoredPosition: {x: 320, y: -275}
   m_SizeDelta: {x: 14, y: 19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1588272895
@@ -4930,8 +5101,10 @@ RectTransform:
   - {fileID: 1532477013}
   - {fileID: 1554328200}
   - {fileID: 1719320368}
+  - {fileID: 1279884199}
   - {fileID: 1646828552}
   - {fileID: 1588272894}
+  - {fileID: 1115084780}
   - {fileID: 1838363227}
   - {fileID: 370186176}
   m_Father: {fileID: 711387557}

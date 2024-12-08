@@ -89,4 +89,8 @@ public class PauseMenu : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(defaultButton);
     }
+    public void toggleMusic()
+    {
+        gameManager.toggleMusic();
+    }
 }

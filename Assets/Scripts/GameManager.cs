@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     private LevelLoader levelLoader;
     public Canvas ArtCreditsScreen;
     public Canvas ControlerScreen;
+    private MusicManager musicManager;
 
     private void Awake()
     {
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         levelLoader = FindObjectOfType<LevelLoader>();
+        musicManager = GetComponent<MusicManager>();
 
     }
 
@@ -91,6 +93,16 @@ public class GameManager : MonoBehaviour
     public void exitGame()
     {
         Application.Quit();
+    }
+
+    public void toggleMusic()
+    {
+        musicManager.toggleMusic();
+    }
+
+    public void handleSceneMusic(AudioSource sceneMusic)
+    {
+        musicManager.setCurrentMusic(sceneMusic);
     }
 
 }

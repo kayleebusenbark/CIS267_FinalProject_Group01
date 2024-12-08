@@ -53,7 +53,7 @@ public class Level01Berry : MonoBehaviour
                 slider.value += rechargeRate * Time.deltaTime;
             }
 
-            if ((Input.GetKeyUp(KeyCode.F) || Input.GetKeyUp(KeyCode.JoystickButton4)) && slider.value >= slider.maxValue)
+            if ((Input.GetKeyUp(KeyCode.I) || Input.GetKeyUp(KeyCode.JoystickButton4)) && slider.value >= slider.maxValue)
             {
                 activePowerUp();
             }
