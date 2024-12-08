@@ -220,4 +220,15 @@ public class WizardAI : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
         }
     }
+
+    public void destroyAllProjectiles()
+    {
+        foreach(GameObject projectile in activeProjectiles)
+        {
+            Destroy(projectile);
+        }
+
+        activeProjectiles.Clear ();
+        orbitCoroutines.Clear ();
+    }
 }

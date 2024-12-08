@@ -23,6 +23,8 @@ public class Level03EnemyHealth : MonoBehaviour
     // (0 = never and 1 = always) 
     [Range(0f,1f)] public float heartDropChange = 0.3f;
 
+    private WizardAI wizardAI;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -31,6 +33,7 @@ public class Level03EnemyHealth : MonoBehaviour
         //spriteRenderer = GetComponent<SpriteRenderer>();
 
         currentHealth = maxHealth;
+        wizardAI = GetComponent<WizardAI>();
 
     }
 
@@ -70,6 +73,11 @@ public class Level03EnemyHealth : MonoBehaviour
 
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+
+        if(wizardAI != null)
+        {
+            wizardAI.destroyAllProjectiles();
+        }
 
         if(gem != null)
         {

@@ -3356,7 +3356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "UI:\r\n-Start Screen background and title text: \rFreepik\n-Art credit
+  m_text: "UI:\r\n-Start Screen background and title text: Freepik\r\n-Art credit
     & Control Background: sr.toasty\r\n-Health bar: Brackeys\r\n-Buttons and banners:
     crusenho\r\n\r\nMusic:\r\n-Level 01, Level 02 & Level o3: Joseph Standford\r\n\r\nSound
     Effects:\r\n-Sword slash: Pixabay\r\n \r\n-Eating: Pixabay\r\n-Scroll:  Pixabay\r\n-Laser: 
@@ -3369,7 +3369,7 @@ MonoBehaviour:
     Elthen's pixel art shop\r\n-Cyclops: Elthen pixel art shop\r\n-Scroll: andegro4ka
     on Getty images\r\n-Sapphire Gem: Joseph stanford\r\n\r\nLevel 03:\r\n-Skeleton:
     Jesse munguia\r\n-Skeleton wolf: Atari Boy\r\n-Potion: Onocentaur\r\n-Wizard:
-    pedrodis\r\n-Castle tileset: 0X72\r\n"
+    pedrodis\r\n-Castle tileset: 0X72\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
