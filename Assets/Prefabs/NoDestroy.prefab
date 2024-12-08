@@ -4742,7 +4742,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 163
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -5336,6 +5336,10 @@ PrefabInstance:
       value: 0.21033669
       objectReference: {fileID: 0}
     - target: {fileID: 941140674688434227, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: a17186a61c2a94447b3fbf123bd3c51e, type: 2}
+    - target: {fileID: 941140674688434227, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
       propertyPath: m_Offset.x
       value: 0.0220325
       objectReference: {fileID: 0}
@@ -5343,6 +5347,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.105784416
       objectReference: {fileID: 0}
+    - target: {fileID: 3005693186569893078, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: a17186a61c2a94447b3fbf123bd3c51e, type: 2}
     - target: {fileID: 3095658009504966650, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
       propertyPath: healthBar
       value: 
@@ -5359,6 +5367,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.10366344
       objectReference: {fileID: 0}
+    - target: {fileID: 4941228147027215674, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: a17186a61c2a94447b3fbf123bd3c51e, type: 2}
     - target: {fileID: 4941228147027215674, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
       propertyPath: m_Offset.y
       value: 0.05183172
@@ -5403,6 +5415,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6827646977331108945, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: a17186a61c2a94447b3fbf123bd3c51e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

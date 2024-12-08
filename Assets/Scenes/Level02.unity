@@ -10499,6 +10499,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 3222951181459897997, guid: d368e2f08d5714c46be06fb56989d15c, type: 3}
+      propertyPath: destroyDelay
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8268250216368161487, guid: d368e2f08d5714c46be06fb56989d15c, type: 3}
       propertyPath: clip
       value: 
@@ -10519,6 +10523,10 @@ PrefabInstance:
       propertyPath: laserPrefab
       value: 
       objectReference: {fileID: 2322213211157445933, guid: a2a01f2d8de0f584c943efeb6d519ee2, type: 3}
+    - target: {fileID: 8268250216368161487, guid: d368e2f08d5714c46be06fb56989d15c, type: 3}
+      propertyPath: cooldownTime
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8268250216368161487, guid: d368e2f08d5714c46be06fb56989d15c, type: 3}
       propertyPath: laserSpawnPoint
       value: 

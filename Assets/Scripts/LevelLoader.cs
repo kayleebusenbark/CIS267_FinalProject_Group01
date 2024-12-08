@@ -43,7 +43,7 @@ public class LevelLoader : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Level01")
+        if (scene.name == "Level01" || scene.name == "Level02" || scene.name == "Level03")
         {
             level03EnemySpawner = FindObjectOfType<Level03EnemySpawner>();
             pickUpSpawner = FindObjectOfType<PickUpSpawner>();
@@ -59,35 +59,6 @@ public class LevelLoader : MonoBehaviour
             }
 
         }
-        if (scene.name == "Level02")
-        {
-            level03EnemySpawner = FindObjectOfType<Level03EnemySpawner>();
-
-            if (level03EnemySpawner != null)
-            {
-                level03EnemySpawner.spawnEnemies();
-            }
-            else
-            {
-                Debug.LogWarning("LEVEL 03 ENEMY SPAWNER NOT FOUND");
-            }
-
-        }
-        if (scene.name == "Level03")
-        {
-            level03EnemySpawner = FindObjectOfType<Level03EnemySpawner>();
-
-            if (level03EnemySpawner != null)
-            {
-                level03EnemySpawner.spawnEnemies();
-            }
-            else
-            {
-                Debug.LogWarning("LEVEL 03 ENEMY SPAWNER NOT FOUND");
-            }
-
-        }
-
 
     }
 }

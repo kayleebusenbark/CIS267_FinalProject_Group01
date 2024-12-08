@@ -197,7 +197,7 @@ MonoBehaviour:
   speed: 0.5
   spriteRenderer: {fileID: 7098868040276974504}
   distanceBetween: 1
-  damage: 10
+  damage: 5
 --- !u!114 &6545563094444333584
 MonoBehaviour:
   m_ObjectHideFlags: 0
