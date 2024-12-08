@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
@@ -19,6 +20,10 @@ public class Inventory : MonoBehaviour
     //for the berry 
     public int fruitCount;
     public TextMeshProUGUI fruitCountText;
+    public PlayerController player;
+    public Level01Berry berry; 
+    public float speedIncrease = 0.5f; 
+
 
     void Start()
     {
@@ -29,14 +34,18 @@ public class Inventory : MonoBehaviour
         emerald.enabled = false;
         sapphire.enabled = false;
         ruby.enabled = false;
-        fruitCount = 0;
-        fruitCountText.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        hideFruit();    
+        fruitCountText.text = fruitCount.ToString();
+
+        if (Input.GetKeyUp(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)
+        {
+            UseFruit();
+        }
+
     }
 
     public void showSwordandShield()
@@ -48,7 +57,6 @@ public class Inventory : MonoBehaviour
     public void showFruit()
     {
         fruit.enabled=true;
-        fruitCountText.enabled=true;
     }
 
     public void showScroll()
@@ -76,33 +84,22 @@ public class Inventory : MonoBehaviour
         if(fruitCount == 0)
         {
             fruit.enabled=false;
-            fruitCountText.enabled = false;
         }
     }
 
-    public void addToFruitCount(int increaseBy)
-    {
-        fruitCount += increaseBy;
-
-        if(fruitCount == 1)
-        {
-            showFruit();
-        }
-        updateFruitText();
-    }
-
-    private void updateFruitText()
+    public void UseFruit()
     {
         if(fruitCount > 0)
         {
-            fruitCountText.text = "X" + fruitCount;
-        }
-        else
-        {
-            hideFruit();
+            fruitCount--;
+            player.(speedIncrease);
+            UpdateFruitCountUI();
         }
     }
 
+    private void UpdateFruitCountUI()
+    {
+        fruitCountText.text = fruitCount.ToString(); 
+    }
 
-    
 }

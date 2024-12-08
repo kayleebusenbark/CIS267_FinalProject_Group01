@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Level01Berry : MonoBehaviour
 {
     public float increaseSpeed = 0.5f;
-
+    public float speed = 1f;
     private AudioSource audioSource;
     private BoxCollider2D itemColider;
     private SpriteRenderer spriteRenderer;
@@ -35,6 +35,7 @@ public class Level01Berry : MonoBehaviour
            // Destroy(this.gameObject);
         }
     }
+
 
     //   !this needs to go in the player script !
 
