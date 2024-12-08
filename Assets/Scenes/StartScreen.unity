@@ -1133,7 +1133,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426966950}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -2643,7 +2643,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056653968}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -3153,7 +3153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -61.30638}
+  m_AnchoredPosition: {x: 14, y: -1}
   m_SizeDelta: {x: 818.9034, y: 694.2037}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334829811
@@ -3176,7 +3176,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "UI:\r\n-Start Screen background and title text: \r\n-Art credit & Control
+    Background: sr.toasty\r\n-Health bar: Brackeys\r\n-Buttons and banners: crusenho\r\n\r\nMusic:\r\n-Level
+    01, Level 02 & Level o3: Joseph Standford\r\n\r\nSound Effects:\r\n-Sword slash:\r\n-Eating:\r\n-Scroll:\r\n-Laser:\r\n-Angry
+    cyclops: Joseph Stanford\r\n-gem pickUp:\r\n-Freeze: pixabay\r\n\r\nLevel 01:\r\n-Player:
+    Zerie\r\n-Hearts: Joseph Stanford\r\n-Inventory Bar: ozanoyunbozan\r\n-Forest
+    TileSet: Elthen's Pixel art shop\r\n-Flower Enemy: chiecola\r\n-Sword: catdev-pixelarts\r\n-Shield:
+    Gamer247\r\n-Apple: zrghr\r\n-Orc: Free game assets (GUI, Sprite, tileSets)\r\n-Emerald
+    Gem: Joseph Stanford\r\n\r\nLevel 02:\r\n-Cave tileset: MrBeast. Commissioned
+    by OpenGameArt.org\r\n-Bats: QuimeraGames\r\n-Spiders: Elthen's pixel art shop\r\n-Cyclops:
+    Elthen pixel art shop\r\n-Scroll: andegro4ka on Getty images\r\n-Sapphire Gem:
+    Joseph stanford\r\n\r\nLevel 03:\r\n-Skeleton: Jesse munguia\r\n-Skeleton wolf:
+    Atari Boy\r\n-Potion: Onocentaur\r\n-Wizard: pedrodis\r\n-Castle tileset: 0X72"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -3185,7 +3196,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3203,13 +3214,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -4260,7 +4271,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 299}
+  m_AnchoredPosition: {x: 0, y: 330}
   m_SizeDelta: {x: 748.8381, y: 141.4731}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1702547850
@@ -4283,7 +4294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Art Credits
+  m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -4310,8 +4321,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 90
-  m_fontSizeBase: 90
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
