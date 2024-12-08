@@ -11,7 +11,6 @@ public class Level01Berry : MonoBehaviour
     private AudioSource audioSource;
     private BoxCollider2D itemColider;
     private SpriteRenderer spriteRenderer;
-
    
     private void Start()
     {
@@ -32,7 +31,7 @@ public class Level01Berry : MonoBehaviour
             audioSource.Play();
             //then "destroy" off screen
             itemColider.enabled = false;
-            spriteRenderer.enabled = false;
+            spriteRenderer.enabled = false;            
            // Destroy(this.gameObject);
         }
     }

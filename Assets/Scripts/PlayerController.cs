@@ -253,7 +253,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.CompareTag("Berries"))
         {
-            inventory.showFruit();
+            inventory.addToFruitCount(1);
+            Destroy(collision.gameObject);
         }
         else if (collision.CompareTag("Scroll"))
         {

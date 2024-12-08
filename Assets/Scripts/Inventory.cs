@@ -29,12 +29,14 @@ public class Inventory : MonoBehaviour
         emerald.enabled = false;
         sapphire.enabled = false;
         ruby.enabled = false;
+        fruitCount = 0;
+        fruitCountText.enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        fruitCountText.text = fruitCount.ToString();
+        hideFruit();    
     }
 
     public void showSwordandShield()
@@ -46,6 +48,7 @@ public class Inventory : MonoBehaviour
     public void showFruit()
     {
         fruit.enabled=true;
+        fruitCountText.enabled=true;
     }
 
     public void showScroll()
@@ -73,6 +76,30 @@ public class Inventory : MonoBehaviour
         if(fruitCount == 0)
         {
             fruit.enabled=false;
+            fruitCountText.enabled = false;
+        }
+    }
+
+    public void addToFruitCount(int increaseBy)
+    {
+        fruitCount += increaseBy;
+
+        if(fruitCount == 1)
+        {
+            showFruit();
+        }
+        updateFruitText();
+    }
+
+    private void updateFruitText()
+    {
+        if(fruitCount > 0)
+        {
+            fruitCountText.text = "X" + fruitCount;
+        }
+        else
+        {
+            hideFruit();
         }
     }
 
