@@ -14,7 +14,7 @@ public class CyclopsChamberTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //cyclops.activateCyclops();
+            cyclops.activateCyclops();
 
             StartCoroutine(delayLock());
         }

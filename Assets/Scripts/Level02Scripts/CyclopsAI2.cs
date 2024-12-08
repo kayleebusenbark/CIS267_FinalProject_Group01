@@ -23,24 +23,27 @@ public class CyclopsAI2 : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     public AudioSource source;
-    public AudioClip clip;
+
+    public AudioClip clip1;
+    public AudioClip clip2;
+  
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        //player = GameObject.FindGameObjectWithTag("Player").transform;
 
-        //GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
 
-        //if (playerObject != null)
-        //{
-        //    player = playerObject.transform;
-        //}
+        if (playerObject != null)
+        {
+            player = playerObject.transform;
+        }
 
-        //animator = GetComponent<Animator>();
-        //enabled = false;
+        animator = GetComponent<Animator>();
+        enabled = false;
 
-        //spriteRenderer =  GetComponent<SpriteRenderer>();
+        spriteRenderer =  GetComponent<SpriteRenderer>();
 
     }
 
@@ -100,10 +103,12 @@ public class CyclopsAI2 : MonoBehaviour
 
         animator.SetTrigger("laser");
 
+        source.PlayOneShot(clip2);
 
         yield return new WaitForSeconds(chargeTime);
 
-        source.PlayOneShot(clip);
+        source.PlayOneShot(clip1);
+        
 
         if (laserSpawnPoint != null)
         {
@@ -115,10 +120,10 @@ public class CyclopsAI2 : MonoBehaviour
         isAttacking = false;
     }
 
-    //public void activateCyclops()
-    //{
-    //    enabled = true;
-    //}
+    public void activateCyclops()
+    {
+        enabled = true;
+    }
 
     private void flip()
     {
