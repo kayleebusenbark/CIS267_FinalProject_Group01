@@ -22,6 +22,10 @@ public class OrcAi : MonoBehaviour
     [SerializeField]
     private float maxRange;
     public int health = 10;
+    public float orcSpeed = 1f;
+    public float distance = .4f; 
+    
+
 
 
 
@@ -93,9 +97,22 @@ public class OrcAi : MonoBehaviour
 
     private void MoveToPlayer()
     {
-        myAnimator.SetBool("isMoving", true);
-        myAnimator.SetBool("playerDetected", true);
-        transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        if(distanceToPlayer > distance)
+        {
+            Vector2 direction = (player.position - transform.position).normalized;
+            transform.position += (Vector3)direction * orcSpeed * Time.deltaTime;
+
+            myAnimator.SetBool("isMoving", true);
+        }
+        else
+        {
+            myAnimator.SetBool("isMoving", false);
+            attackPlayer(); 
+        }
+       
+        
     }
 
     public void attackPlayer()

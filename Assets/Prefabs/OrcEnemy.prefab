@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5186918222109545469}
   - component: {fileID: -6724565154169789766}
   - component: {fileID: -574269759863524543}
-  - component: {fileID: 1727922998533573040}
   m_Layer: 0
   m_Name: OrcEnemy
   m_TagString: Orc
@@ -185,14 +184,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d354d55afebfb0a41bcc5c67ad42a53f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6531787891721042424, guid: 4971956af33c9c046a8190caf6e4381f, type: 3}
   attackDamage: 10
   attackRange: 5
   attackCoolDown: 1
-  speed: 0
+  speed: 1
   minRange: 0
   maxRange: 0
   health: 3
+  orcSpeed: 1
+  distance: 0.4
 --- !u!114 &-574269759863524543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,21 +211,5 @@ MonoBehaviour:
   pushbackForce: 0.1
   spriteRenderer: {fileID: 439090487918535950}
   heartPrefab: {fileID: 0}
-  gem: {fileID: 0}
+  gem: {fileID: 3574858528342623694, guid: d6b1aa5540e5b2f4c8b13876c879dd85, type: 3}
   heartDropChange: 0.3
---- !u!114 &1727922998533573040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4869519769914000697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b9003b6eea3f4a4e90076e095b2522e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.75
-  spriteRenderer: {fileID: 439090487918535950}
-  distanceBetween: 1
-  damage: 10
