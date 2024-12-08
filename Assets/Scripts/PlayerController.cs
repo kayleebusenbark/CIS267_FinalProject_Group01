@@ -266,8 +266,10 @@ public class PlayerController : MonoBehaviour
         else if(collision.CompareTag("Ruby"))
         {
             Destroy(collision.gameObject);
-
             inventory.showRuby();
+
+            VictoryScreen screen = FindObjectOfType<VictoryScreen>();
+            screen.triggerVictoryScreen();
         }
     }
 

@@ -4526,7 +4526,6 @@ MonoBehaviour:
   slider: {fileID: 8958652302379877299}
   duration: 10
   rechargeRate: 7
-  activeKey: 105
   flickerThreshold: 20
   freezeSound: {fileID: 158423746374488456}
 --- !u!1 &7784597540501385389
