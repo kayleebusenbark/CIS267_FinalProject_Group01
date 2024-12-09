@@ -11,7 +11,6 @@ public class OrcAi : MonoBehaviour
     public float attackRange = 5f;
     public float attackCoolDown = 1f;
     private float lastAttackTime;
-    public float speed;
     private Animator myAnimator;
     //private Transform target;
     private bool isAttacking = false;
@@ -97,41 +96,41 @@ public class OrcAi : MonoBehaviour
 
     private void MoveToPlayer()
     {
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        if (distanceToPlayer < distance && distanceToPlayer > .5f)
-        {
-            Vector2 direction = (player.position - transform.position).normalized;
-            transform.position += (Vector3)direction * orcSpeed * Time.deltaTime;
-
-            myAnimator.SetBool("isMoving", true);
-        }
-        else
-        {
-            myAnimator.SetBool("isMoving", false);
-
-            if (distanceToPlayer <= .5f)
-            {
-                attackPlayer();
-            }
-
-        }
         //float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        //if (distanceToPlayer > distance)
+        //if (distanceToPlayer <= distance && distanceToPlayer > .5f)
         //{
         //    Vector2 direction = (player.position - transform.position).normalized;
         //    transform.position += (Vector3)direction * orcSpeed * Time.deltaTime;
 
         //    myAnimator.SetBool("isMoving", true);
         //}
-
         //else
         //{
         //    myAnimator.SetBool("isMoving", false);
-        //    attackPlayer();
+
+        //    if (distanceToPlayer <= .5f)
+        //    {
+        //        attackPlayer();
+        //    }
 
         //}
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        if (distanceToPlayer > distance)
+        {
+            Vector2 direction = (player.position - transform.position).normalized;
+            transform.position += (Vector3)direction * orcSpeed * Time.deltaTime;
+
+            myAnimator.SetBool("isMoving", true);
+        }
+
+        else
+        {
+            myAnimator.SetBool("isMoving", false);
+            attackPlayer();
+
+        }
 
     }
 
@@ -186,7 +185,7 @@ public class OrcAi : MonoBehaviour
         }
         else
         {
-            myAnimator.SetTrigger("hit"); 
+            myAnimator.SetTrigger("hurt"); 
         }
     }
 
