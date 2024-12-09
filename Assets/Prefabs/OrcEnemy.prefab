@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 439090487918535950}
   - component: {fileID: 8479941025159086559}
   - component: {fileID: 3585730113385126633}
-  - component: {fileID: 5186918222109545469}
   - component: {fileID: -6724565154169789766}
   - component: {fileID: -574269759863524543}
+  - component: {fileID: 16781520686476257}
   m_Layer: 0
   m_Name: OrcEnemy
   m_TagString: Orc
@@ -118,7 +118,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4869519769914000697}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -137,8 +137,49 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 2
---- !u!70 &5186918222109545469
-CapsuleCollider2D:
+--- !u!114 &-6724565154169789766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869519769914000697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d354d55afebfb0a41bcc5c67ad42a53f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 10
+  attackRange: 5
+  attackCoolDown: 1
+  speed: 0
+  minRange: 0.4
+  maxRange: 0.4
+  health: 3
+  orcSpeed: 1
+  distance: 0.4
+--- !u!114 &-574269759863524543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4869519769914000697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68f12c081f6ca4448bcdd4a93ca1946a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  maxHealth: 3
+  destroyDelay: 0.5
+  pushbackForce: 0.1
+  spriteRenderer: {fileID: 439090487918535950}
+  heartPrefab: {fileID: 0}
+  gem: {fileID: 3574858528342623694, guid: d6b1aa5540e5b2f4c8b13876c879dd85, type: 3}
+  heartDropChange: 0.3
+--- !u!61 &16781520686476257
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -169,47 +210,16 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.057878647, y: 0.016452624}
-  m_Size: {x: 0.4663622, y: 0.3986961}
-  m_Direction: 1
---- !u!114 &-6724565154169789766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4869519769914000697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d354d55afebfb0a41bcc5c67ad42a53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 10
-  attackRange: 5
-  attackCoolDown: 1
-  speed: 1
-  minRange: 0
-  maxRange: 0
-  health: 3
-  orcSpeed: 1
-  distance: 0.4
---- !u!114 &-574269759863524543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4869519769914000697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68f12c081f6ca4448bcdd4a93ca1946a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
-  maxHealth: 3
-  destroyDelay: 0.5
-  pushbackForce: 0.1
-  spriteRenderer: {fileID: 439090487918535950}
-  heartPrefab: {fileID: 0}
-  gem: {fileID: 3574858528342623694, guid: d6b1aa5540e5b2f4c8b13876c879dd85, type: 3}
-  heartDropChange: 0.3
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 0.64}
+  m_EdgeRadius: 0

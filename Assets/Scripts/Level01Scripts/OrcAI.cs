@@ -99,7 +99,7 @@ public class OrcAi : MonoBehaviour
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        if(distanceToPlayer > distance)
+        if (distanceToPlayer < distance && distanceToPlayer > .5f)
         {
             Vector2 direction = (player.position - transform.position).normalized;
             transform.position += (Vector3)direction * orcSpeed * Time.deltaTime;
@@ -109,10 +109,30 @@ public class OrcAi : MonoBehaviour
         else
         {
             myAnimator.SetBool("isMoving", false);
-            attackPlayer(); 
+
+            if (distanceToPlayer <= .5f)
+            {
+                attackPlayer();
+            }
+
         }
-       
-        
+        //float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        //if (distanceToPlayer > distance)
+        //{
+        //    Vector2 direction = (player.position - transform.position).normalized;
+        //    transform.position += (Vector3)direction * orcSpeed * Time.deltaTime;
+
+        //    myAnimator.SetBool("isMoving", true);
+        //}
+
+        //else
+        //{
+        //    myAnimator.SetBool("isMoving", false);
+        //    attackPlayer();
+
+        //}
+
     }
 
     public void attackPlayer()
@@ -134,17 +154,21 @@ public class OrcAi : MonoBehaviour
 
     private void DealDamage()
     {
-        if(player != null)
+        if (player == null)
         {
-            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-
-            if (playerHealth != null)
-            {
-                playerHealth.takeDamage(attackDamage);
-            }
+            return; 
         }
 
-        isAttacking= false;
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+
+        if (playerHealth == null)
+        {
+            return; 
+        }
+        int damageToDeal = attackDamage; 
+        playerHealth.takeDamage(damageToDeal);
+
+        isAttacking = false;
     }
 
     private void TakeDamage(int damage)
