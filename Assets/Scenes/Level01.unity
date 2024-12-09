@@ -184,6 +184,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1577647575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &273425457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 273425458}
+  m_Layer: 0
+  m_Name: BushMonsterSpawners (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &273425458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273425457}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.29, y: -18.89, z: 0.28910884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1577647575}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &311308734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 311308735}
+  m_Layer: 0
+  m_Name: FlowerEnemy(5) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &311308735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311308734}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.58, y: -18.27, z: 0.32600838}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1577647575}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &323089269
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,114 +306,6 @@ Transform:
   - {fileID: 748764234}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &326340967
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1444340812318664118, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: gem
-      value: 
-      objectReference: {fileID: 1972090863}
-    - target: {fileID: 1444340812318664118, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: health
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1444340812318664118, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: maxHealth
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2236734133382817392, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2236734133382817392, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: health
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2236734133382817392, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: maxRange
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2236734133382817392, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: minRange
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3239323334171552039, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_Name
-      value: OrcEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 4534894085411703498, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4534894085411703498, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4534894085411703498, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.002349339
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8542002915308626206, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 866af1ff79093b04887e300d3b516940, type: 3}
---- !u!114 &326340968 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2236734133382817392, guid: 866af1ff79093b04887e300d3b516940, type: 3}
-  m_PrefabInstance: {fileID: 326340967}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d354d55afebfb0a41bcc5c67ad42a53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &356871244
 GameObject:
   m_ObjectHideFlags: 0
@@ -34251,7 +34205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c189e3b66a93ff4ea74d490825bcad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orc: {fileID: 326340968}
+  orc: {fileID: 0}
   bossCollider: {fileID: 1139837457}
 --- !u!61 &1139837457
 BoxCollider2D:
@@ -34312,6 +34266,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1208294208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208294209}
+  m_Layer: 0
+  m_Name: BushMonsterSpawners (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208294209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208294208}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.4, y: -17.34, z: 0.28910884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1577647575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1268862047
 GameObject:
@@ -75163,12 +75148,18 @@ Transform:
   - {fileID: 1669048333}
   - {fileID: 1268862048}
   - {fileID: 1475000641}
+  - {fileID: 2045401812}
+  - {fileID: 1208294209}
+  - {fileID: 1998354249}
+  - {fileID: 273425458}
   - {fileID: 971722702}
   - {fileID: 2047083725}
   - {fileID: 263107724}
   - {fileID: 1972186573}
   - {fileID: 1642793139}
   - {fileID: 865466443}
+  - {fileID: 311308735}
+  - {fileID: 1670573138}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1577647576
@@ -75199,6 +75190,11 @@ MonoBehaviour:
   - {fileID: 1972186572}
   - {fileID: 1642793138}
   - {fileID: 865466442}
+  - {fileID: 865466442}
+  - {fileID: 1208294208}
+  - {fileID: 1998354248}
+  - {fileID: 273425457}
+  - {fileID: 2045401811}
 --- !u!1 &1604306952
 GameObject:
   m_ObjectHideFlags: 0
@@ -75413,6 +75409,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1577647575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1670573137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670573138}
+  m_Layer: 0
+  m_Name: FlowerEnemy(5) (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1670573138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670573137}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.21, y: -18.15, z: 0.32600838}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1577647575}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743008724
 GameObject:
   m_ObjectHideFlags: 0
@@ -75491,11 +75518,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1577647575}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1972090863 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3574858528342623694, guid: d6b1aa5540e5b2f4c8b13876c879dd85, type: 3}
-  m_PrefabInstance: {fileID: 6179519974095311232}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1972186572
 GameObject:
   m_ObjectHideFlags: 0
@@ -75522,6 +75544,68 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -26.92, y: -13.26, z: 0.32600838}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1577647575}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1998354248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1998354249}
+  m_Layer: 0
+  m_Name: BushMonsterSpawners (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1998354249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998354248}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.27, y: -19.03, z: 0.28910884}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1577647575}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2045401811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2045401812}
+  m_Layer: 0
+  m_Name: BushMonsterSpawners (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2045401812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045401811}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.83, y: -17.33, z: 0.28910884}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75798,6 +75882,5 @@ SceneRoots:
   - {fileID: 1577647575}
   - {fileID: 323089271}
   - {fileID: 1139837458}
-  - {fileID: 326340967}
   - {fileID: 1604306953}
   - {fileID: 2126978643}

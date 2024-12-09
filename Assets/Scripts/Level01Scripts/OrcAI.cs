@@ -122,7 +122,9 @@ public class OrcAi : MonoBehaviour
             Vector2 direction = (player.position - transform.position).normalized;
             transform.position += (Vector3)direction * orcSpeed * Time.deltaTime;
 
+            myAnimator.SetBool("playerDetected", true);
             myAnimator.SetBool("isMoving", true);
+
         }
 
         else
