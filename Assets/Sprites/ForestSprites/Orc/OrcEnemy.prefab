@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8424088942717744464}
   - component: {fileID: 4534894085411703498}
   - component: {fileID: 3567608295826328108}
-  - component: {fileID: 1562327170610258541}
   - component: {fileID: 2236734133382817392}
   - component: {fileID: 1444340812318664118}
   m_Layer: 0
@@ -183,22 +182,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.40431213, y: 0.3754511}
   m_EdgeRadius: 0
---- !u!114 &1562327170610258541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3239323334171552039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b9003b6eea3f4a4e90076e095b2522e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.75
-  spriteRenderer: {fileID: 5922997669904304463}
-  distanceBetween: 1
-  damage: 10
 --- !u!114 &2236734133382817392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,10 +197,11 @@ MonoBehaviour:
   attackDamage: 10
   attackRange: 5
   attackCoolDown: 1
-  speed: 2
   minRange: 0
   maxRange: 0
   health: 3
+  orcSpeed: 1
+  distance: 0.4
 --- !u!114 &1444340812318664118
 MonoBehaviour:
   m_ObjectHideFlags: 0

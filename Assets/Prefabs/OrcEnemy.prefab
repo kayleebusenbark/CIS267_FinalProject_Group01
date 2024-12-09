@@ -152,9 +152,8 @@ MonoBehaviour:
   attackDamage: 10
   attackRange: 5
   attackCoolDown: 1
-  speed: 0
-  minRange: 0.4
-  maxRange: 0.4
+  minRange: 0
+  maxRange: 0
   health: 3
   orcSpeed: 1
   distance: 0.4
